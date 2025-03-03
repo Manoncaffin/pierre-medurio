@@ -2,6 +2,27 @@ Title: Contact
 
 ----
 
+Email: 
+
+----
+
+Tel: 
+
+----
+
+Networks:
+
+- 
+  network: instagram
+  link: >
+    https://www.instagram.com/pierre.medurio/
+
+----
+
+Biography: 
+
+----
+
 Text: Voici le texte de la page Contact.
 
 ----
