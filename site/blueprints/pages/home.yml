@@ -1,0 +1,9 @@
+title: Accueil
+
+sections:
+  images:
+    label: Images
+    type: files
+    layout: cards
+    multiple: true
+    max: 5

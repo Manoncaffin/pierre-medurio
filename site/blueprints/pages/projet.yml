@@ -1,0 +1,15 @@
+title: Projet
+
+fields:
+  title:
+    label: Nom du projet
+    type: text
+
+  cover:
+    label: Image principale
+    type: files
+    max: 1
+
+  description:
+    label: Description
+    type: textarea

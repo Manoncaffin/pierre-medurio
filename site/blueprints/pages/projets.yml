@@ -1,0 +1,12 @@
+title: Projets
+
+sections:
+  projects:
+    label: Liste des projets
+    type: pages
+    template: project
+    layout: cards
+    size: small
+    image:
+      query: page.images.first
+      cover: true

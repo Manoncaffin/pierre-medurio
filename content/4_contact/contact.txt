@@ -1,0 +1,13 @@
+Title: Contact
+
+----
+
+Text: Voici le texte de la page Contact.
+
+----
+
+Template: contact
+
+----
+
+Uuid: bwymwZvfnLfWbCRN

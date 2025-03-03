@@ -1,5 +1,44 @@
 title: Site
 
-sections:
+options:
+  changeStatus: false
+  changeSlug: false
+  delete: false
+
+tabs:
   pages:
-    type: pages
+    label: Pages du site
+    columns:
+      main:
+      - width: 1/2
+        sections:
+          pages:
+            headline: Pages
+            type: pages
+            template: 
+              - home
+              - projets
+              - contact
+              - prestations
+              - mentions-legales
+            create: true
+            layout: list
+            sortable: true
+            images: false
+  identite:
+    label: Identité visuelle
+    columns:
+      main:
+        width: 1/2
+        sections:
+          logo: 
+            label: Logotype
+            type: files
+            layout: cards
+            max: 1
+            min: 1
+            accept: 
+              - image/svg+xml
+              - image/png
+              - image/jpeg
+              - image/webp

@@ -1,0 +1,40 @@
+title: Contact
+icon: chat
+
+columns:
+  - width: 1/2
+    sections:
+    fields:
+      pageSettings:
+          label: Contact
+          type: headline
+          required: true
+      email:
+        label: Email
+        type: email
+      tel:
+        label: Téléphone
+        type: tel
+      networks:
+        label: Réseaux
+        type: structure
+        fields:
+          network:
+            label: Nom du réseau
+            type: text
+          link:
+            label: Lien
+            type: url
+
+  - width: 1/2
+    sections:
+    fields:
+      pagePartners:
+          label: Biographie
+          type: headline
+          required: true
+      biography:
+        label: Biographie
+        type: textarea
+
+

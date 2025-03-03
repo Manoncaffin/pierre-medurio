@@ -1,0 +1,13 @@
+Title: Mentions légales
+
+----
+
+Text: Voici le texte de la page Mentions légales
+
+----
+
+Template: mentions-legales
+
+----
+
+Uuid: g8piOF1TosYGYhF4
