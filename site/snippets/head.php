@@ -34,7 +34,7 @@
     <link rel="mask-icon" href="<?= $site->url() ?>/assets/imgs/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />

@@ -1,18 +1,46 @@
+<?php
+$logo = $site->files()->first('pierre_medurio_logotype_noir.svg');
+$navPages = $site->children()->listed()->filter(function ($page) {
+    return in_array($page->slug(), ['projets', 'prestations', 'articles', 'à propos', 'contact']);
+});
+?>
+
 <body>
-    <div class="header-wrapper">
-        <header class="container_header">
+    <header class="container_header">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-            <nav>
-                <ul>
-                    <?php foreach ($site->children()->listed() as $page): ?>
-                        <li>
-                            <a href="<?= $page->url() ?>" <?= e($page->isOpen(), 'class="active"') ?>>
-                                <?= $page->title() ?>
-                            </a>
-                        </li>
-                    <?php endforeach ?>
-                </ul>
-            </nav>
+        <nav>
+            <?php if ($logo): ?>
+                <div class="logo">
+                    <a href="<?= url('home') ?>">
+                        <img src="<?= $logo->url() ?>" alt="Logo">
+                    </a>
+                </div>
+            <?php else: ?>
+                <p>Logo non trouvé</p>
+            <?php endif; ?>
+            <ul>
+                <?php
+                $navPages = $site->children()->listed()->filter(function ($page) {
+                    return in_array($page->slug(), ['projets', 'prestations', 'articles', 'a-propos', 'contact']);
+                });
 
-        </header>
+                $totalPages = $navPages->count();
+                $index = 0;
+
+                foreach ($navPages as $page): ?>
+                    <li>
+                        <a href="<?= $page->url() ?>" <?= e($page->isOpen(), 'class="active"') ?>>
+                            <?= $page->title() ?>
+                        </a>
+                    </li>
+                    <?php if ($index < $totalPages - 1): ?>
+                        <div class="separator"></div>
+                    <?php endif; ?>
+                    <?php $index++; ?>
+                <?php endforeach ?>
+            </ul>
+        </nav>
+
+    </header>
     </div>

@@ -1,21 +1,27 @@
 @font-face {
     font-family: "InclusiveSans-Light";
-    src: url('../fonts/InclusiveSans-Light.ttf') format('truetype');
+    src: url('../fonts/InclusiveSans-Light.ttf') format('truetype'),
+        url('../fonts/InclusiveSans-Light.woff') format('woff'),
+        url('../fonts/InclusiveSans-Light.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "InclusiveSans-LightItalic";
-    src: url('../fonts/InclusiveSans-LightItalic.ttf') format('truetype');
+    src: url('../fonts/InclusiveSans-LightItalic.ttf') format('truetype'),
+        url('../fonts/InclusiveSans-LightItalic.woff') format('woff'),
+        url('../fonts/InclusiveSans-LightItalic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "InclusiveSans-SemiBold";
-    src: url('../fonts/InclusiveSans-SemiBold.ttf') format('truetype');
-    font-weight: bold;
+    src: url('../fonts/InclusiveSans-SemiBold.ttf') format('truetype'),
+        ('../fonts/InclusiveSans-SemiBold.woff') format('woff'),
+        ('../fonts/InclusiveSans-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -29,6 +35,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+    font-size: 1.1rem;
 }
 
 :root {
@@ -43,6 +50,8 @@ body {
 
 html,
 body {
+    width: 100vw;
+    height: 100vh;
     -webkit-scroll-behavior: smooth;
     scroll-behavior: smooth;
     padding: 0;
@@ -63,14 +72,26 @@ h6 {
 }
 
 p,
-a,
-ul,
-li {
+a {
     font-family: "InclusiveSans-Light", serif;
     color: var(--text-color);
     font-weight: normal;
     margin: 0;
     padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "InclusiveSans-Semibold", serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Start coding here */
@@ -81,8 +102,66 @@ li {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
+
     /* ------- HEADER ------- */
     /* ---------------------- */
+    main {
+        padding-top: 100px;
+    }
+
+    .container_header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: white;
+        margin: 20px 200px 0 200px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        gap: 80px;
+    }
+
+    nav .logo {
+        flex-shrink: 0;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    ul li {
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    ul li a {
+        font-family: 'InclusiveSans-Semibold';
+        font-weight: 600;
+    }
+
+    .separator {
+        display: inline-block;
+        height: 60px;
+        width: 1px;
+        background-color: black;
+        margin-left: 10px;
+    }
+
+    ul li:not(:last-child) .separator {
+        display: block;
+    }
 
     /* ------- HEADER ------- */
     /* ---------------------- */
@@ -96,9 +175,10 @@ li {
 
     /* -------- PAGE -------- */
     /* ---------------------- */
-    /* .container_page {
+    .container_page {
+        border-top: 1px solid black;
+    }
 
-} */
     /* -------- PAGE -------- */
     /* ---------------------- */
 }
@@ -140,7 +220,63 @@ li {
 @media only screen and (min-width: 1000px) {
     /* ------- HEADER ------- */
     /* ---------------------- */
+    main {
+        padding-top: 100px;
+    }
 
+    .container_header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: white;
+        margin: 20px 200px 0 200px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        gap: 80px;
+    }
+
+    nav .logo {
+        flex-shrink: 0;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    ul li {
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    ul li a {
+        font-family: 'InclusiveSans-Semibold';
+        font-weight: 600;
+    }
+
+    .separator {
+        display: inline-block;
+        height: 60px;
+        width: 1px;
+        background-color: black;
+        margin-left: 10px;
+    }
+
+    ul li:not(:last-child) .separator {
+        display: block;
+    }
     /* ------- HEADER ------- */
     /* ---------------------- */
 
