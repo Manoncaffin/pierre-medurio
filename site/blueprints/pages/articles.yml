@@ -1,1 +1,11 @@
 title: Articles
+preset: pages
+
+drafts:
+  extends: sections/articles
+  label: Articles brouillons
+
+listed:
+  extends: sections/articles
+  label: Articles publiés
+  layout: cards

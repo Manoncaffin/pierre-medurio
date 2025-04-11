@@ -1,0 +1,31 @@
+title: Article
+preset: page
+
+status:
+  draft: Brouillon
+  listed: Publication
+
+fields:
+  description:
+    type: textarea
+    size: large
+# Illustration principale de l'article, illustré comme couverture
+  imageArticle:
+    label: Photographie
+    type: files
+    max: 1
+  legend:
+    label: Légende
+    type: textarea
+    size: small
+  published:
+    label: Date de publication
+    type: date
+    width: 1/2
+    display: DD.MM.YYYY
+# images complémentaires, dans le contenu ou en bas de l'article
+sidebar:
+  galleryArticle:
+    type: files
+    label: Galerie
+    template: image

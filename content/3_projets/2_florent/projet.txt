@@ -13,21 +13,13 @@ Description: Florent désirait avant tout mettre en avant une émotion – pas f
 Details:
 
 - 
-  network: Florent Donot
+  client: Florent Donot
+  model: ""
   year: 2025
+  network: Florent Donot
+
 
 ----
 
-Year: 2018
-
-----
-
-Intro: 
-
-----
-
-Text: 
-
-----
 
 Uuid: 9coSF7f3vKWZk817
