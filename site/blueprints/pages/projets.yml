@@ -1,12 +1,14 @@
 title: Projets
+icon: users
 
-sections:
-  projects:
-    label: Liste des projets
-    type: pages
-    template: project
-    layout: cards
-    size: small
-    image:
-      query: page.images.first
-      cover: true
+columns:
+  main:
+    width: 2/3
+    sections:
+      projets: sections/projets
+        type: pages
+        layout: cards
+        template: projet
+        image:
+          ratio: 16/9
+          cover: true

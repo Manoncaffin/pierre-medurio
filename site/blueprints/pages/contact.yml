@@ -4,37 +4,58 @@ icon: chat
 columns:
   - width: 1/2
     sections:
-    fields:
-      pageSettings:
-          label: Contact
-          type: headline
-          required: true
-      email:
-        label: Email
-        type: email
-      tel:
-        label: Téléphone
-        type: tel
-      networks:
-        label: Réseaux
-        type: structure
+      contactForm:
+        type: fields
         fields:
-          network:
-            label: Nom du réseau
+          contactHeadline:
+            label: Me contacter
+            type: headline
+          contactName:
+            label: Nom
             type: text
-          link:
-            label: Lien
-            type: url
+          contactFirstname:
+            label: Prénom
+            type: text
+          contactEmail:
+            label: Mail
+            type: email
+          contactPhone:
+            label: Téléphone
+            type: tel
+          contactInterest:
+            label: Intérêt
+            type: checkboxes
+            options:
+              - Reportage
+              - Portrait
+              - Atelier
+              - Échanger
+              - Autre
+          contactMessage:
+            label: Message
+            type: textarea
 
   - width: 1/2
     sections:
-    fields:
-      pagePartners:
-          label: Biographie
-          type: headline
-          required: true
-      biography:
-        label: Biographie
-        type: textarea
-
-
+      pageSettings:
+        type: fields
+        fields:
+          pageSettingsHeadline:
+            label: Me suivre
+            type: headline
+            required: true
+          networks:
+            label: Réseaux
+            type: structure
+            fields:
+              network:
+                label: Nom du réseau
+                type: text
+              link:
+                label: Lien
+                type: url
+          newsletterEmail:
+            label: Adresse e-mail pour la newsletter
+            type: email
+            required: true
+            help: Entrez votre adresse e-mail pour vous abonner à la newsletter.

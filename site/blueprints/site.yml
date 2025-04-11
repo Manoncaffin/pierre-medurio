@@ -17,9 +17,12 @@ tabs:
             type: pages
             template: 
               - home
+              - accueil
               - projets
-              - contact
               - prestations
+              - articles
+              - à propos
+              - contact
               - mentions-legales
             create: true
             layout: list

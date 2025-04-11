@@ -1,0 +1,19 @@
+title: À propos
+icon: chat
+
+columns:
+  - width: 1/2
+    sections:
+    fields:
+      pagePartners:
+          label: Biographie
+          type: headline
+          required: true
+      biography:
+        label: Biographie
+        type: textarea
+      portrait:
+        label: Portrait
+        type: image
+
+

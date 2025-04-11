@@ -1,0 +1,29 @@
+Title: Mentions légales
+
+----
+
+Content1: <h2>Mentions légales</h2><p>Éditeur du site&nbsp;: Pierre Medurio </p><p>Siège social&nbsp;: Saint-Étienne, 42000 </p><p>Numéro SIRET&nbsp;: 82255862300028 </p><p>Numéro RCS&nbsp;: Saint-Étienne A 822558623<br>N° de TVA intracommunautaire&nbsp;: FR&nbsp;52&nbsp;822558623 </p><p>Email&nbsp;: contact@pierremedurio.com </p><p>Responsable de la publication&nbsp;: Pierre Medurio<br><br>Hébergeur&nbsp;: EX2 Siège social&nbsp;: 34 Avenue des Champs-Élysées, 75008 Paris<br></p><h3><br>Propriété intellectuelle </h3><p>Toutes les photographies, textes, et plus généralement, le contenu du site Pierre Medurio sont protégés par le droit d’auteur et les lois relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Pierre Medurio.</p>
+
+----
+
+Content2: <h2>Crédits</h2><p>Photographies : Pierre Medurio </p><p>Identité visuelle, webdesign et code : Manon Caffin </p><p>Typographies : Inclusive par Olivia King</p>
+
+----
+
+Column1: <h1>Mentions légales  </h1><p>Éditeur du site&nbsp;: Pierre Medurio </p><p>Siège social&nbsp;: Saint-Étienne, 42000 Numéro </p><p>SIRET&nbsp;: 82255862300028 </p><p>Numéro RCS&nbsp;: Saint-Étienne A 822558623<br>N° de TVA intracommunautaire&nbsp;: FR&nbsp;52&nbsp;822558623 </p><p>Email&nbsp;: contact@pierremedurio.com </p><p>Responsable de la publication&nbsp;: Pierre Medurio<br><br>Hébergeur&nbsp;: EX2 </p><p>Siège social&nbsp;: 34 Avenue des Champs-Élysées, 75008 Paris<br></p><p><br>Propriété intellectuelle </p><p>Toutes les photographies, textes, et plus généralement, le contenu du site Pierre Medurio sont protégés par le droit d’auteur et les lois relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Pierre Medurio.<br><br></p>
+
+----
+
+Column2: <h1>Crédits</h1><p> <br>Photographies : Pierre Medurio </p><p>Identité visuelle, webdesign et code : Manon Caffin </p><p>Typographies : Inclusive par Olivia King</p>
+
+----
+
+Text: Voici le texte de la page Mentions légales
+
+----
+
+Template: mentions-legales
+
+----
+
+Uuid: g8piOF1TosYGYhF4

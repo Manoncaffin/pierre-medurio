@@ -1,0 +1,62 @@
+Title: Contact
+
+----
+
+Contactname: 
+
+----
+
+Contactfirstname: 
+
+----
+
+Contactemail: 
+
+----
+
+Contactphone: 
+
+----
+
+Contactinterest: 
+
+----
+
+Contactmessage: 
+
+----
+
+Networks:
+
+- 
+  network: Instagram
+  link: >
+    https://www.instagram.com/pierre.medurio/
+- 
+  network: LinkedIn
+  link: >
+    https://www.linkedin.com/in/pierre-medurio-974856234/
+
+----
+
+Email: 
+
+----
+
+Tel: 
+
+----
+
+Biography: 
+
+----
+
+Text: Voici le texte de la page Contact.
+
+----
+
+Template: contact
+
+----
+
+Uuid: bwymwZvfnLfWbCRN

@@ -3,28 +3,37 @@ icon: document
 
 columns:
   - width: 1/2
-    fields:
+    sections:
       column1:
-        label: Colonne 1
-        type: writer
-        fieldsets:
-          - heading
-          - text
-          - list
-          - image
-          - gallery
-          - video
-          - code
-          - markdown
+        type: fields
+        fields:
+          content1:
+            label: Colonne 1
+            type: writer
+            fieldsets:
+              - heading
+              - text
+              - list
+              - image
+              - gallery
+              - video
+              - code
+              - markdown
+
+  - width: 1/2
+    sections:
       column2:
-        label: Colonne 2
-        type: writer
-        fieldsets:
-          - heading
-          - text
-          - list
-          - image
-          - gallery
-          - video
-          - code
-          - markdown
+        type: fields
+        fields:
+          content2:
+            label: Colonne 2
+            type: writer
+            fieldsets:
+              - heading
+              - text
+              - list
+              - image
+              - gallery
+              - video
+              - code
+              - markdown

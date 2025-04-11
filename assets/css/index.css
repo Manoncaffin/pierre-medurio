@@ -1,5 +1,31 @@
+@font-face {
+    font-family: "InclusiveSans-Light";
+    src: url('../fonts/InclusiveSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "InclusiveSans-LightItalic";
+    src: url('../fonts/InclusiveSans-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "InclusiveSans-SemiBold";
+    src: url('../fonts/InclusiveSans-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+::selection {
+    background-color: rgb(227, 227, 227);
+    color: #000000;
+}
+
 body {
-    font-family: "Inclusive Sans", serif;
+    font-family: "InclusiveSans-Light", serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
@@ -28,12 +54,19 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    font-family: "InclusiveSans-Semibold", serif;
+    color: var(--text-color);
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
 p,
 a,
 ul,
 li {
-    font-family: "Inclusive Sans", serif;
+    font-family: "InclusiveSans-Light", serif;
     color: var(--text-color);
     font-weight: normal;
     margin: 0;

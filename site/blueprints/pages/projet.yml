@@ -1,15 +1,33 @@
 title: Projet
+icon: users
 
-fields:
-  title:
-    label: Nom du projet
-    type: text
+options:
+  changeStatus: true
+  changeSlug: true
+  delete: false
 
-  cover:
-    label: Image principale
-    type: files
-    max: 1
-
-  description:
-    label: Description
-    type: textarea
+columns:
+  - width: 1/2
+    fields:
+      title:
+        label: Nom du projet
+        type: text
+      description:
+        label: Description
+        type: textarea
+      galerie:
+        label: Images
+        type: files
+        multiple: true
+  - width: 1/2
+    fields:
+      details:
+        label: Détails du projet
+        type: structure
+        fields:
+          commanditaire:
+            label: Commanditaire
+            type: text
+          date:
+            label: Date
+            type: date
