@@ -1,14 +1,12 @@
 title: Projets
-icon: users
+preset: pages
+icon: 🖼
 
-columns:
-  main:
-    width: 2/3
-    sections:
-      projets: sections/projets
-        type: pages
-        layout: cards
-        template: projet
-        image:
-          ratio: 16/9
-          cover: true
+drafts:
+  extends: sections/projets
+  label: Projets brouillons
+
+listed:
+  extends: sections/projets
+  label: Projets publiés
+  layout: cards

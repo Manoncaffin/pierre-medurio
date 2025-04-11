@@ -1,11 +1,11 @@
 type: pages
 headline: Projets
 parent: kirby.page("projets")
-info: "{{ page.description }} | {{ page.galerie.count }} image(s)"
 layout: cards
 size: medium
 template: projet
-empty: No project yet
 image:
-  query: page.galerie.first
+  query: page.images.template("cover").first
+  ratio: 3/2
   cover: true
+info: "{{ page.year }}"

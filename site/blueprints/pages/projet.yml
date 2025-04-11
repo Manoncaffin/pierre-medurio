@@ -1,33 +1,47 @@
 title: Projet
-icon: users
+preset: page
 
-options:
-  changeStatus: true
-  changeSlug: true
-  delete: false
+status:
+  draft: Draft
+  listed: Published
 
-columns:
-  - width: 1/2
+fields:
+  tags:
+    label: Thématique
+    type: tags
+    options:
+      - Reportage, événement
+      - Portrait
+      - Atelier
+    limit: 1
+    accept: options-only
+  description:
+    type: textarea
+    size: large
+  details:
+    label: Détails
+    type: structure
     fields:
-      title:
-        label: Nom du projet
+      network:
+        label: Commanditaire
         type: text
-      description:
-        label: Description
-        type: textarea
-      galerie:
-        label: Images
-        type: files
-        multiple: true
-  - width: 1/2
-    fields:
-      details:
-        label: Détails du projet
-        type: structure
-        fields:
-          commanditaire:
-            label: Commanditaire
-            type: text
-          date:
-            label: Date
-            type: date
+      year:
+        label: Année
+        type: number
+        min: 2000
+        default: 2020
+        required: true
+
+sidebar:
+  cover:
+    type: files
+    label: Couverture
+    layout: cards
+    info: "{{ file.dimensions }}"
+    template: cover
+    min: 1
+    max: 3
+  gallery:
+    type: files
+    label: Galerie
+    template: image

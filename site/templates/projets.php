@@ -1,16 +1,21 @@
 <?php snippet('header') ?>
 
 <main>
-    <?php foreach ($page->children() as $project): ?>
-        <div class="project-card">
-            <a href="<?= $project->url() ?>">
-                <h1><?= $page->title() ?></h1>
-                <?php if ($image = $project->images()->first()): ?>
-                    <img src="<?= $image->url() ?>" alt="<?= $project->title() ?>">
-                <?php endif; ?>
-            </a>
-        </div>
-    <?php endforeach; ?>
+    <main>
+        <?php snippet('intro') ?>
+        <ul class="projects" <?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
+            <?php foreach ($page->children()->listed() as $project): ?>
+                <li>
+                    <a href="<?= $project->url() ?>">
+                        <figure>
+                            <?= $project->images()->findBy("template", "cover") ?>
+                            <figcaption><?= $project->title() ?> <small><?= $project->year() ?></small></figcaption>
+                        </figure>
+                    </a>
+                </li>
+            <?php endforeach ?>
+        </ul>
+    </main>
 </main>
 
 <?php snippet('footer') ?>

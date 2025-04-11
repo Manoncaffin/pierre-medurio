@@ -1,0 +1,7 @@
+Title: À propos
+----
+Template: a-propos
+----
+Text:
+Ceci est la page à propos.
+----
