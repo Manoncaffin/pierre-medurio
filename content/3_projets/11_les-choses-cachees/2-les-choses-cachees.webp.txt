@@ -1,0 +1,9 @@
+Sort: 2
+
+----
+
+Uuid: bCxfd4qB9XEIld8n
+
+----
+
+Template: image

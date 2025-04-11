@@ -1,0 +1,21 @@
+Title: Nina
+
+----
+
+Tags: Portrait
+
+----
+
+Description: Cascadeuse de profession, Nina a régulièrement besoin de nouvelles images d'elle dans son milieu professionnel. J'ai choisi un fond neutre ainsi qu'un éclairage doux pour mettre en valeur son visage, tout en assumant un format paysage qui permet de projeter son image dans un cadre cinématographique.
+
+----
+
+Details:
+
+- 
+  network: Nina Bianchi
+  year: 2025
+
+----
+
+Uuid: al0m9cVg0zNSEMyk

@@ -1,0 +1,140 @@
+Title: Prestations
+
+----
+
+Portrait:
+
+- 
+  question: "Pourquoi s'offrir une séance photo ?"
+  answer: 'La raison peut être personnelle : pour se faire plaisir, pour retrouver de la confiance en soi, pour jouer avec son image... Nous avons souvent beaucoup de photos de nous prises par nos proches, mais avons-nous beaucoup de photos où nous nous aimons ? La raison peut être aussi professionnelle : une photographie de qualité donnera une image sérieuse et engageante de vous et votre travail.'
+- 
+  question: "Comment se passe l'organisation d'une séance de portrait ?"
+  answer: "Je vous invite en premier lieu à me contacter (insérer lien adresse mail ou formulaire de contact selon option choisie) pour que vous m'expliquiez ce que vous souhaitez faire. Ensuite, je vous rappelle afin que l'on précise votre demande, nous définissons ensemble une date et un lieu, et je vous transmet les modalités administratives."
+- 
+  question: >
+    La séance photo se déroulera-t-elle en
+    studio ou en extérieur ?
+  answer: "En tant que photographe venant du reportage, je privilégie toujours les « vrais lieux ». Ainsi, nous pourrons trouver l'espace idéal pour raconter ce que vous voulez transmettre, et ce sera moins intimidant pour vous que le studio."
+- 
+  question: "Que faire si je ne suis pas à l'aise devant l'objectif ?"
+  answer: "Rassurez-vous : à part les modèles professionnels, personne n'est vraiment à l'aise ! Ce moment sera le vôtre, et c'est mon travail de vous guider pas à pas pour obtenir les images qui vous ressemblent et vous plaisent."
+
+----
+
+Image1: - file://gyM8DWtwfUuGeXMI
+
+----
+
+Text1:
+
+## Portrait au naturel
+Des photos de vous qui vous ressemblent et vous plaisent. En ville, chez vous, à votre travail, dans la nature... selon votre personnalité et ce que vous souhaitez mettre en avant ! Pour se faire plaisir, ou renouveler son image professionnelle.
+→ 5 photos, à partir de 180€
+
+----
+
+Image2: - file://5bMlUR9Xmqqpe28P
+
+----
+
+Text2:
+
+## Portrait mis en scène
+Des photos qui mettrons le plus en avant votre personnalité, votre style, et si vous êtes professionnel.le, votre activité ! Nous élaborons ensemble une direction artistique, un scénario, un travail sur les vêtements et décors afin de produire les images qui serons au plus proche de ce que vous souhaitez raconter.
+→ 10 photos, à partir de 250€
+
+----
+
+Reportage:
+
+- 
+  question: "À qui s'adresse le reportage photo ?"
+  answer: |
+    Si vous êtes professionnel.le, le reportage photo consiste à mettre en avant votre activité à travers une série de photos en immersion. Je peux aussi intervenir sur un événement particulier que vous organisez : un meeting, un festival, une fête, etc.
+    Si vous êtes un particulier, j'interviens pour couvrir les grands évènements de votre vie : un mariage, fête d'anniversaire, baptême, etc.
+    Si vous êtes artiste, professionnel.le ou non, je réalise des images pour mettre en valeur votre travail artistique, quelque soit votre pratique : exposition, concert, performance, théâtre, etc.
+- 
+  question: >
+    Pourquoi faire appel à un photographe
+    professionnel ?
+  answer: "Au delà d'un matériel professionnel qui reste et restera toujours à des années lumières supérieur en termes de qualité à celle des meilleurs smartphones, un photographe professionnel travaille avec un regard, une sensibilité et une expertise technique construite sur plusieurs années de travail. Ce sont ces compétences dans lesquelles vous investissez afin d'obtenir des images au plus proche de qui vous êtes et de ce que vous faites !"
+- 
+  question: "Comment se passe l'organisation du reportage ?"
+  answer: "Je vous invite en premier lieu à me contacter (insérer lien adresse mail ou formulaire de contact selon option choisie) pour que vous me racontiez qui vous êtes et quelle est l'activité ou l'évènement que vous voulez que je photographie. Ensuite, je vous rappelle afin que l'on précise votre demande, nous définissons ensemble une date et un lieu, et je vous transmet les modalités administratives."
+
+----
+
+Text3:
+
+## Tarifs reportage & évènements
+Pour vous donner un ordre d'idée, mon tarif de base est de 300€ pour une demie journée de reportage. Mais vous l'avez compris, le reportage couvre un champ très large d'évènements possibles, avec beaucoup de facteurs variables : les lieux, la diversité du type d'images produites, le temps passé sur place, le nombre de photos, etc. C'est pourquoi je ne peux proposer de formule avec un tarif fixe. 
+Chaque activité ou événement étant différent, je vous invite à me contacter en cliquant ici afin que nous puissions ensemble établir un devis au plus proche de vos besoins.
+
+----
+
+Image4: - file://jT2Lehkd6NsIApPq
+
+----
+
+Image5: - file://xRaNqyFll8FOVxNE
+
+----
+
+Image6: - file://WpXXbIkmaxpc88wo
+
+----
+
+Atelier:
+
+- 
+  question: >
+    Quelle est la différence entre les
+    cours et les ateliers de photographie ?
+  answer: "Les cours de photo s'adressent avant tout aux particuliers, qu'ils soient débutants dans la photographie ou souhaitent approfondir leurs connaissances. Les ateliers sont eux à destination des structures (associations, centre sociaux, MJC, etc) qui souhaitent organiser pour leur public ou pour leurs salarié.es des ateliers ludiques autour de la photographie."
+- 
+  question: >
+    Je suis un particulier et je souhaite
+    mieux connaître mon appareil, que
+    proposez-vous ?
+  answer: "Les cours que je dispense sont tous « à la carte » : je m'adapte à vos besoins ! Si vous êtes débutant.e, nous pouvons faire le tour des fonctions de votre appareil afin que vous puissiez bien le prendre en main. Nous pouvons aussi travailler ensemble sur les réglages à maîtriser, les bases du cadrage, de comment utiliser la lumière... Les possibilités sont vastes ! Et si vous êtes confirmé.e et souhaitez aller plus loin dans votre pratique, je m'adapte à vos besoins : travail sur l'éclairage, sur la retouche, choix des optiques, etc."
+- 
+  question: >
+    Je représente une structure et je
+    souhaite organiser un atelier photo, que
+    proposez-vous ?
+  answer: "Je propose aux professionnel.les deux types d'ateliers : le premier est sous forme de cours collectif, avec pour but d'apprendre des compétences techniques aux participant.es ; le deuxième est un atelier participatif qui a pour but de créer ensemble du contenu – par exemple, une série de photos sur une thématique donnée. Comme pour les cours destinés aux particuliers, le contenu précis de ces ateliers est déterminé avec vous pour être au plus proche de vos attentes !"
+- 
+  question: >
+    Où se déroulent les cours et ateliers
+    de photo ?
+  answer: "N'ayant pas (encore!) de lieu à disposition, les cours de photo se déroulent chez vous si vous êtes un particulier, et dans votre structure si vous êtes un.e professionnel.le. En fonction des thématiques abordées, les cours et ateliers peuvent aussi se dérouler à l'extérieur."
+
+----
+
+Text6:
+
+## Tarifs cours de photo (particuliers) → 50€/h
+Le tarif est dégressif : plus vous planifiez d'heures, moins vous payez !
+2h → 90€ (vous économisez 10€)
+4h → 170€ (vous économisez 30€)
+5h → 200€ (vous économisez 50€)
+
+----
+
+Image7: 
+
+----
+
+Text8: 
+
+----
+
+Text: Voici le texte de la page Prestations.
+
+----
+
+Template: prestations
+
+----
+
+Uuid: y0oq8gCy4HjZnI6a

@@ -1,1 +1,224 @@
+# title: Prestations
+
+# fields:
+#   portrait:
+#     label: Portrait
+#     type: structure
+#     fields:
+#       question:
+#         label: Question
+#         type: text
+#       answer:
+#         label: Réponse
+#         type: textarea
+#         buttons: false
+#   photoText1:
+#     label: Image + texte 1
+#     type: group
+#     fields:
+#       text1:
+#         label: Texte associé
+#         type: textarea
+#       image1:
+#         label: Image 1
+#         type: files
+#         max: 1
+#   photoText2:
+#     label: Image + texte 2
+#     type: group
+#     fields:
+#       text2:
+#         label: Texte associé
+#         type: textarea
+#       image2:
+#         label: Image 2
+#         type: files
+#         max: 1
+
+
+#   reportage:
+#     label: Reportage
+#     type: structure
+#     fields:
+#       question:
+#         label: Question
+#         type: text
+#       answer:
+#         label: Réponse
+#         type: textarea
+#         buttons: false
+#   photoText3:
+#     label: Image + texte 3
+#     type: group
+#     fields:
+#       text3:
+#         label: Texte associé
+#         type: textarea
+#   photoText4:
+#     label: Image + texte 4
+#     type: group
+#     fields:
+#       image4:
+#         label: Image 4
+#         type: files
+#         max: 1
+#       image5:
+#         label: Image 5
+#         type: files
+#         max: 1
+#       image6:
+#         label: Image 6
+#         type: files
+#         max: 1
+
+#   atelier:
+#     label: Atelier
+#     type: structure
+#     fields:
+#       question:
+#         label: Question
+#         type: text
+#       answer:
+#         label: Réponse
+#         type: textarea
+#         buttons: false
+#   photoText6:
+#     label: Image + texte 6
+#     type: group
+#     fields:
+#       image6:
+#         label: Image 6
+#         type: files
+#         max: 1
+#       text6:
+#         label: Texte associé
+#         type: textarea
+#   photoText7:
+#     label: Image + texte 7
+#     type: group
+#     fields:
+#       image7:
+#         label: Image 7
+#         type: files
+#         max: 1
+
+        
+
+
+
 title: Prestations
+
+tabs:
+  contenu:
+    label: Contenu
+    fields:
+
+      # ——— PORTRAIT ———
+      portrait_title:
+        label: 📸 Portrait
+        type: headline
+
+      portrait:
+        label: Questions portrait
+        type: structure
+        fields:
+          question:
+            label: Question
+            type: text
+          answer:
+            label: Réponse
+            type: textarea
+            buttons: false
+
+      photoText1:
+        label: Image + texte 1
+        type: group
+        fields:
+          image1:
+            label: Image
+            type: files
+            max: 1
+          text1:
+            label: Texte associé
+            type: textarea
+
+      photoText2:
+        label: Image + texte 2
+        type: group
+        fields:
+          image2:
+            label: Image
+            type: files
+            max: 1
+          text2:
+            label: Texte associé
+            type: textarea
+
+      # ——— REPORTAGE ———
+      reportage_title:
+        label: 🎞️ Reportage
+        type: headline
+
+      reportage:
+        label: Questions reportage
+        type: structure
+        fields:
+          question:
+            label: Question
+            type: text
+          answer:
+            label: Réponse
+            type: textarea
+            buttons: false
+
+      photoText3:
+        label: Image + texte 3
+        type: group
+        fields:
+          text3:
+            label: Texte associé
+            type: textarea
+
+      photoText4:
+        label: Galerie reportage
+        type: files
+        multiple: true
+        max: 3
+
+      # ——— ATELIER ———
+      atelier_title:
+        label: 🛠️ Atelier
+        type: headline
+
+      atelier:
+        label: Questions atelier
+        type: structure
+        fields:
+          question:
+            label: Question
+            type: text
+          answer:
+            label: Réponse
+            type: textarea
+            buttons: false
+
+      photoText6:
+        label: Image + texte 6
+        type: group
+        fields:
+          image6:
+            label: Image
+            type: files
+            max: 1
+          text6:
+            label: Texte associé
+            type: textarea
+
+      photoText7:
+        label: Image + texte 7
+        type: group
+        fields:
+          image7:
+            label: Image
+            type: files
+            max: 1

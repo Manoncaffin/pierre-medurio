@@ -1,0 +1,21 @@
+Title: Yaëlle, hypnothérapeute
+
+----
+
+Tags: Reportage
+
+----
+
+Description: L’approche de Yaëlle Corbrejaud, praticienne en hypnose et thérapeute féministe, pourrait être résumée par cette phrase de Catherine Dorion : il y a en nous, quelque chose de plus intelligent que nous. En articulant les oppressions systémiques avec le vécu individuel de chacun.e, Yaëlle permet à ses patient.es un accompagnement inclusif et bienveillant. Je la remercie d'avoir fait appel à moi pour mettre des images sur sa pratique.
+
+----
+
+Details:
+
+- 
+  network: Yaëlle Corbrejaud
+  year: 2025
+
+----
+
+Uuid: HdQHuN1CGsry27eF

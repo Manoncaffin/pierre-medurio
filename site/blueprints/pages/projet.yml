@@ -2,18 +2,19 @@ title: Projet
 preset: page
 
 status:
-  draft: Draft
-  listed: Published
+  draft: Brouillon
+  listed: Publication
 
 fields:
   tags:
     label: Thématique
     type: tags
     options:
-      - Reportage, événement
+      - Reportage
       - Portrait
       - Atelier
-    limit: 1
+      - Travail personnel
+    limit: 2
     accept: options-only
   description:
     type: textarea
@@ -22,11 +23,14 @@ fields:
     label: Détails
     type: structure
     fields:
-      network:
+      client:
         label: Commanditaire
         type: text
+      model:
+        label: Modèle
+        type: text
       year:
-        label: Année
+        label: Date
         type: number
         min: 2000
         default: 2020

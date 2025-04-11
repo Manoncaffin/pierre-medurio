@@ -9,11 +9,12 @@ columns:
           label: Biographie
           type: headline
           required: true
+      portrait:
+        label: Portrait
+        type: files
       biography:
         label: Biographie
         type: textarea
-      portrait:
-        label: Portrait
-        type: image
+
 
 

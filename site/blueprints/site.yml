@@ -21,7 +21,7 @@ tabs:
               - projets
               - prestations
               - articles
-              - à propos
+              - a-propos
               - contact
               - mentions-legales
             create: true

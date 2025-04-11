@@ -1,0 +1,21 @@
+Title: Fanny
+
+----
+
+Tags: Portrait
+
+----
+
+Description: Chanteuse dans différents groupes de musique, Fanny m'a contacté car elle souhaitait se voir différemment, ne s'appréciant que rarement en photo. Le printemps arrivant, nous avons convenu d'une séance dans un espace naturel, en faisant la part belle aux fleurs qui viennent d'éclore. En voyant les photos, elle m'a confié que celles-ci lui faisaient du bien. Je suis très heureux que quelques images puissent redonner ainsi confiance et amour de soi : c'est sûrement une des plus belles choses que la photographie peut produire.
+
+----
+
+Details:
+
+- 
+  network: Fanny Rapaoly
+  year: 2025
+
+----
+
+Uuid: yPbWDDZSkIJguug1

@@ -1,0 +1,22 @@
+Title: Sans nom
+
+----
+
+Tags: Travail personnel
+
+----
+
+Description: « Être à la marge » implique toujours qu'il existe une norme : un genre, une attitude, un langage, une apparence, un corps, et d'autres encore que l'on doit performer pour être normal. Refuser ces conventions, intentionnellement ou non, c'est se placer à la marge. Le personnage sans nom incarne ce refus. Comme tant d'autres, il marche dans un monde qui n'est pas fait pour lui.
+
+----
+
+Details:
+
+- 
+  client: ""
+  model: ""
+  year: 2014
+
+----
+
+Uuid: XvunGhDCDmP8vnLG
