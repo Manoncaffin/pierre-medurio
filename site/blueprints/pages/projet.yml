@@ -6,16 +6,13 @@ status:
   listed: Publication
 
 fields:
-  tags:
-    label: Thématique
-    type: tags
+  categorie:
+    label: Catégorie
+    type: select
     options:
-      - Reportage
-      - Portrait
-      - Atelier
-      - Travail personnel
-    limit: 2
-    accept: options-only
+      reportage: Reportage
+      portrait: Portrait
+      travail-personnel: Travail personnel
   description:
     type: textarea
     size: large

@@ -2,7 +2,7 @@ Title: Mona
 
 ----
 
-Tags: Portrait
+Categorie: portrait
 
 ----
 
@@ -13,8 +13,15 @@ Description: À la sortie du confinement suite à l'épidémie du Covid-19, j'ai
 Details:
 
 - 
-  network: Mona Maire
+  client: Mona Maire
+  model: ""
   year: 2020
+  categorie: portrait
+  network: Mona Maire
+
+----
+
+Tags: Portrait
 
 ----
 

@@ -2,7 +2,7 @@ Title: Horizon
 
 ----
 
-Tags: Portrait
+Categorie: portrait
 
 ----
 
@@ -16,7 +16,12 @@ Details:
   client: Atelier Horizon
   model: Amina Bouajila
   year: 2020
+  categorie: portrait
   network: Atelier Horizon
+
+----
+
+Tags: Portrait
 
 ----
 

@@ -2,7 +2,7 @@ Title: Florent
 
 ----
 
-Tags: Portrait
+Categorie: portrait
 
 ----
 
@@ -16,10 +16,13 @@ Details:
   client: Florent Donot
   model: ""
   year: 2025
+  categorie: portrait
   network: Florent Donot
-
 
 ----
 
+Tags: Portrait
+
+----
 
 Uuid: 9coSF7f3vKWZk817

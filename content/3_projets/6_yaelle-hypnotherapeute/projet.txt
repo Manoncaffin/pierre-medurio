@@ -2,7 +2,7 @@ Title: Yaëlle, hypnothérapeute
 
 ----
 
-Tags: Reportage
+Categorie: reportage
 
 ----
 
@@ -13,8 +13,15 @@ Description: L’approche de Yaëlle Corbrejaud, praticienne en hypnose et thér
 Details:
 
 - 
-  network: Yaëlle Corbrejaud
+  client: Yaëlle, hypnothérapeute
+  model: ""
   year: 2025
+  categorie: reportage
+  network: Yaëlle Corbrejaud
+
+----
+
+Tags: Reportage
 
 ----
 

@@ -24,4 +24,5 @@
     </section>
 
 </body>
+<script src="<?= url('assets/js/intro.js') ?>"></script>
 </html>

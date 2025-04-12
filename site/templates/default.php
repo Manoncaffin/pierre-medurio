@@ -3,7 +3,7 @@
 <?php endif; ?>
 
 <main>
-    <?= $slot ?>
+
 </main>
 
 <?php if ($page->template() != 'intro'): ?>

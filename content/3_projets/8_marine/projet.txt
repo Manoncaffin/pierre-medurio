@@ -2,7 +2,7 @@ Title: Marine
 
 ----
 
-Tags: Portrait
+Categorie: portrait
 
 ----
 
@@ -16,6 +16,11 @@ Details:
   client: "Marine D'Agostinis"
   model: ""
   year: 2020
+  categorie: portrait
+
+----
+
+Tags: Portrait
 
 ----
 

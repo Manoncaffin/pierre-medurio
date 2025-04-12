@@ -2,7 +2,7 @@ Title: Sans nom
 
 ----
 
-Tags: Travail personnel
+Categorie: travail-personnel
 
 ----
 
@@ -16,6 +16,11 @@ Details:
   client: ""
   model: ""
   year: 2014
+  categorie: travail-personnel
+
+----
+
+Tags: Travail personnel
 
 ----
 

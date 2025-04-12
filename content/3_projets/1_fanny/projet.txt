@@ -2,7 +2,7 @@ Title: Fanny
 
 ----
 
-Tags: Portrait
+Categorie: portrait
 
 ----
 
@@ -13,8 +13,15 @@ Description: Chanteuse dans différents groupes de musique, Fanny m'a contacté 
 Details:
 
 - 
-  network: Fanny Rapaoly
+  client: Fanny Rapaoly
+  model: ""
   year: 2025
+  categorie: portrait
+  network: Fanny Rapaoly
+
+----
+
+Tags: Portrait
 
 ----
 

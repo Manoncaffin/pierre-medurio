@@ -2,7 +2,7 @@ Title: IGINEECI
 
 ----
 
-Tags: Travail personnel
+Categorie: travail-personnel
 
 ----
 
@@ -13,8 +13,15 @@ Description: In girum imus nocte ecce et consumimur igni signifie en latin nous 
 Details:
 
 - 
-  network: ""
+  client: ""
+  model: ""
   year: 2020
+  categorie: travail-personnel
+  network: ""
+
+----
+
+Tags: Travail personnel
 
 ----
 

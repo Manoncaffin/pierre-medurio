@@ -2,7 +2,7 @@ Title: Nina
 
 ----
 
-Tags: Portrait
+Categorie: portrait
 
 ----
 
@@ -13,8 +13,15 @@ Description: Cascadeuse de profession, Nina a régulièrement besoin de nouvelle
 Details:
 
 - 
-  network: Nina Bianchi
+  client: Nina Bianchi
+  model: ""
   year: 2025
+  categorie: portrait
+  network: Nina Bianchi
+
+----
+
+Tags: Portrait
 
 ----
 

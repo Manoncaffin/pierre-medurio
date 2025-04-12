@@ -2,7 +2,7 @@ Title: Résister
 
 ----
 
-Tags: Reportage
+Categorie: reportage
 
 ----
 
@@ -13,8 +13,15 @@ Description: Résister. C’est le titre du dernier livre de l’autrice et jour
 Details:
 
 - 
-  network: Librairie Forum Saint-Étienne
+  client: Librairie Forum Saint-Étienne
+  model: ""
   year: 2025
+  categorie: reportage
+  network: Librairie Forum Saint-Étienne
+
+----
+
+Tags: Reportage
 
 ----
 

@@ -2,7 +2,7 @@ Title: Les choses cachées
 
 ----
 
-Tags: Travail personnel
+Categorie: travail-personnel
 
 ----
 
@@ -16,6 +16,11 @@ Details:
   client: ""
   model: ""
   year: 2012
+  categorie: travail-personnel
+
+----
+
+Tags: Travail personnel
 
 ----
 

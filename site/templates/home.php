@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-
+<body>
 <main class="main_home">
 <?php
 $images = $page->images();
@@ -20,4 +20,5 @@ if ($images->count() > 0):
     <p>Aucune image n’est disponible pour la page d’accueil.</p>
 <?php endif; ?>
 </main>
+</body>
 

@@ -3,14 +3,12 @@ $logo = $site->files()->first('pierre_medurio_logotype_noir.svg');
 $navPages = $site->children()->listed()->filter(function ($page) {
     return in_array($page->slug(), ['projets', 'prestations', 'articles', 'à propos', 'contact']);
 });
+$isHomePage = $page->isHome();
 ?>
 <link rel="stylesheet" href="<?= url('assets/css/index.css') ?>">
 
-<body>
-    <header>
-        <section class="container_header">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-
+<header>
+    <section class="container_header">
         <nav>
             <?php if ($logo): ?>
                 <div class="logo">
@@ -43,6 +41,5 @@ $navPages = $site->children()->listed()->filter(function ($page) {
                 <?php endforeach ?>
             </ul>
         </nav>
-        </section>
-    </header>
-    </div>
+    </section>
+</header>
