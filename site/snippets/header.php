@@ -20,35 +20,35 @@ $isHomePage = $page->isHome();
                 <p>Logo non trouvé</p>
             <?php endif; ?>
             <ul>
-                <?php
-                $navPages = $site->children()->listed()->filter(function ($page) {
-                    return in_array($page->slug(), ['projets', 'prestations', 'articles', 'a-propos', 'contact']);
-                });
+    <?php
+    $navPages = $site->children()->listed()->filter(function ($page) {
+        return in_array($page->slug(), ['projets', 'prestations', 'articles', 'a-propos', 'contact']);
+    });
 
-                $totalPages = $navPages->count();
-                $index = 0;
+    $totalPages = $navPages->count();
+    $index = 0;
 
-                foreach ($navPages as $page): ?>
-                    <li>
-                        <a href="<?= $page->url() ?>" <?= e($page->isOpen(), 'class="active"') ?>>
-                            <?= $page->title() ?>
-                        </a>
-                    </li>
-                    <?php if ($index < $totalPages - 1): ?>
-                        <div class="separator"></div>
-                    <?php endif; ?>
-                    <?php $index++; ?>
-                <?php endforeach ?>
-            </ul>
+    foreach ($navPages as $page): ?>
+        <li class="<?= e($page->isOpen(), 'active') ?>"> 
+            <a href="<?= $page->url() ?>">
+                <?= $page->title() ?>
+            </a>
+        </li>
+        <?php if ($index < $totalPages - 1): ?>
+            <div class="separator"></div>
+        <?php endif; ?>
+        <?php $index++; ?>
+    <?php endforeach ?>
+</ul>
         </nav>
     </section>
 </header>
 
 <style>
     header ul li {
-    position: relative; /* Pour pouvoir manipuler l'image SVG avec positionnement */
-    padding: 20px 30px; /* Ajuster le padding en fonction de la taille de l'image SVG */
-    list-style: none; /* Pour enlever les puces par défaut */
+    position: relative; 
+    padding: 20px 30px; 
+
 }
 
 header ul li::before {
@@ -67,7 +67,8 @@ header ul li::before {
     z-index: -1; 
 }
 
-header ul li:hover::before {
-    opacity: 1; /* Rendre l'image visible */
+header ul li:hover::before,
+header ul li.active::before {
+    opacity: 1;
 }
 </style>
