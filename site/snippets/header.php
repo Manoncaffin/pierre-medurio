@@ -43,3 +43,31 @@ $isHomePage = $page->isHome();
         </nav>
     </section>
 </header>
+
+<style>
+    header ul li {
+    position: relative; /* Pour pouvoir manipuler l'image SVG avec positionnement */
+    padding: 20px 30px; /* Ajuster le padding en fonction de la taille de l'image SVG */
+    list-style: none; /* Pour enlever les puces par défaut */
+}
+
+header ul li::before {
+    content: ''; 
+    position: absolute; 
+    top: 70%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 150px; 
+    height: 80px; 
+    background-image: url('<?= url('assets/images/select_medium.svg') ?>'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    z-index: -1; 
+}
+
+header ul li:hover::before {
+    opacity: 1; /* Rendre l'image visible */
+}
+</style>

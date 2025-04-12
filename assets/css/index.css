@@ -200,6 +200,7 @@ a {
     ul li:not(:last-child) .separator {
         display: block;
     }
+    
 
     /* Menu coulissant */
     /* .menu-toggle {
@@ -281,7 +282,7 @@ a {
     }
 
     .networks:hover .default-text {
-        visibility: hidden;
+        display: none;
     }
 
     .networks:hover .social-links {
@@ -289,8 +290,6 @@ a {
     }
 
     .networks .social-links a {
-        color: #000;
-        text-decoration: none;
         margin: 0 5px;
     }
 

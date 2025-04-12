@@ -11,7 +11,7 @@
     .all_projects {
         display: flex;
         flex-direction: column;
-        margin: 50px 40px 0 40px;
+        margin: 50px 40px 30px 40px;
     }
 
     .projects {
@@ -123,7 +123,7 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 1000px) {
     .all_projects {
-        margin: 20px 80px 0 80px;
+        margin: 20px 80px 30px 80px;
     }
 }
 
@@ -136,7 +136,7 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 1200px) {
     .all_projects {
-        margin: 20px 140px 0 140px;
+        margin: 20px 140px 60px 140px;
     }
 
     .projects {
@@ -164,7 +164,7 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 1500px) {
     .all_projects {
-        margin: 20px 140px 0px 140px;
+        margin: 20px 140px 70px 140px;
     }
 }
 
@@ -177,6 +177,6 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 1600px) {
     .all_projects {
-        margin: 20px 200px 0 200px;
+        margin: 20px 200px 70px 200px;
     }
 }
