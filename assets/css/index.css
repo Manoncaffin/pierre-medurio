@@ -142,8 +142,6 @@ a {
         margin: 50px 40px 0 40px;
     }
 
-
-
     nav {
         display: flex;
         align-items: center;
@@ -194,7 +192,6 @@ a {
         width: 100vw;
         height: 1px;
         background-color: black;
-        margin-left: 10px;
     }
 
     ul li:not(:last-child) .separator {
@@ -376,11 +373,8 @@ a {
     }
 
     nav {
-        display: flex;
-        align-items: center;
         flex-direction: row;
-        margin-bottom: 15px;
-        gap: 100px;
+        gap: 20px;
     }
 
     nav .logo {
@@ -388,7 +382,7 @@ a {
     }
 
     .logo_header {
-        width: 230px;
+        width: 180px;
     }
 
     nav ul {
@@ -418,8 +412,6 @@ a {
         display: inline-block;
         height: 60px;
         width: 1px;
-        background-color: black;
-        margin-left: 10px;
     }
 
     ul li:not(:last-child) .separator {
@@ -446,6 +438,38 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .networks {
+        position: relative;
+        display: inline-block;
+        min-width: 300px; 
+        height: 1.2em; 
+        width: 220px;
+    }
+    
+    .networks span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: opacity 0.3s ease;
+        width: 100%;
+    }
+    
+    .networks .default-text {
+        opacity: 1;
+    }
+    
+    .networks .social-links {
+        opacity: 0;
+    }
+    
+    .networks:hover .default-text {
+        opacity: 0;
+    }
+    
+    .networks:hover .social-links {
+        opacity: 1;
     }
 
     /* ------- FOOTER ------- */
@@ -477,6 +501,10 @@ a {
     /* ---------------------- */
     .container_header {
         margin: 20px 140px 40px 140px;
+    }
+
+    .logo_header {
+        width: 230px;
     }
 
     /* ------- HEADER ------- */

@@ -16,6 +16,27 @@ snippet('header') ?>
             </select>
         </div>
 
+        <!-- <div class="tags-mobile mobile-dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+                <label for="dropdown-toggle" class="tag-mobile">↓ type de projet</label> -->
+        
+                <!-- <div class="dropdown-menu">
+                    <button class="tag-mobile" data-category="project-print">imprimé</button>
+                    <button class="tag-mobile" data-category="project-graphic">identité</button>
+                    <button class="tag-mobile" data-category="project-service">service</button>
+                    <button class="tag-mobile" data-category="project-web">webdesign & code</button>
+                    <button class="tag-mobile" data-category="all">tous</button>
+                </div>
+            </div>
+        
+            <div class="tags-desktop desktop-only">
+                <button class="tag-desktop" data-category="project-print">imprimé</button>
+                <button class="tag-desktop" data-category="project-graphic">identité</button>
+                <button class="tag-desktop" data-category="project-service">service</button>
+                <button class="tag-desktop" data-category="project-web">webdesign & code</button>
+                <button class="tag-desktop" data-category="all">tous</button>
+            </div> -->
+
         <ul class="projects" <?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
             <?php foreach ($page->children()->listed() as $project): ?>
                 <?php $category = Str::slug($project->categorie()) ?>

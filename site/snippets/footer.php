@@ -11,7 +11,7 @@
         </p>
         <a href="<?= url('cgv') ?>">CGV</a>
         <a href="<?= url('mentions-legales') ?>">Mentions légales</a>
-        <p>pierre medurio © 2025.</p>
+        <p>pierre medurio © 2025</p>
     </div>
 </footer>
 

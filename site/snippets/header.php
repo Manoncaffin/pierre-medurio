@@ -45,20 +45,51 @@ $isHomePage = $page->isHome();
 </header>
 
 <style>
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1000PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 1000px) {
+header ul li::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 100px;
+    background-image: url(http://localhost:8888/pierremedurio/assets/images/select_medium.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+}
+
+    /* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1200PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 350px) {
     header ul li {
     position: relative; 
-    padding: 20px 30px; 
+    padding: 20px 0; 
 
 }
 
 header ul li::before {
     content: ''; 
     position: absolute; 
-    top: 70%; 
+    top: 85%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    width: 150px; 
-    height: 80px; 
+    width: 130px; 
+    height: 90px; 
     background-image: url('<?= url('assets/images/select_medium.svg') ?>'); 
     background-size: contain; 
     background-repeat: no-repeat; 
@@ -70,5 +101,6 @@ header ul li::before {
 header ul li:hover::before,
 header ul li.active::before {
     opacity: 1;
+}
 }
 </style>
