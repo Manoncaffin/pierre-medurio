@@ -7,35 +7,28 @@ snippet('header') ?>
 
 <main>
     <section class="all_projects">
-        <div class="custom-select-wrapper">
+        <!-- <div class="custom-select-wrapper">
             <select class="filters-select" id="project-filter">
                 <option value="all">tous les projets</option>
                 <option value="reportage">reportage</option>
                 <option value="portrait">portrait</option>
+                <option value="atelier">atelier</option>
                 <option value="travail-personnel">travail personnel</option>
             </select>
-        </div>
+        </div>  -->
 
-        <!-- <div class="tags-mobile mobile-dropdown">
-                <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
-                <label for="dropdown-toggle" class="tag-mobile">↓ type de projet</label> -->
-        
-                <!-- <div class="dropdown-menu">
-                    <button class="tag-mobile" data-category="project-print">imprimé</button>
-                    <button class="tag-mobile" data-category="project-graphic">identité</button>
-                    <button class="tag-mobile" data-category="project-service">service</button>
-                    <button class="tag-mobile" data-category="project-web">webdesign & code</button>
-                    <button class="tag-mobile" data-category="all">tous</button>
-                </div>
+        <div class="tags-mobile mobile-dropdown">
+            <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+            <label for="dropdown-toggle" class="all">tous les projets</label>
+
+            <div class="dropdown-menu">
+                <button class="tag-mobile" data-category="reportage">reportage</button>
+                <button class="tag-mobile" data-category="portrait">portrait</button>
+                <button class="tag-mobile" data-category="atelier">atelier</button>
+                <button class="tag-mobile" data-category="travail-personnel">travail personnel</button>
+                <button class="tag-mobile" data-category="all">tous</button>
             </div>
-        
-            <div class="tags-desktop desktop-only">
-                <button class="tag-desktop" data-category="project-print">imprimé</button>
-                <button class="tag-desktop" data-category="project-graphic">identité</button>
-                <button class="tag-desktop" data-category="project-service">service</button>
-                <button class="tag-desktop" data-category="project-web">webdesign & code</button>
-                <button class="tag-desktop" data-category="all">tous</button>
-            </div> -->
+        </div>
 
         <ul class="projects" <?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
             <?php foreach ($page->children()->listed() as $project): ?>

@@ -12,6 +12,7 @@ fields:
     options:
       reportage: Reportage
       portrait: Portrait
+      atelier: Atelier
       travail-personnel: Travail personnel
   description:
     type: textarea

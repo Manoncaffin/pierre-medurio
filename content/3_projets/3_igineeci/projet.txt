@@ -15,7 +15,7 @@ Details:
 - 
   client: ""
   model: ""
-  year: 2020
+  year: 2025
   categorie: travail-personnel
   network: ""
 

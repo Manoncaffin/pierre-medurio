@@ -24,6 +24,7 @@ tabs:
               - a-propos
               - contact
               - mentions-legales
+              - cgv
             create: true
             layout: list
             sortable: true

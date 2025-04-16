@@ -4,17 +4,19 @@ icon: chat
 columns:
   - width: 1/2
     sections:
-    fields:
-      pagePartners:
-          label: Biographie
-          type: headline
-          required: true
-      portrait:
-        label: Portrait
-        type: files
-      biography:
-        label: Biographie
-        type: textarea
+      content:
+        type: fields
+        fields:
+          pagePartners:
+              label: Biographie
+              type: headline
+              required: true
+          portrait:
+            label: Portrait
+            type: files
+          biography:
+            label: Biographie
+            type: textarea
 
 
 
