@@ -34,13 +34,9 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 768px) {
 
-
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
+    .biography {
+        flex-direction: row;
+    }
 }
 
 
@@ -52,7 +48,6 @@
 @media only screen and (min-width: 1000px) {
     .biography {
         margin: 20px 80px 0 80px;
-        display: flex;
         gap: 120px;
 
         img {

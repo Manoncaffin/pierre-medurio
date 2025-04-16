@@ -1,6 +1,4 @@
-<?php
-
-snippet('header') ?>
+<?php snippet('header') ?>
 <link rel="stylesheet" href="<?= url('assets/css/templates/a-propos.css') ?>">
 
 <main>
@@ -11,7 +9,7 @@ snippet('header') ?>
         <?php endif; ?>
 
         <div class="text_biography">
-        <p><?= $page->biography()->kirbytext() ?></p>
+            <p><?= $page->biography()->kirbytext() ?></p>
         </div>
     </section>
 

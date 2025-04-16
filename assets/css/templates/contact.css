@@ -1,0 +1,96 @@
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 350PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 350px) {
+    main {
+        margin: 50px 40px 0 40px;
+    }
+
+    .contact {
+        margin: 50px 40px 30px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter li.contact_networks {
+        padding: 0;
+    }
+
+    .title_contact {
+        padding-bottom: 10px;
+    }
+
+    /* formulaire */
+    form>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        all: unset;
+        border-bottom: 1px solid black;
+        padding: 4px 0;
+        font-family: inherit;
+        font-size: 1rem;
+    }
+
+    input:focus {
+        outline: none;
+        border-bottom: 3px solid black;
+    }
+
+    label {
+        padding-top: 15px;
+    }
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 768px) {}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1000PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+    .contact {
+        margin: 20px 80px 0 80px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1200PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+    .contact {
+        margin: 20px 160px 0 160px;
+    }
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1500PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1500px) {
+    .contact {
+        margin: 20px 260px 40px 260px;
+    }
+}
