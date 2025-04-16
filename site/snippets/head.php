@@ -20,7 +20,7 @@
     <meta property="twitter:image" content="<?= $site->url() ?>/assets/imgs/meta-tags.png" />
 
     <meta name="<?= $site->title() ?>" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="Photographe, Saint-Étienne" />
     <meta name="Author" content="Pierre Medurio" />
     <meta name="Revisit-After" content="15 days" />
