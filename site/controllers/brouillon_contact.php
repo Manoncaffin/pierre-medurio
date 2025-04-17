@@ -1,6 +1,6 @@
 <?php
 
-require '/home/lamaiso5/public_html/vendor/autoload.php';  
+require '/home/pierreme/public_html/vendor/autoload.php';  
 
 use Dotenv\Dotenv;
 use PHPMailer\PHPMailer\PHPMailer;

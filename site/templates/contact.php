@@ -44,47 +44,50 @@
 
             <form id="contactForm" action="contact" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="csrf_token" value="<?= csrf() ?>" />
-                
+
                 <h1 class="title_contact">Me contacter</h1>
                 <p>Mon travail vous intéresse ?</p>
                 <p>Parlez moi de vous et de vos envies !</p>
                 <div>
                     <label for="contactName">Nom</label>
-                    <input type="text" id="contactName" name="contactName" value="<?= htmlspecialchars($name ?? '') ?>" required>
+                    <input type="text" id="contactName" name="contactName" placeholder="Entrez votre nom" value="<?= htmlspecialchars($name ?? '') ?>" required>
                 </div>
 
                 <div>
                     <label for="contactFirstname">Prénom</label>
-                    <input type="text" id="contactFirstname" name="contactFirstname" value="<?= htmlspecialchars($firstname ?? '') ?>" required>
+                    <input type="text" id="contactFirstname" name="contactFirstname" placeholder="Entrez votre prénom" value="<?= htmlspecialchars($firstname ?? '') ?>" required>
                 </div>
 
                 <div>
                     <label for="contactEmail">Mail</label>
-                    <input type="email" id="contactEmail" name="contactEmail" value="<?= htmlspecialchars($email ?? '') ?>" required>
+                    <input type="email" id="contactEmail" name="contactEmail" placeholder="exemple@domaine.com" value="<?= htmlspecialchars($email ?? '') ?>" required>
                 </div>
 
                 <div>
                     <label for="contactPhone">Téléphone</label>
-                    <input type="tel" id="contactPhone" name="contactPhone" value="<?= htmlspecialchars($phone ?? '') ?>">
+                    <input type="tel" id="contactPhone" name="contactPhone" placeholder="06 00 00 00 00" value="<?= htmlspecialchars($phone ?? '') ?>">
                 </div>
 
-                <div>
+                <div class="custom-select-wrapper">
                     <label for="contactInterest">Intérêt</label>
-                    <fieldset>
-                        <?php
-                        $options = ['Reportage', 'Portrait', 'Atelier', 'Échanger', 'Autre'];
-                        foreach ($options as $option): ?>
-                            <label>
-                                <input type="checkbox" name="contactInterest[]" value="<?= $option ?>" <?= isset($interest) && in_array($option, explode(', ', $interest)) ? 'checked' : '' ?>>
-                                <?= $option ?>
-                            </label><br>
-                        <?php endforeach; ?>
-                    </fieldset>
+                    <?php $options = ['Reportage', 'Portrait', 'Atelier', 'Échanger', 'Autre']; ?>
+                    <div class="custom-select" id="dropdown">
+                        <input type="hidden" name="contactInterest" id="contactInterest" value="<?= htmlspecialchars($interest ?? '') ?>">
+                        <div class="selected-option" onclick="toggleDropdown()">
+                            <?= $interest ?? 'Choisissez un intérêt' ?>
+                        </div>
+                        <div class="select-options" id="selectOptions">
+                            <?php foreach ($options as $option): ?>
+                                <div class="option" data-value="<?= $option ?>"><?= $option ?></div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
                 </div>
-
                 <div>
-                    <label for="contactMessage">Message</label>
-                    <textarea id="contactMessage" name="contactMessage" required><?= htmlspecialchars($message ?? '') ?></textarea>
+                    <label for="contactMessage" class="label-message">Message</label>
+                    <textarea id="contactMessage" name="contactMessage" required
+                        placeholder="Écrivez votre message ici..."
+                        class="message-textarea"><?= htmlspecialchars($message ?? '') ?></textarea>
                 </div>
 
                 <div>
@@ -100,13 +103,13 @@
                     <li class="contact_networks"><a href="<?= $network->link() ?>"><?= $network->network() ?></a></li>
                 <?php endforeach; ?>
             </ul>
-            <div>
-                <label for="newsletterEmail">Adresse mail pour la newsletter</label>
+            <div class="newsletter_email">
+                <label for="newsletterEmail">S'abonner à la newsletter</label>
                 <input type="email" id="newsletterEmail" name="newsletterEmail" value="<?= $page->newsletterEmail() ?>" required>
                 <button type="submit" name="subscribe">S'abonner</button>
             </div>
         </article>
     </section>
 </main>
-
+<script src="<?= url('assets/js/dropdown.js') ?>"></script>
 <?php snippet('footer') ?>
