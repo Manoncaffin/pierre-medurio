@@ -1,9 +1,0 @@
-title: intro
-
-sections:
-  images:
-    label: Images
-    type: files
-    layout: cards
-    uploads:
-      template: image
