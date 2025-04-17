@@ -56,9 +56,13 @@
         font-family: "InclusiveSans-Light", serif;
         font-weight: 100;
         font-style: normal;
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 10px;
-        margin-bottom: 15px;
+    }
+
+    .message-textarea {
+        border-radius: 5px;
+        color: black;
     }
 
     .message-textarea:focus {
@@ -89,9 +93,11 @@
     }
 
     .selected-option {
-        padding: 10px;
         border-bottom: 1px solid #000;
         background-color: white;
+        padding: 4px 0 4px 10px;
+        font-size: 1rem;
+        color: #6a6a6a;
     }
 
     .selected-option:focus {
@@ -106,6 +112,7 @@
         right: 0;
         background: white;
         z-index: 10;
+        font-size: 1rem;
     }
 
     .select-options.open {
@@ -120,6 +127,7 @@
         background-color: #000000;
         color: white;
     }
+
 }
 
 /* --------------------------------------------------- */

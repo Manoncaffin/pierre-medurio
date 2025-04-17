@@ -73,8 +73,8 @@
                     <?php $options = ['Reportage', 'Portrait', 'Atelier', 'Échanger', 'Autre']; ?>
                     <div class="custom-select" id="dropdown">
                         <input type="hidden" name="contactInterest" id="contactInterest" value="<?= htmlspecialchars($interest ?? '') ?>">
-                        <div class="selected-option" onclick="toggleDropdown()">
-                            <?= $interest ?? 'Choisissez un intérêt' ?>
+                        <div class="selected-option" tabindex="0" role="button" onclick="toggleDropdown()">
+                            <?= $interest ?? 'Sélectionnez la raison de votre demande' ?>
                         </div>
                         <div class="select-options" id="selectOptions">
                             <?php foreach ($options as $option): ?>

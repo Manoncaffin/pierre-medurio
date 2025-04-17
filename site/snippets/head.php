@@ -28,17 +28,14 @@
     <meta name="Robots" content="All" />
     <?= css(['assets/css/index.css', '@auto']) ?>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= url('assets/imgs/favicon/apple-icon-180x180.png') ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= url('assets/imgs/favicon/favicon-32x32.png') ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= url('assets/imgs/favicon/favicon-16x16.png') ?>">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?= url('assets/imgs/favicon/android-icon-192x192.png') ?>">
-    <meta name="msapplication-TileImage" content="<?= url('assets/imgs/favicon/ms-icon-144x144.png') ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= url('assets/images/favicon/apple-touch-icon.png') ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= url('assets/images/favicon/favicon-32x32.png') ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= url('assets/images/favicon/favicon-16x16.png') ?>">
+    <link rel="manifest" href="<?= url('assets/imgs/favicon/site.webmanifest') ?>">
     <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="<?= url('assets/imgs/favicon/manifest.json') ?>">
 </head>
