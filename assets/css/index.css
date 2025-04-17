@@ -58,7 +58,6 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
 
 h1,
@@ -129,10 +128,6 @@ button:hover {
     /* ---------------------- */
     main {
         flex-grow: 1;
-    }
-
-    .main_home {
-        padding-top: 360px;
     }
 
     header {
@@ -236,7 +231,6 @@ button:hover {
         padding: 10px;
         cursor: pointer;
         display: block;
-        /* border: 1px solid black; */
         border-radius: 5px 5px 0 0;
         width: 160px;
     }
@@ -292,7 +286,6 @@ button:hover {
         display: block;
     }
 
-    /* Menu coulissant */
 
     /* ------- HEADER ------- */
     /* ---------------------- */
@@ -345,15 +338,6 @@ button:hover {
     /* ------- FOOTER ------- */
     /* ---------------------- */
 
-    /* -------- PAGE -------- */
-    /* ---------------------- */
-
-    .container_page {
-        border-top: 1px solid black;
-    }
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
 }
 
 
@@ -375,25 +359,6 @@ button:hover {
     /* ---------------------- */
 
     /* ------- FOOTER ------- */
-    /* ---------------------- */
-
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
-
-    .image_home {
-        width: 100vw;
-        height: auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    .image_home img {
-        width: 1000px;
-        height: auto;
-    }
-
-    /* -------- PAGE -------- */
     /* ---------------------- */
 }
 
@@ -526,20 +491,6 @@ button:hover {
 
     /* ------- FOOTER ------- */
     /* ---------------------- */
-
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
-    .main_home {
-        padding-top: 160px;
-    }
-
-    .image_home img {
-        width: 830px;
-    }
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
 }
 
 /* --------------------------------------------------- */
@@ -571,18 +522,6 @@ button:hover {
 
     /* ------- FOOTER ------- */
     /* ---------------------- */
-
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
-
-    .main_home {
-        padding-top: 160px;
-        overflow-y: hidden;
-    }
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
 }
 
 
@@ -596,7 +535,7 @@ button:hover {
     /* ------- HEADER ------- */
     /* ---------------------- */
     .container_header {
-        margin: 20px 140px 40px 140px;
+        margin: 20px 140px 0 140px;
     }
 
     /* ------- HEADER ------- */
@@ -610,20 +549,6 @@ button:hover {
     }
 
     /* ------- FOOTER ------- */
-    /* ---------------------- */
-
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
-    .main_home {
-        padding-top: 175px;
-    }
-
-    .image_home img {
-        width: 1050px;
-    }
-
-    /* -------- PAGE -------- */
     /* ---------------------- */
 }
 
@@ -653,12 +578,5 @@ button:hover {
     }
 
     /* ------- FOOTER ------- */
-    /* ---------------------- */
-
-
-    /* -------- PAGE -------- */
-    /* ---------------------- */
-
-    /* -------- PAGE -------- */
     /* ---------------------- */
 }

@@ -22,7 +22,7 @@
 
                 if (empty($errors)) {
                     // Envoi de l'email
-                    $to = 'client@example.com'; // Adresse email du destinataire
+                    $to = 'client@example.com'; 
                     $subject = "Message de $firstname $name via le formulaire de contact";
                     $body = "Nom: $name\nPrénom: $firstname\nEmail: $email\nTéléphone: $phone\nIntérêt: $interest\n\nMessage:\n$message";
                     $headers = "From: $email\r\n" .
@@ -89,7 +89,6 @@
                         placeholder="Écrivez votre message ici..."
                         class="message-textarea"><?= htmlspecialchars($message ?? '') ?></textarea>
                 </div>
-
                 <div>
                     <button type="submit">Envoyer</button>
                 </div>
@@ -97,7 +96,7 @@
         </article>
 
         <article class="newsletter">
-            <h1 class="title_contact">Me suivre</h1>
+            <h2 class="title_contact">Me suivre</h2>
             <ul>
                 <?php foreach ($page->networks()->toStructure() as $network): ?>
                     <li class="contact_networks"><a href="<?= $network->link() ?>"><?= $network->network() ?></a></li>

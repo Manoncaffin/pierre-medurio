@@ -1,35 +1,22 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* ------------- MEDIA MIN-WIDTH 350PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
-    main {
-        margin: 50px 40px 0 40px;
+    .main_home {
+        padding-top: 360px;
     }
 
-    strong, b {
-        font-weight: bold;
-      }
-
-    h1,
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .little_title_contact {
-        font-size: 1.1rem;
-        margin-top: 15px;
-    }
-
-    .title_contact {
-        margin-bottom: 10px;
-    }
-
-    .legal_notice_grid {
-        margin: 50px 40px 30px 40px;
-        display: flex;
-        flex-direction: column;
+    .container_page {
+        border-top: 1px solid black;
     }
 }
 
@@ -39,7 +26,20 @@
 /* ------------- MEDIA MIN-WIDTH 768PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .image_home {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image_home img {
+        width: 1000px;
+        height: auto;
+    }
+}
+
 
 
 /* --------------------------------------------------- */
@@ -48,17 +48,15 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
-    .legal_notice_grid {
-        margin: 20px 80px 0 80px;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 40px;
+    .main_home {
+        padding-top: 160px;
     }
 
-    .col {
-        width: 50%;
+    .image_home img {
+        width: 830px;
     }
 }
+
 
 
 /* --------------------------------------------------- */
@@ -67,8 +65,9 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
-    .legal_notice_grid {
-        margin: 20px 160px 0 160px;
+    .main_home {
+        padding-top: 160px;
+        overflow-y: hidden;
     }
 }
 
@@ -79,11 +78,11 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
-    .legal_notice_grid {
-        margin: 20px 260px 40px 260px;
+    .main_home {
+        padding-top: 175px;
     }
 
-    .legal_notice_grid {
-        gap: 100px;
+    .image_home img {
+        width: 1050px;
     }
 }
