@@ -21,7 +21,7 @@ Portrait:
 
 ----
 
-Image1: - file://gyM8DWtwfUuGeXMI
+Image1: - file://HIHTXRxSJTwOHrSN
 
 ----
 
@@ -33,7 +33,7 @@ Des photos de vous qui vous ressemblent et vous plaisent. En ville, chez vous, �
 
 ----
 
-Image2: - file://5bMlUR9Xmqqpe28P
+Image2: - file://PonVYe9ooAf3qwmm
 
 ----
 
@@ -72,7 +72,11 @@ Chaque activité ou événement étant différent, je vous invite à me contacte
 
 ----
 
-Phototext4: 
+Phototext4:
+
+- file://vfvQh1YlMgmNlaPm
+- file://IxpMQlHFkiHnojvG
+- file://x3JrvJ1JqcNfjB5L
 
 ----
 
@@ -100,6 +104,10 @@ Atelier:
     Où se déroulent les cours et ateliers
     de photo ?
   answer: "N'ayant pas (encore!) de lieu à disposition, les cours de photo se déroulent chez vous si vous êtes un particulier, et dans votre structure si vous êtes un.e professionnel.le. En fonction des thématiques abordées, les cours et ateliers peuvent aussi se dérouler à l'extérieur."
+
+----
+
+Phototext6: 
 
 ----
 

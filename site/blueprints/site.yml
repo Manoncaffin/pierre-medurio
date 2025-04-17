@@ -17,7 +17,6 @@ tabs:
             type: pages
             template: 
               - home
-              - accueil
               - projets
               - prestations
               - articles

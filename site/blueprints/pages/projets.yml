@@ -10,3 +10,14 @@ listed:
   extends: sections/projets
   label: Projets publiés
   layout: cards
+
+fields:
+  projectTags:
+    label: Catégories
+    type: checkboxes
+    options:
+      - filtres
+      - reportage
+      - portrait
+      - atelier
+      - travail personnel

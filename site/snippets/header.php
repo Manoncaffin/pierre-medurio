@@ -7,6 +7,7 @@ $isHomePage = $page->isHome();
 ?>
 <link rel="stylesheet" href="<?= url('assets/css/index.css') ?>">
 
+<body>
 <header>
     <section class="container_header">
         <nav>

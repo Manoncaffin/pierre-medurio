@@ -14,7 +14,6 @@
         <p>pierre medurio © 2025</p>
     </div>
 </footer>
-
 </body>
 
 </html>
