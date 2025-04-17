@@ -6,4 +6,4 @@ sections:
     type: files
     layout: cards
     multiple: true
-    max: 5
+    max: 15
