@@ -98,6 +98,24 @@ a {
     color: black;
 }
 
+button {
+    all: unset; 
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
 /* Start coding here */
 
 /* --------------------------------------------------- */
