@@ -1,0 +1,96 @@
+title: CGV
+icon: file-text
+
+columns:
+  - width: 1/1
+    sections:
+      cgv:
+        type: fields
+        fields:
+          intro_text:
+            label: Introduction
+            type: textarea
+
+          bloc1_title:
+            label: Titre bloc 1
+            type: text
+          bloc1_text:
+            label: Bloc 1
+            type: textarea
+
+          bloc2_title:
+            label: Titre bloc 2
+            type: text
+          bloc2_text:
+            label: Bloc 2
+            type: textarea
+
+          bloc3_title:
+            label: Titre bloc 3
+            type: text
+          bloc3_text:
+            label: Bloc 3
+            type: textarea
+
+          bloc4_title:
+            label: Titre bloc 4
+            type: text
+          bloc4_text:
+            label: Bloc 4
+            type: textarea
+
+          bloc5_title:
+            label: Titre bloc 5
+            type: text
+          bloc5_text:
+            label: Bloc 5
+            type: textarea
+
+          bloc6_title:
+            label: Titre bloc 6
+            type: text
+          bloc6_text:
+            label: Bloc 6
+            type: textarea
+
+          bloc7_title:
+            label: Titre bloc 7
+            type: text
+          bloc7_text:
+            label: Bloc 7
+            type: textarea
+
+          bloc8_title:
+            label: Titre bloc 8
+            type: text
+          bloc8_text:
+            label: Bloc 8
+            type: textarea
+
+          bloc9_title:
+            label: Titre bloc 9
+            type: text
+          bloc9_text:
+            label: Bloc 9
+            type: textarea
+
+          bloc10_title:
+            label: Titre bloc 10
+            type: text
+          bloc10_text:
+            label: Bloc 10
+            type: textarea
+
+          bloc11_title:
+            label: Titre bloc 11
+            type: text
+          bloc11_text:
+            label: Bloc 11
+            type: textarea
+
+          bloc12_title:
+            label: Titre bloc 12
+            type: text
+          bloc12_text:
+            label: Bloc 12
+            type: textarea

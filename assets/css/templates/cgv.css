@@ -8,28 +8,31 @@
         margin: 50px 40px 0 40px;
     }
 
-    strong, b {
-        font-weight: bold;
-      }
+    .cgv_grid {
+        margin: 50px 40px 30px 40px;
+        display: flex;
+        flex-direction: column;
+    }
 
-    h1,
-    h2 {
+    .col > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col > *:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    h1 {
         font-size: 1.8rem;
     }
 
-    .little_title_contact {
+    h2 {
         font-size: 1.1rem;
-        margin-top: 15px;
     }
 
     .title_contact {
         margin-bottom: 10px;
-    }
-
-    .legal_notice_grid {
-        margin: 50px 40px 30px 40px;
-        display: flex;
-        flex-direction: column;
     }
 }
 
@@ -48,15 +51,12 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
-    .legal_notice_grid {
+    .cgv_grid {
         margin: 20px 80px 0 80px;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 40px;
     }
 
     .col {
-        width: 50%;
+        width: 75%;
     }
 }
 
@@ -67,7 +67,7 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
-    .legal_notice_grid {
+    .cgv_grid {
         margin: 20px 160px 0 160px;
     }
 }
@@ -79,11 +79,7 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
-    .legal_notice_grid {
+    .cgv_grid {
         margin: 20px 260px 40px 260px;
-    }
-
-    .legal_notice_grid {
-        gap: 100px;
     }
 }
