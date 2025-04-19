@@ -94,8 +94,12 @@ tabs:
             type: textarea
             buttons: false
 
-      photoText6:
+      photoText5:
         label: Galerie atelier
         type: files
         multiple: true
         max: 3
+
+      text5:
+        label: Texte atelier
+        type: textarea
