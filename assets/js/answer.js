@@ -1,6 +1,6 @@
-document.querySelectorAll('.qa h3').forEach(function(question) {
+document.querySelectorAll('.qa .question_arrow').forEach(function(question) {
     question.addEventListener('click', function() {
-        const parent = question.parentElement;
+        const parent = question.closest('.qa');
         parent.classList.toggle('active'); 
     });
 });

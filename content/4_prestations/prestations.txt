@@ -117,13 +117,17 @@ Phototext5:
 
 Text5:
 
-## Tarifs cours de photo (particuliers) → 50€/h
+**Tarifs cours de photo (particuliers) → 50€/h**
 Le tarif est dégressif : plus vous planifiez d'heures, moins vous payez !
 2h → 90€ (vous économisez 10€)
 4h → 170€ (vous économisez 30€)
 5h → 200€ (vous économisez 50€)
 
-## Tarifs ateliers photo (professionnel.les) → 100€/h	
+----
+
+Text6:
+
+**Tarifs ateliers photo (professionnel.les) → 100€/h**	
 À noter que les tarifs indiqués n'incluent pas les frais de déplacement éventuels, notamment si vous êtes en dehors de Saint-Étienne. Je vous invite à me contacter (insérer lien adresse mail ou formulaire de contact selon option choisie) afin de voir ensemble quels sont vos besoins et envies !
 
 ----

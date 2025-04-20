@@ -101,5 +101,9 @@ tabs:
         max: 3
 
       text5:
-        label: Texte atelier
+        label: Texte atelier 5
+        type: textarea
+
+      text6:
+        label: Texte atelier 6
         type: textarea
