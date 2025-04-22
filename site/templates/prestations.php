@@ -10,10 +10,10 @@
 
         <?php foreach ($page->portrait()->toStructure() as $item): ?>
             <div class="qa">
-            <div class="question_arrow">
-                <p class="question"><?= $item->question() ?></p>
-                <img src="<?= url('assets/images/plus_noir.svg') ?>" alt="dérouler vers le bas" class="arrow">
-        </div>
+                <div class="question_arrow">
+                    <p class="question"><?= $item->question() ?></p>
+                    <img src="<?= url('assets/images/plus_noir.svg') ?>" alt="dérouler vers le bas" class="arrow">
+                </div>
                 <div class="border_question"></div>
                 <p class="answer"><?= $item->answer()->kt() ?></p>
                 <div class="border_answer"></div>
@@ -22,18 +22,22 @@
 
         <div class="image-text">
             <div class="image-portrait">
-                <?php if ($image1 = $page->image($page->photoText1()->image1()->value())): ?>
-                    <img src="<?= $image1->url() ?>" alt="Fanny">
+                <?php if ($image1 = $page->photoText1_image()->toFile()): ?>
+                    <img src="<?= $image1->url() ?>" alt="<?= $image1->alt() ?>">
                 <?php endif ?>
+                <div class="text_1">
+                    <?= $page->photoText1_text()->kt() ?>
+                </div>
             </div>
-            <p><?= $page->photoText1()->text1()->kt() ?></p>
 
             <div class="image-portrait">
-                <?php if ($image2 = $page->image($page->photoText2()->image2()->value())): ?>
-                    <img src="<?= $image2->url() ?>" alt="">
+                <?php if ($image2 = $page->photoText2_image()->toFile()): ?>
+                    <img src="<?= $image2->url() ?>" alt="<?= $image2->alt() ?>">
                 <?php endif ?>
+                <div class="text_2">
+                    <?= $page->photoText2_text()->kt() ?>
+                </div>
             </div>
-            <p><?= $page->photoText2()->text2()->kt() ?></p>
         </div>
     </section>
 
@@ -45,10 +49,10 @@
 
         <?php foreach ($page->reportage()->toStructure() as $item): ?>
             <div class="qa">
-            <div class="question_arrow">
-                <p class="question"><?= $item->question() ?></p>
-                <img src="<?= url('assets/images/plus_noir.svg') ?>" alt="dérouler vers le bas" class="arrow">
-        </div>
+                <div class="question_arrow">
+                    <p class="question"><?= $item->question() ?></p>
+                    <img src="<?= url('assets/images/plus_noir.svg') ?>" alt="dérouler vers le bas" class="arrow">
+                </div>
                 <div class="border_question"></div>
                 <p class="answer"><?= $item->answer()->kt() ?></p>
                 <div class="border_answer"></div>
@@ -56,9 +60,9 @@
         <?php endforeach ?>
 
         <div class="image-text_reportage">
-        <p><?= $page->text3()->kt() ?></p>
+            <?= $page->text3()->kt() ?>
             <div class="gallery reportage-gallery">
-                <?php foreach ($page->photoText4()->toFiles() as $image): ?>
+                <?php foreach ($page->photoText3()->toFiles() as $image): ?>
                     <img src="<?= $image->url() ?>" alt="">
                 <?php endforeach ?>
             </div>
@@ -67,15 +71,15 @@
 
     <section class="atelier">
         <div class="title_border">
-            <h2>Atelier</h2>
+            <h2>Cours et ateliers de photographie</h2>
             <div class="border_portrait"></div>
         </div>
 
         <?php foreach ($page->atelier()->toStructure() as $item): ?>
             <div class="qa">
                 <div class="question_arrow">
-                <p class="question"><?= $item->question() ?></p>
-                <img src="<?= url('assets/images/plus_noir.svg') ?>" alt="dérouler vers le bas" class="arrow">
+                    <p class="question"><?= $item->question() ?></p>
+                    <img src="<?= url('assets/images/plus_noir.svg') ?>" alt="dérouler vers le bas" class="arrow">
                 </div>
                 <div class="border_question"></div>
                 <p class="answer"><?= $item->answer()->kt() ?></p>
@@ -84,8 +88,8 @@
         <?php endforeach ?>
 
         <div class="image-text_atelier">
-            <p><?= $page->text5()->kt() ?></p>
-            <p><?= $page->text6()->kt() ?></p>
+            <?= $page->text5()->kt() ?>
+            <?= $page->text6()->kt() ?>
 
             <div class="gallery atelier-gallery">
                 <?php foreach ($page->photoText5()->toFiles() as $image): ?>

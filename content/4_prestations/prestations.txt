@@ -9,7 +9,7 @@ Portrait:
   answer: 'La raison peut être personnelle : pour se faire plaisir, pour retrouver de la confiance en soi, pour jouer avec son image... Nous avons souvent beaucoup de photos de nous prises par nos proches, mais avons-nous beaucoup de photos où nous nous aimons ? La raison peut être aussi professionnelle : une photographie de qualité donnera une image sérieuse et engageante de vous et votre travail.'
 - 
   question: "Comment se passe l'organisation d'une séance de portrait ?"
-  answer: "Je vous invite en premier lieu à me contacter (insérer lien adresse mail ou formulaire de contact selon option choisie) pour que vous m'expliquiez ce que vous souhaitez faire. Ensuite, je vous rappelle afin que l'on précise votre demande, nous définissons ensemble une date et un lieu, et je vous transmet les modalités administratives."
+  answer: "Je vous invite en premier lieu à me contacter en cliquant ici pour que vous m'expliquiez ce que vous souhaitez faire. Ensuite, je vous rappelle afin que l'on précise votre demande, nous définissons ensemble une date et un lieu, et je vous transmet les modalités administratives."
 - 
   question: >
     La séance photo se déroulera-t-elle en
@@ -21,26 +21,28 @@ Portrait:
 
 ----
 
-Image1: - file://HIHTXRxSJTwOHrSN
+Phototext1-image: - file://HIHTXRxSJTwOHrSN
 
 ----
 
-Text1:
+Phototext1-text:
 
-## Portrait au naturel
+**Portrait au naturel**
 Des photos de vous qui vous ressemblent et vous plaisent. En ville, chez vous, à votre travail, dans la nature... selon votre personnalité et ce que vous souhaitez mettre en avant ! Pour se faire plaisir, ou renouveler son image professionnelle.
-→ 5 photos, à partir de 180€
+
+ → 5 photos, à partir de 180€
 
 ----
 
-Image2: - file://PonVYe9ooAf3qwmm
+Phototext2-image: - file://PonVYe9ooAf3qwmm
 
 ----
 
-Text2:
+Phototext2-text:
 
-## Portrait mis en scène
-Des photos qui mettrons le plus en avant votre personnalité, votre style, et si vous êtes professionnel.le, votre activité ! Nous élaborons ensemble une direction artistique, un scénario, un travail sur les vêtements et décors afin de produire les images qui serons au plus proche de ce que vous souhaitez raconter.
+**Portrait mis en scène**
+Des photos qui mettrons le plus en avant votre personnalité, votre style, et si vous êtes professionnel·le, votre activité ! Nous élaborons ensemble une direction artistique, un scénario, un travail sur les vêtements et décors afin de produire les images qui serons au plus proche de ce que vous souhaitez raconter.
+
 → 10 photos, à partir de 250€
 
 ----
@@ -64,15 +66,15 @@ Reportage:
 
 ----
 
-Text3:
+Phototext3-text:
 
-## Tarifs reportage & évènements
+**Tarifs reportage & évènements**
 Pour vous donner un ordre d'idée, mon tarif de base est de 300€ pour une demie journée de reportage. Mais vous l'avez compris, le reportage couvre un champ très large d'évènements possibles, avec beaucoup de facteurs variables : les lieux, la diversité du type d'images produites, le temps passé sur place, le nombre de photos, etc. C'est pourquoi je ne peux proposer de formule avec un tarif fixe. 
 Chaque activité ou événement étant différent, je vous invite à me contacter en cliquant ici afin que nous puissions ensemble établir un devis au plus proche de vos besoins.
 
 ----
 
-Phototext4:
+Phototext3:
 
 - file://x3JrvJ1JqcNfjB5L
 - file://vfvQh1YlMgmNlaPm
@@ -107,14 +109,6 @@ Atelier:
 
 ----
 
-Phototext5:
-
-- file://HoynUp4aBjeeKZE3
-- file://LQucE5GK6khmrd7N
-- file://VmqScnVNAOBuGtCr
-
-----
-
 Text5:
 
 **Tarifs cours de photo (particuliers) → 50€/h**
@@ -129,6 +123,58 @@ Text6:
 
 **Tarifs ateliers photo (professionnel.les) → 100€/h**	
 À noter que les tarifs indiqués n'incluent pas les frais de déplacement éventuels, notamment si vous êtes en dehors de Saint-Étienne. Je vous invite à me contacter (insérer lien adresse mail ou formulaire de contact selon option choisie) afin de voir ensemble quels sont vos besoins et envies !
+
+----
+
+Phototext5:
+
+- file://HoynUp4aBjeeKZE3
+- file://LQucE5GK6khmrd7N
+- file://VmqScnVNAOBuGtCr
+
+----
+
+Phototext3-image: 
+
+----
+
+Phototext4:
+
+- file://x3JrvJ1JqcNfjB5L
+- file://vfvQh1YlMgmNlaPm
+- file://IxpMQlHFkiHnojvG
+
+----
+
+Image1: - file://HIHTXRxSJTwOHrSN
+
+----
+
+Text1:
+
+**Portrait au naturel**
+Des photos de vous qui vous ressemblent et vous plaisent. En ville, chez vous, à votre travail, dans la nature... selon votre personnalité et ce que vous souhaitez mettre en avant ! Pour se faire plaisir, ou renouveler son image professionnelle.
+→ 5 photos, à partir de 180€
+
+----
+
+Image2: - file://PonVYe9ooAf3qwmm
+
+----
+
+Text2:
+
+**Portrait mis en scène**
+Des photos qui mettrons le plus en avant votre personnalité, votre style, et si vous êtes professionnel.le, votre activité ! Nous élaborons ensemble une direction artistique, un scénario, un travail sur les vêtements et décors afin de produire les images qui serons au plus proche de ce que vous souhaitez raconter.
+→ 10 photos, à partir de 250€
+
+----
+
+Text3:
+
+**Tarifs reportage & évènements**
+Pour vous donner un ordre d'idée, mon tarif de base est de 300€ pour une demie journée de reportage. Mais vous l'avez compris, le reportage couvre un champ très large d'évènements possibles, avec beaucoup de facteurs variables : les lieux, la diversité du type d'images produites, le temps passé sur place, le nombre de photos, etc. C'est pourquoi je ne peux proposer de formule avec un tarif fixe. 
+Chaque activité ou événement étant différent, je vous invite à me contacter en cliquant ici afin que nous puissions ensemble établir un devis au plus proche de vos besoins.
 
 ----
 

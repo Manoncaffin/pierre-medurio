@@ -14,9 +14,12 @@ fields:
       portrait: Portrait
       atelier: Atelier
       travail-personnel: Travail personnel
+
   description:
+    label: Description
     type: textarea
     size: large
+
   details:
     label: Détails
     type: structure
@@ -36,14 +39,19 @@ fields:
 
 sidebar:
   cover:
+    label: Image de couverture
     type: files
-    label: Couverture
     layout: cards
-    info: "{{ file.dimensions }}"
+    info: "{{ file.alt.or(file.filename) }}"
     template: cover
     min: 1
-    max: 3
+    max: 1
+
   gallery:
+    label: Galerie de photos
     type: files
-    label: Galerie
     template: image
+    layout: cards
+    multiple: true
+    max: 20
+    info: "{{ file.alt.or(file.filename) }}"

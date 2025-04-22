@@ -149,7 +149,6 @@ body {
         left: 0;
         background: white;
         border: 1px solid #000000;
-        /* Bordure par défaut */
         z-index: 30;
         display: none;
         border-radius: 0 0 5px 5px;
@@ -191,9 +190,7 @@ body {
         z-index: 100;
         position: relative;
         width: 200px;
-
     }
-
 }
 
 

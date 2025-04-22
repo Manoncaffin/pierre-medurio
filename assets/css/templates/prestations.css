@@ -10,20 +10,17 @@
 
     h1,
     h2 {
-        font-size: 1.8rem;
+        font-size: 3.8rem;
     }
 
-    p.question {
-        font-size: 1.1rem;
-    }
-    
     strong {
         font-family: "InclusiveSans-Semibold", serif;
         font-weight: bold;
+        font-size: 1.1rem;
     }
 
     .image-text_atelier p {
-        margin-bottom: 15px;
+        margin-bottom: 35px;
     }
 
     .portrait,
@@ -34,7 +31,44 @@
     }
 
     .atelier {
-        margin: 50px 40px 50px 40px;
+        margin: 50px 40px 280px 40px;
+    }
+
+    .image-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text_1,
+    .text_2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .image-portrait img,
+    .reportage-gallery img,
+    .image-text_atelier img {
+        width: 100%;
+        height: auto;
+        max-width: 900px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .image-portrait,
+    .reportage-gallery,
+    .atelier-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 5px;
+        overflow: hidden;
     }
 
     .title_border {
@@ -44,11 +78,13 @@
         gap: 15px;
     }
 
-    .qa p.question {
+    .qa p.question,
+    .qa p.answer {
         margin-bottom: 15px;
         display: block;
         font-family: "InclusiveSans-Semibold", serif;
         font-weight: bold;
+        font-size: 1.1rem !important;
     }
 
     .qa p {
@@ -68,7 +104,7 @@
     .border_answer {
         border: 1px solid black;
         width: 100%;
-        height: 1px; 
+        height: 1px;
     }
 
     .border_answer {
@@ -79,18 +115,24 @@
     .qa.active .border_question {
         display: none;
     }
-    
+
     .qa.active .border_answer {
         display: block;
     }
 
     .border_portrait {
         border: 1px solid black;
-        width: 690px;
+        width: 100%;
     }
 
-    .image-portrait {
-        margin-top: 50px;
+    .image-portrait,
+    .image-text_atelier,
+    .image-text_reportage {
+        margin-top: 40px;
+    }
+
+    .image-portrait:nth-of-type(1) {
+        margin-bottom: 5px;
     }
 
     .image-portrait:nth-of-type(2) {
@@ -100,17 +142,9 @@
     .reportage-gallery,
     .atelier-gallery {
         margin-top: 15px;
-    }
-
-    .image-text_atelier,
-    .image-text_reportage {
-        margin-top: 50px;
-    }
-
-    .image-text {
+        gap: 5px;
         display: flex;
         flex-direction: column;
-        gap: 5px;
     }
 
     .atelier-gallery {
@@ -118,14 +152,14 @@
         flex-direction: column;
     }
 
-    .image-portrait img,
-    .reportage-gallery img,
-    .image-text_atelier img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-        max-width: 300px;
+    .image-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-portrait {
+        display: flex;
+        flex-direction: column;
     }
 
     .text-portrait {
@@ -143,15 +177,11 @@
         align-items: center;
         cursor: pointer;
     }
-    
+
     .arrow {
         width: 1rem;
         height: auto;
         transition: transform 0.3s ease;
-    }
-    
-    .qa.active .question .arrow {
-        transform: rotate(90deg); /* ou 180deg selon le style de flèche */
     }
 }
 
@@ -164,8 +194,8 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 768px) {
 
-    .image-portrait img {
-        max-width: 100%;
+    .atelier {
+        margin-bottom: 350px;
     }
 }
 
@@ -178,9 +208,17 @@
 @media only screen and (min-width: 1000px) {
 
     .portrait,
-    .reportage,
-    .atelier {
+    .reportage {
         margin: 20px 80px 0 80px;
+    }
+
+    .atelier {
+        margin: 20px 80px 100px 80px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.8rem;
     }
 
     .atelier-gallery,
@@ -190,19 +228,33 @@
         justify-content: space-between;
     }
 
-    .border_portrait {
-        width: 890px;
-    }
-
     .image-portrait img,
     .reportage-gallery img,
-    .image-text_atelier img {
-        max-width: 100%;
+    .atelier-gallery img {
+        width: calc((100% - 10px) / 3);
+        max-width: 500px;
         height: auto;
-        display: block;
         object-fit: cover;
-        max-width: 375px;
-        gap: 5px;
+    }
+
+    .image-portrait,
+    .image-text_atelier,
+    .image-text_reportage {
+        margin-top: 30px;
+    }
+
+    .reportage-gallery,
+    .atelier-gallery {
+        margin-top: 30px;
+    }
+
+    .image-text_atelier p {
+        margin-bottom: 15px;
+    }
+
+    .image-portrait {
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -220,7 +272,12 @@
     }
 
     .atelier {
-        margin: 50px 40px 50px 40px;
+        margin: 20px 160px 100px 160px;
+    }
+
+    .text_1,
+    .text_2 {
+        margin-bottom: 0;
     }
 }
 
@@ -241,20 +298,5 @@
 
     .atelier {
         margin: 20px 260px 130px 260px;
-    }
-
-    .border_portrait {
-        width: 1390px;
-    }
-
-    .image-portrait img,
-    .reportage-gallery img,
-    .image-text_atelier img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-        max-width: 435px;
-        gap: 5px;
     }
 }

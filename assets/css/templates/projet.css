@@ -1,0 +1,152 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 350PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 350px) {
+    main {
+        margin: 50px 40px 0 40px;
+    }
+    
+    .project {
+        margin: 50px 40px 30px 40px;
+        display: flex;
+        flex-direction: column;
+
+        ul li {
+            padding: 0;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+            font-family: "InclusiveSans-Light";
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            font-family: "InclusiveSans-LightItalic";
+            font-weight: normal;
+            font-style: italic;
+        }
+    }
+
+    .description img,
+    .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 900px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 5px;
+        overflow: hidden;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .project {
+        margin: 20px 80px 0 80px;
+        gap: 5px;
+    }
+}
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1000PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 1000px) {
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1200PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+    .project {
+        margin: 20px 160px 0 160px;
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 300px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1500PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 1500px) {
+    .project {
+            margin: 20px 260px 40px 260px;
+    }
+}
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1600PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 1600px) {
+}

@@ -22,29 +22,23 @@ tabs:
             type: textarea
             buttons: false
 
-      photoText1:
-        label: Image + texte 1
-        type: group
-        fields:
-          image1:
-            label: Image
-            type: files
-            max: 1
-          text1:
-            label: Texte associé
-            type: textarea
+      photoText1_image:
+        label: Image 1
+        type: files
+        template: image
+        max: 1
+      photoText1_text:
+          label: Texte associé
+          type: textarea
 
-      photoText2:
+      photoText2_image:
         label: Image + texte 2
-        type: group
-        fields:
-          image2:
-            label: Image
-            type: files
-            max: 1
-          text2:
-            label: Texte associé
-            type: textarea
+        type: files
+        template: image
+        max: 1
+      photoText2_text:
+        label: Texte associé
+        type: textarea
 
       # ——— REPORTAGE ———
       reportage_title:
@@ -63,17 +57,14 @@ tabs:
             type: textarea
             buttons: false
 
-      photoText3:
-        label: Image + texte 3
-        type: group
-        fields:
-          text3:
-            label: Texte associé
-            type: textarea
+      photoText3_text:
+        label: Texte associé
+        type: textarea
 
-      photoText4:
+      photoText3:
         label: Galerie reportage
         type: files
+        template: image
         multiple: true
         max: 3
 
@@ -94,16 +85,17 @@ tabs:
             type: textarea
             buttons: false
 
+      text5:
+        label: Texte associé 5
+        type: textarea
+
+      text6:
+        label: Texte associé 6
+        type: textarea
+
       photoText5:
         label: Galerie atelier
         type: files
         multiple: true
         max: 3
-
-      text5:
-        label: Texte atelier 5
-        type: textarea
-
-      text6:
-        label: Texte atelier 6
-        type: textarea
+        template: image

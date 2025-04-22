@@ -25,4 +25,14 @@ Tags: Portrait
 
 ----
 
+Cover: 
+  - fanny-1-couv.webp
+
+----
+
+Gallery:
+  - fanny-2.webp
+
+----
+
 Uuid: yPbWDDZSkIJguug1

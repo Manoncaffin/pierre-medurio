@@ -1,6 +1,5 @@
-extends: files/image
+title: Image
 
-title: Couverture
 fields:
   alt:
     label: Texte alternatif

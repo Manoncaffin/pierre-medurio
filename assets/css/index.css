@@ -36,6 +36,7 @@ body {
     font-weight: 100;
     font-style: normal;
     font-size: 1.1rem;
+    overflow-x: hidden;
 }
 
 :root {
@@ -81,6 +82,7 @@ a {
     margin: 0;
     padding: 0;
     line-height: 1.5rem;
+    font-size: 1.1rem;
 }
 
 ul,
@@ -377,7 +379,7 @@ button:hover {
     }
 
     main {
-        padding-top: 130px;
+        padding-top: 120px;
         padding-bottom: 60px;
     }
 
