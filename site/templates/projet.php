@@ -107,4 +107,5 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="<?= url('assets/js/swiper.js') ?>"></script>
+<script src="<?= url('assets/js/dropdown.js') ?>"></script>
 <?php snippet('footer') ?>

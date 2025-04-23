@@ -101,96 +101,54 @@ body {
         pointer-events: auto;
     }
 
-    /* Filtres */
-    select {
-        width: fit-content;
-        padding: 6px 10px;
-        border-radius: 5px;
-    }
-
-    .filters-select:focus {
-        outline: none;
-        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
-    }
-
-    .custom-select-wrapper {
+    /* Dropdown */
+     /* dropdown */
+     .custom-select-wrapper {
         position: relative;
-        max-width: 300px;
-        margin-bottom: 1rem;
+        width: 200px;
+        margin-bottom: 20px;
     }
 
-    .select-options.tags-filter {
+    .selected-option {
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    .select-options {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background: white;
-        border: 1px solid #000;
-        border-radius: 0 0 8px 8px;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .select-options.tags-filter .option {
-        padding: 0.5rem;
-        cursor: pointer;
-        transition: background 0.2s ease;
-    }
-
-    .select-options.tags-filter .option:hover {
-        background: #000;
-        color: #fff;
-    }
-
-    .select-options {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: white;
         border: 1px solid #000000;
-        z-index: 30;
-        display: none;
-        border-radius: 0 0 5px 5px;
+        border-top: none; 
+        background: white;
+        z-index: 10;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     }
 
     .select-options.open {
         display: block;
-        border-top: none;
-    }
-
-    .selected-option.open {
-        border-bottom: none;
     }
 
     .option {
         padding: 10px;
         cursor: pointer;
-        width: 200px;
     }
 
     .option:hover {
-        background-color: #000000;
+        background: #000000;
         color: white;
     }
 
-
-    .custom-select {
-        position: relative;
-        width: 200px;
-        z-index: 10;
+    .projects .project-item {
+        display: block;
     }
 
-    .selected-option {
-        cursor: pointer;
-        padding: 6px 10px;
-        border: 1px solid black;
-        border-radius: 5px;
-        background-color: rgb(255, 255, 255);
-        z-index: 100;
-        position: relative;
-        width: 200px;
-    }
 }
 
 
