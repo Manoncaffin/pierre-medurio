@@ -10,8 +10,12 @@ $tags = ['reportage', 'portrait', 'atelier', 'travail personnel', 'tous les proj
     <section class="all_projects">
         <div class="custom-select-wrapper" id="dropdown">
             <input type="hidden" name="projectTags" id="projectTagsInput">
+            <!-- <div class="selected-option" tabindex="0" role="button">
+                Filtres
+            </div> -->
             <div class="selected-option" tabindex="0" role="button">
                 Filtres
+                <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Filter Icon" class="filter-icon">
             </div>
             <div class="select-options" id="projectTagsOptions">
                 <div class="option" data-category="all">Tous</div>

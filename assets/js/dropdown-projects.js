@@ -36,6 +36,5 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Afficher tous les projets au chargement de la page
     filterProjects('all');
 });

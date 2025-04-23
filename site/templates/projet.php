@@ -71,9 +71,6 @@
         foreach ($gallery as $image): ?>
           <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
         <?php endforeach ?>
-      <?php else: ?>
-        <p>Aucune image de galerie trouvée.</p>
-      <?php endif ?>
     </div>
 
     <div class="swiper">
