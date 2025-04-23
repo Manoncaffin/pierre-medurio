@@ -1,5 +1,8 @@
 <?php snippet('header') ?>
 <link rel="stylesheet" href="<?= url('assets/css/templates/projet.css') ?>">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 <main>
   <section class="project">
@@ -43,33 +46,55 @@
     <div class="previous_next">
       <div class="previous">
         <a href="<?= $prevPage->url() ?>">
-          <img src="<?= url('assets/images/fleche_noire.svg') ?>" alt="Flèche précédente">
+          <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Flèche précédente">
           <p>page précédente</p>
         </a>
       </div>
       <div class="next">
         <a href="<?= $nextPage->url() ?>">
           <p>page suivante</p>
-          <img src="<?= url('assets/images/fleche_noire.svg') ?>" alt="Flèche suivante">
+          <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Flèche suivante">
         </a>
       </div>
     </div>
 
     <div class="gallery">
-      <?php if ($cover = $page->cover()->toFile()): ?>
+      <?php if ($cover = $page->files()->template('cover')->first()): ?>
         <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->html() ?>">
       <?php else: ?>
         <p>Aucune image de couverture trouvée.</p>
       <?php endif ?>
 
-      <?php if ($page->gallery()->isNotEmpty()): ?>
-        <?php foreach ($page->gallery()->toFiles() as $image): ?>
+      <?php
+      $gallery = $page->files()->template('image');
+      if ($gallery->isNotEmpty()):
+        foreach ($gallery as $image): ?>
           <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
         <?php endforeach ?>
       <?php else: ?>
         <p>Aucune image de galerie trouvée.</p>
       <?php endif ?>
     </div>
+
+    <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
   </section>
 
   <?php
@@ -80,4 +105,6 @@
   <p><?= $imageCount ?> image<?= $imageCount > 1 ? 's' : '' ?></p>
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="<?= url('assets/js/swiper.js') ?>"></script>
 <?php snippet('footer') ?>

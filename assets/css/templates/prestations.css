@@ -48,6 +48,10 @@
         p {
             margin-bottom: 10px;
         }
+
+        p:nth-of-type(2) {
+            text-decoration: underline;
+        }
     }
 
     .image-portrait img,

@@ -12,7 +12,7 @@
             <div class="qa">
                 <div class="question_arrow">
                     <p class="question"><?= $item->question() ?></p>
-                    <img src="<?= url('assets/images/plus_noir.svg') ?>" alt="dérouler vers le bas" class="arrow">
+                    <img src="<?= url('assets/images/plus.svg') ?>" alt="dérouler vers le bas" class="arrow" data-plus-src="<?= url('assets/images/plus.svg') ?>" data-minus-src="<?= url('assets/images/moins.svg') ?>">
                 </div>
                 <div class="border_question"></div>
                 <p class="answer"><?= $item->answer()->kt() ?></p>
@@ -51,7 +51,7 @@
             <div class="qa">
                 <div class="question_arrow">
                     <p class="question"><?= $item->question() ?></p>
-                    <img src="<?= url('assets/images/plus_noir.svg') ?>" alt="dérouler vers le bas" class="arrow">
+                    <img src="<?= url('assets/images/plus.svg') ?>" alt="dérouler vers le bas" class="arrow" data-plus-src="<?= url('assets/images/plus.svg') ?>" data-minus-src="<?= url('assets/images/moins.svg') ?>">
                 </div>
                 <div class="border_question"></div>
                 <p class="answer"><?= $item->answer()->kt() ?></p>
@@ -79,7 +79,7 @@
             <div class="qa">
                 <div class="question_arrow">
                     <p class="question"><?= $item->question() ?></p>
-                    <img src="<?= url('assets/images/plus_noir.svg') ?>" alt="dérouler vers le bas" class="arrow">
+                    <img src="<?= url('assets/images/plus.svg') ?>" alt="dérouler vers le bas" class="arrow" data-plus-src="<?= url('assets/images/plus.svg') ?>" data-minus-src="<?= url('assets/images/moins.svg') ?>">
                 </div>
                 <div class="border_question"></div>
                 <p class="answer"><?= $item->answer()->kt() ?></p>
@@ -101,3 +101,4 @@
 
     <script src="<?= url('assets/js/answer.js') ?>"></script>
     <?php snippet('footer') ?>
+</main>

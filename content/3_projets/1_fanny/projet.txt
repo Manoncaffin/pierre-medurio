@@ -16,23 +16,7 @@ Details:
   client: Fanny Rapaoly
   model: ""
   year: 2025
-  categorie: portrait
-  network: Fanny Rapaoly
 
 ----
 
-Tags: Portrait
-
-----
-
-Cover: 
-  - fanny-1-couv.webp
-
-----
-
-Gallery:
-  - fanny-2.webp
-
-----
-
-Uuid: yPbWDDZSkIJguug1
+Uuid: 26y91SErAFhBUA9V

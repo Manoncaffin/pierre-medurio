@@ -10,7 +10,7 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 50px 40px 0 40px;
+        margin: 50px 40px 260px 40px;
     }
 
     .project {
@@ -32,7 +32,7 @@ body {
             font-family: "InclusiveSans-Light";
             font-weight: normal;
             font-style: normal;
-            width: 200px;
+            width: 300px;
         }
 
         h1 {
@@ -135,7 +135,51 @@ body {
 /* ------------- MEDIA MIN-WIDTH 1000PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
-@media screen and (min-width: 1000px) {}
+@media screen and (min-width: 1000px) {
+    main {
+        margin: 50px 40px 150px 40px;
+    }
+
+    /* swiper */
+    .swiper {
+        width: 600px;
+        height: 300px;
+      }
+
+      .swiper-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        display: none; /* Initialement caché */
+      }
+      
+      .swiper-wrapper {
+        height: 100%;
+      }
+      
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      
+      .swiper-slide img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+      
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: white;
+      }
+
+
+}
 
 
 /* --------------------------------------------------- */
@@ -145,7 +189,7 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1200px) {
     .project {
-        margin: 20px 160px 0 160px;
+        margin: 20px 160px 80px 160px;
     }
 
     .description_projet {
@@ -155,7 +199,7 @@ body {
 
     .text_projet {
         display: flex;
-        gap: 200px;
+        gap: 100px;
     }
 
     .gallery {
@@ -172,7 +216,7 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1500px) {
     .project {
-        margin: 20px 260px 40px 260px;
+        margin: 20px 260px 80px 260px;
     }
 
     .text_projet {
