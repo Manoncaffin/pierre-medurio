@@ -63,7 +63,7 @@
             <?= $page->text3()->kt() ?>
             <div class="gallery reportage-gallery">
                 <?php foreach ($page->photoText3()->toFiles() as $image): ?>
-                    <img src="<?= $image->url() ?>" alt="">
+                    <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
                 <?php endforeach ?>
             </div>
         </div>
@@ -93,7 +93,7 @@
 
             <div class="gallery atelier-gallery">
                 <?php foreach ($page->photoText5()->toFiles() as $image): ?>
-                    <img src="<?= $image->url() ?>" alt="">
+                    <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
                 <?php endforeach ?>
             </div>
         </div>

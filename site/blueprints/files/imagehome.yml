@@ -1,0 +1,9 @@
+title: Imagehome
+
+fields:
+  alt:
+    label: Texte alternatif
+    type: text
+  year:
+    label: Année
+    type: text

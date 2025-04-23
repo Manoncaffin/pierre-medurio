@@ -49,7 +49,7 @@ $tags = ['reportage', 'portrait', 'atelier', 'travail personnel', 'tous les proj
                     <a href="<?= $project->url() ?>" class="title_project">
                         <figure>
                             <?php if ($cover = $project->images()->findBy("template", "cover")): ?>
-                                <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->or($project->title()) ?>">
+                                <img src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>">
                             <?php endif ?>
                             <figcaption><?= $project->title() ?>
                                 <small>

@@ -18,15 +18,12 @@ body {
     .container_page {
         border-top: 1px solid black;
     }
-}
 
+    .image_wrapper {
+        display: inline-block;
+        text-align: right;
+    }
 
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
-/* ------------------ SUP. OU ÉGALE ------------------ */
-/* --------------------------------------------------- */
-@media screen and (min-width: 768px) {
     .image_home {
         width: 100vw;
         height: auto;
@@ -38,7 +35,33 @@ body {
         width: 1000px;
         height: auto;
     }
+
+    .legend {
+        margin-top: 4px;
+        max-width: 100%;
+        margin-top: 4px;
+        max-width: 100%;
+        text-align: right;
+    }
+
+    .project-name {
+        font-family: "InclusiveSans-LightItalic";
+        font-style: italic;
+    }
+
+    .project-year {
+        font-family: "InclusiveSans-Light";
+        font-style: normal;
+    }
 }
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 768px) {}
 
 
 

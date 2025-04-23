@@ -1,0 +1,17 @@
+Alt: La Friterie,
+
+----
+
+Year: 2025
+
+----
+
+Sort: 6
+
+----
+
+Uuid: uh2PsAHccPYoRXXZ
+
+----
+
+Template: imagehome

@@ -5,7 +5,7 @@
 
     <section class="biography">
         <?php if ($image = $page->portrait()->toFile()): ?>
-            <img src="<?= $image->url() ?>" alt="Portrait de Pierre">
+            <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
         <?php endif; ?>
 
         <div class="text_biography">

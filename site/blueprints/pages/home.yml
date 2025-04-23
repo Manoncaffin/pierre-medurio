@@ -7,3 +7,4 @@ sections:
     layout: cards
     multiple: true
     max: 15
+    template: imagehome
