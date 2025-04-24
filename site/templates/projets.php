@@ -52,6 +52,6 @@ $tags = ['reportage', 'portrait', 'atelier', 'travail personnel', 'tous les proj
         </ul>
     </section>
 </main>
-
+<script src="<?= url('assets/js/toggle.js') ?>"></script>
 <script src="<?= url('assets/js/dropdown-projects.js') ?>"></script>
 <?php snippet('footer') ?>

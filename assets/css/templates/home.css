@@ -42,6 +42,7 @@ body {
         margin-top: 4px;
         max-width: 100%;
         text-align: right;
+        font-size: 0.9rem;
     }
 
     .project-name {

@@ -98,7 +98,7 @@
             </div>
         </div>
     </section>
-
+    <script src="<?= url('assets/js/toggle.js') ?>"></script>
     <script src="<?= url('assets/js/answer.js') ?>"></script>
     <?php snippet('footer') ?>
 </main>

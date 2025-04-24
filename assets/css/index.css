@@ -19,8 +19,8 @@
 @font-face {
     font-family: "InclusiveSans-SemiBold";
     src: url('../fonts/InclusiveSans-SemiBold.ttf') format('truetype'),
-        ('../fonts/InclusiveSans-SemiBold.woff') format('woff'),
-        ('../fonts/InclusiveSans-SemiBoldItalic.woff2') format('woff2');
+        url('../fonts/InclusiveSans-SemiBold.woff') format('woff'),
+        url('../fonts/InclusiveSans-SemiBoldItalic.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
 }
@@ -81,8 +81,8 @@ a {
     font-weight: normal;
     margin: 0;
     padding: 0;
-    line-height: 1.5rem;
-    font-size: 1.1rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
 }
 
 ul,
@@ -100,7 +100,7 @@ a {
 }
 
 button {
-    all: unset; 
+    all: unset;
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
@@ -132,7 +132,8 @@ button:hover {
         flex-grow: 1;
     }
 
-    header {
+    .header_home,
+    .header_other {
         background-color: rgba(255, 255, 255, 0.827);
         margin: 0;
         padding: 0;
@@ -142,15 +143,18 @@ button:hover {
         left: 0;
         right: 0;
         z-index: 1000;
+        height: 300px;
+        border-bottom: 1px solid black;
     }
 
-    header * {
+    .header_home *,
+    .header_other * {
         margin: 0;
         padding: 0;
     }
 
     .container_header {
-        position: fixed;
+        /* position: fixed; */
         top: 0;
         left: 0;
         right: 0;
@@ -158,12 +162,76 @@ button:hover {
         margin: 50px 40px 0 40px;
     }
 
+    .container_header_other {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        margin: 50px 80px 0 80px;
+    }
+
     nav {
         display: flex;
         align-items: center;
-        justify-content: center;
         margin-bottom: 15px;
+    }
+
+    .nav_first {
+        justify-content: center;
         flex-direction: column;
+    }
+
+    .nav_other {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .nav_other ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: white;
+        z-index: 10;
+        padding: 6px 10px;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .nav_other ul.open {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        padding-top: 300px;
+        width: 100%;
+    }
+
+    .hidden-logo {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+    }
+
+    .header_home.menu-open,
+    .header_other.menu-open {
+        border-bottom: none;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        z-index: 500; 
+        display: none;
+    }
+
+    .burger-menu img {
+        width: 100px;
     }
 
     nav .logo {
@@ -172,6 +240,10 @@ button:hover {
 
     .logo_header {
         width: 750px;
+    }
+
+    .logo_other_page {
+        width: 560px;
     }
 
     .logo img {
@@ -213,80 +285,6 @@ button:hover {
     ul li:not(:last-child) .separator {
         display: block;
     }
-    
-
-    /* Menu coulissant */
-    .tags-mobile {
-        position: relative;
-        display: inline-block;
-        border: 1px solid black;
-        border-radius: 5px;
-        width: fit-content;
-    }
-
-    .dropdown-checkbox {
-        display: none;
-    }
-
-    .all {
-        color: black;
-        padding: 10px;
-        cursor: pointer;
-        display: block;
-        border-radius: 5px 5px 0 0;
-        width: 160px;
-    }
-
-    .tag-mobile {
-        padding: 10px;
-        border: none;
-        font-size: 1.1rem;
-        background-color: white;
-        font-family: "InclusiveSans-Light";
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    .dropdown-menu {
-        display: none;
-        position: absolute;
-        background-color: white;
-        width: 160px;
-        z-index: 1;
-        top: 100%;
-        left: 0;
-        border: 1px solid black;
-        border-top: none;
-        border-radius: 0 0 5px 5px;
-    }
-
-    .dropdown-item {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        background: none;
-        text-align: left;
-        cursor: pointer;
-        display: block;
-    }
-
-    .dropdown-menu button {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        background: none;
-        text-align: left;
-        cursor: pointer;
-        display: block;
-    }
-
-    .dropdown-item:hover {
-        background-color: #f1f1f1;
-    }
-
-    .dropdown-checkbox:checked+.all+.dropdown-menu {
-        display: block;
-    }
 
 
     /* ------- HEADER ------- */
@@ -306,7 +304,7 @@ button:hover {
         border-top: 1px solid black;
         background-color: rgba(255, 255, 255, 0.827);
     }
-    
+
     footer a,
     footer p,
     footer h1,
@@ -318,7 +316,7 @@ button:hover {
 
 
     .end {
-        margin: 50px 40px 40px 40px;        
+        margin: 50px 40px 40px 40px;
     }
 
     .networks .social-links {
@@ -352,7 +350,7 @@ button:hover {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
-    
+
     /* ------- HEADER ------- */
     /* ---------------------- */
 
@@ -374,6 +372,12 @@ button:hover {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
+    p,
+    a {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
     header {
         border-bottom: 1px solid black;
     }
@@ -462,11 +466,11 @@ button:hover {
     .networks {
         position: relative;
         display: inline-block;
-        min-width: 300px; 
-        height: 1.2em; 
+        min-width: 300px;
+        height: 1.2em;
         width: 220px;
     }
-    
+
     .networks span {
         position: absolute;
         left: 0;
@@ -474,19 +478,19 @@ button:hover {
         transition: opacity 0.3s ease;
         width: 100%;
     }
-    
+
     .networks .default-text {
         opacity: 1;
     }
-    
+
     .networks .social-links {
         opacity: 0;
     }
-    
+
     .networks:hover .default-text {
         opacity: 0;
     }
-    
+
     .networks:hover .social-links {
         opacity: 1;
     }

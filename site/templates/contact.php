@@ -111,5 +111,6 @@
         </article>
     </section>
 </main>
+<script src="<?= url('assets/js/toggle.js') ?>"></script>
 <script src="<?= url('assets/js/dropdown.js') ?>"></script>
 <?php snippet('footer') ?>

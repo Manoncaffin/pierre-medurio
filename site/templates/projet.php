@@ -1,8 +1,6 @@
 <?php snippet('header') ?>
 <link rel="stylesheet" href="<?= url('assets/css/templates/projet.css') ?>">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 <main>
   <section class="project">
@@ -18,11 +16,9 @@
             <?php if ($item->client()->isNotEmpty()): ?>
               <li><strong>Client·e :</strong> <?= $item->client() ?></li>
             <?php endif ?>
-
             <?php if ($item->model()->isNotEmpty()): ?>
               <li><strong>Modèle :</strong> <?= $item->model() ?></li>
             <?php endif ?>
-
             <?php if ($item->year()->isNotEmpty()): ?>
               <li><strong>Année :</strong> <?= $item->year() ?></li>
             <?php endif ?>
@@ -32,13 +28,8 @@
     </div>
 
     <?php
-    // Récupérer toutes les pages sœurs (les autres projets)
     $siblings = $page->siblings();
-
-    // Trouver l'index de la page actuelle dans la liste des pages sœurs
     $currentIndex = $siblings->indexOf($page);
-
-    // Déterminer les pages précédente et suivante
     $prevPage = $siblings->nth($currentIndex - 1) ?? $siblings->last();
     $nextPage = $siblings->nth($currentIndex + 1) ?? $siblings->first();
     ?>
@@ -58,40 +49,33 @@
       </div>
     </div>
 
-    <div class="gallery">
-      <?php if ($cover = $page->files()->template('cover')->first()): ?>
-        <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->html() ?>">
-      <?php else: ?>
-        <p>Aucune image de couverture trouvée.</p>
-      <?php endif ?>
+    <?php if ($cover = $page->files()->template('cover')->first()): ?>
+  <div class="gallery">
+    <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->html() ?>">
 
-      <?php
-      $gallery = $page->files()->template('image');
-      if ($gallery->isNotEmpty()):
-        foreach ($gallery as $image): ?>
-          <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
-        <?php endforeach ?>
-    </div>
-
-    <div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
+    <?php
+    $gallery = $page->files()->template('image');
+    if ($gallery->isNotEmpty()):
+      foreach ($gallery as $image): ?>
+        <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
+      <?php endforeach ?>
+    <?php endif ?>
   </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+<?php endif ?>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+    <!-- Swiper -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <!-- Tu pourras ici boucler sur les images si besoin -->
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
   </section>
 
   <?php
@@ -103,6 +87,7 @@
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="<?= url('assets/js/toggle.js') ?>"></script>
 <script src="<?= url('assets/js/swiper.js') ?>"></script>
 <script src="<?= url('assets/js/dropdown.js') ?>"></script>
 <?php snippet('footer') ?>

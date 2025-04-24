@@ -14,5 +14,5 @@
     </section>
 
 </main>
-
+<script src="<?= url('assets/js/toggle.js') ?>"></script>
 <?php snippet('footer') ?>

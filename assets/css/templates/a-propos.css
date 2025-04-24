@@ -48,10 +48,10 @@
 @media only screen and (min-width: 1000px) {
     .biography {
         margin: 20px 80px 0 80px;
-        gap: 120px;
+        gap: 100px;
 
         img {
-            width: 300px;
+            width: 270px;
         }
     }
 }
@@ -66,10 +66,10 @@
 @media only screen and (min-width: 1200px) {
     .biography {
         margin: 20px 160px 0 160px;
-        gap: 120px;
+        gap: 100px;
 
         img {
-            width: 335px;
+            width: 300px;
         }
     }
 }
