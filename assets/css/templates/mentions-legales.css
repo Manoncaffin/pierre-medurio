@@ -67,6 +67,10 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
+    main {
+        margin: 160px 40px 260px 40px;
+    }
+    
     .legal_notice_grid {
         margin: 20px 160px 0 160px;
     }

@@ -70,7 +70,6 @@ body {
     .title_projet {
         display: flex;
         flex-direction: column;
-        margin-bottom: 15px;
     }
 
     .description_projet {
@@ -186,6 +185,10 @@ body {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 1200px) {
+    main {
+        margin: 160px 40px 260px 40px;
+    }
+
     .project {
         margin: 20px 160px 80px 160px;
     }

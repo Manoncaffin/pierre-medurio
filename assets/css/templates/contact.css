@@ -5,11 +5,11 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 50px 40px 0 40px;
+        margin: 300px 40px 260px 40px;
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
     }
 
     .contact {
@@ -154,6 +154,10 @@
         gap: 200px;
     }
 
+    h1 {
+        font-size: 1.8rem;
+    }
+
     .form {
         width: 50%;
         min-width: 300px;
@@ -187,6 +191,10 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
+    main {
+        margin: 160px 40px 260px 40px;
+    }
+    
     .contact {
         margin: 20px 260px 40px 260px;
     }

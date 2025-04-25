@@ -50,3 +50,6 @@ Icon
 /site/config/.license
 /site/config/config.starterkit.test.php
 .qodo
+
+# Ignorer le fichier .env
+.env

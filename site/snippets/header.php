@@ -23,7 +23,7 @@ $isHomePage = $page->isHomePage();
             <!-- Header pour la page d'accueil -->
             <header class="header_home">
                 <section class="container_header">
-                    <nav class="first">
+                    <nav class="nav_first">
                         <?php if ($logo): ?>
                             <div class="logo">
                                 <a href="<?= url('home') ?>">
@@ -63,7 +63,7 @@ $isHomePage = $page->isHomePage();
                 <section class="container_header_other">
                     <nav class="nav_other">
                         <?php if ($logo): ?>
-                            <div class="logo" id="mobile_logo">
+                            <div class="logo_other" id="mobile_logo">
                                 <a href="<?= url('home') ?>">
                                     <img src="<?= $logo->url() ?>" alt="Logo" class="logo_other_page">
                                 </a>
@@ -122,8 +122,8 @@ $isHomePage = $page->isHomePage();
                     top: 10%;
                     left: 55%;
                     transform: translate(-50%, -50%);
-                    width: 600px;
-                    height: 190px;
+                    width: 550px;
+                    height: 180px;
                     background-image: url('<?= url('assets/images/select_medium.svg') ?>');
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -148,11 +148,11 @@ $isHomePage = $page->isHomePage();
                 header ul li::before {
                     content: '';
                     position: absolute;
-                    top: 20%;
-                    left: 70%;
+                    top: 120%;
+                    left: 50%;
                     transform: translate(-50%, -50%);
-                    width: 600px;
-                    height: 170px;
+                    width: 160px;
+                    height: 100px;
                     background-image: url(http://localhost:8888/pierremedurio/assets/images/select_medium.svg);
                     background-size: contain;
                     background-repeat: no-repeat;

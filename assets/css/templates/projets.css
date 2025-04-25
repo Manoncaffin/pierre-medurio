@@ -200,6 +200,10 @@ body {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 1200px) {
+    main {
+        margin: 160px 40px 260px 40px;
+    }
+    
     .all_projects {
         margin: 20px 140px 60px 140px;
     }

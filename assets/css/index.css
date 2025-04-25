@@ -144,6 +144,9 @@ button:hover {
         right: 0;
         z-index: 1000;
         height: 300px;
+    }
+
+    .header_other {
         border-bottom: 1px solid black;
     }
 
@@ -167,7 +170,7 @@ button:hover {
         left: 0;
         right: 0;
         z-index: 1000;
-        margin: 50px 80px 0 80px;
+        margin: 50px 40px 0 20px;
     }
 
     nav {
@@ -182,9 +185,11 @@ button:hover {
     }
 
     .nav_other {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        position: relative;
+        align-items: center;
+        width: 100%;
     }
 
     .nav_other ul {
@@ -197,18 +202,22 @@ button:hover {
         z-index: 10;
         padding: 6px 10px;
         flex-direction: column;
-        gap: 60px;
-    }
+        gap: 75px;
+    } 
 
     .nav_other ul.open {
         display: flex;
         height: 100vh;
         align-items: center;
-        padding-top: 300px;
+        padding-top: 250px;
         width: 100%;
     }
 
-    .hidden-logo {
+    .logo_other {
+        flex-shrink: 0;
+    }
+
+    .hidden-logo_other {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease;
@@ -217,6 +226,8 @@ button:hover {
     .header_home.menu-open,
     .header_other.menu-open {
         border-bottom: none;
+        background-color: white !important;
+        z-index: 1100; 
     }
 
     .overlay {
@@ -246,15 +257,20 @@ button:hover {
         width: 560px;
     }
 
-    .logo img {
+    .logo img,
+    .logo_other img {
         display: block;
         max-width: 100%;
         height: auto;
     }
 
+    .logo img {
+        margin-bottom: 750px;
+    }
+
     nav ul {
         display: flex;
-        gap: 1.5rem;
+        gap: 40px;
         list-style: none;
         padding: 0;
         padding-top: 700px;
@@ -372,22 +388,21 @@ button:hover {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
+
+
     p,
     a {
         font-size: 1.1rem;
         line-height: 1.5rem;
     }
-
-    header {
-        border-bottom: 1px solid black;
-    }
-
-    main {
+    
+    .main_home {
         padding-top: 120px;
         padding-bottom: 60px;
     }
 
-    .container_header {
+    .container_header,
+    .container_header_other {
         position: relative;
         top: 0;
         left: 0;
@@ -395,51 +410,22 @@ button:hover {
         margin: 20px 80px 0 80px;
     }
 
-    nav {
-        flex-direction: row;
-        gap: 20px;
+    .logo_other_page {
+        width: 460px;
     }
 
-    nav .logo {
-        flex-shrink: 0;
+    .header_home, .header_other {
+        height: 220px;
     }
 
-    .logo_header {
-        width: 180px;
+    .burger-menu img {
+        width: 60px;
     }
 
-    nav ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        padding-top: 0;
-        margin: 0;
-        flex: 1;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
+    .nav_other ul {
+        gap: 55px;
     }
 
-    ul li {
-        position: relative;
-        padding: 10px 10px;
-    }
-
-    ul li a {
-        font-family: 'InclusiveSans-Semibold';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-
-    .separator {
-        display: inline-block;
-        height: 60px;
-        width: 1px;
-    }
-
-    ul li:not(:last-child) .separator {
-        display: block;
-    }
 
     /* ------- HEADER ------- */
     /* ---------------------- */
@@ -508,11 +494,87 @@ button:hover {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
-    .container_header {
+    .container_header,
+    .container_header_other {
         margin: 20px 140px 0 140px;
     }
-
     .logo_header {
+        width: 180px;
+    }
+
+    .nav_first ul,
+    .nav_other ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        padding-top: 0;
+        margin: 0;
+        flex: 1;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    ul li {
+        position: relative;
+        padding: 10px 10px;
+    }
+
+    ul li a {
+        font-family: 'InclusiveSans-Semibold';
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .separator {
+        display: inline-block;
+        height: 60px;
+        width: 1px;
+    }
+
+    ul li:not(:last-child) .separator {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+    
+    header {
+        border-bottom: 1px solid black;
+    }
+
+    .nav_other ul {
+        position: static;
+        flex-direction: row;
+        background: none;
+        align-items: center;
+    }
+
+    .header_home, .header_other {
+        height: 120px;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    nav .logo {
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        margin-bottom: 0;
+    }
+
+    .nav_first,
+    .nav_other {
+        flex-direction: row;
+    }
+
+    .logo_header,
+    .logo_other {
         width: 230px;
     }
 
@@ -540,7 +602,8 @@ button:hover {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
-    .container_header {
+    .container_header,
+    .container_header_other {
         margin: 20px 140px 0 140px;
     }
 
@@ -569,7 +632,8 @@ button:hover {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
-    .container_header {
+    .container_header,
+    .container_header_other {
         margin: 20px 200px 0px 200px;
     }
 

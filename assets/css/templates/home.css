@@ -37,13 +37,9 @@ body {
     }
 
     .legend {
-        margin-top: 4px;
-        max-width: 100%;
-        margin-top: 4px;
-        max-width: 100%;
-        text-align: right;
-        font-size: 0.9rem;
+        display: none;
     }
+
 
     .project-name {
         font-family: "InclusiveSans-LightItalic";
@@ -73,11 +69,21 @@ body {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     .main_home {
-        padding-top: 160px;
+        padding-top: 140px;
     }
 
     .image_home img {
         width: 830px;
+    }
+
+    .legend {
+        display: block;
+        margin-top: 4px;
+        max-width: 100%;
+        margin-top: 4px;
+        max-width: 100%;
+        text-align: right;
+        font-size: 0.9rem;
     }
 }
 
@@ -90,7 +96,7 @@ body {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     .main_home {
-        padding-top: 160px;
+        padding-top: 140px;
         overflow-y: hidden;
     }
 }
@@ -103,7 +109,7 @@ body {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
     .main_home {
-        padding-top: 175px;
+        padding-top: 165px;
     }
 
     .image_home img {

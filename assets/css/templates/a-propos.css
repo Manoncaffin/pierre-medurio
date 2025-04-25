@@ -5,11 +5,11 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 50px 40px 0 40px;
+        margin: 300px 40px 260px 40px;
     }
 
     .biography {
-        margin: 50px 40px 30px 40px;
+        margin: 50px 40px 280px 40px;
         display: flex;
         flex-direction: column;
         gap: 60px;
@@ -33,10 +33,6 @@
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 768px) {
-
-    .biography {
-        flex-direction: row;
-    }
 }
 
 
@@ -47,6 +43,7 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     .biography {
+        flex-direction: row;
         margin: 20px 80px 0 80px;
         gap: 100px;
 
@@ -64,6 +61,10 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
+    main {
+        margin: 160px 40px 260px 40px;
+    }
+    
     .biography {
         margin: 20px 160px 0 160px;
         gap: 100px;
