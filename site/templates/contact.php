@@ -16,7 +16,7 @@
             $message = '';
 
             // Traitement du formulaire
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contactName'])) {
                 $name = $_POST['contactName'] ?? '';
                 $firstname = $_POST['contactFirstname'] ?? '';
                 $email = $_POST['contactEmail'] ?? '';
@@ -53,6 +53,30 @@
                     }
                 }
             }
+
+
+            // Traitement du formulaire d'inscription à la newsletter
+            if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['subscribe'])) {
+                $newsletterEmail = $_POST['newsletterEmail'] ?? '';
+
+                // Validation simple
+                if (empty($newsletterEmail) || !filter_var($newsletterEmail, FILTER_VALIDATE_EMAIL)) {
+                    $newsletterErrors[] = 'L\'email est invalide.';
+                } else {
+                    // Enregistrement de l'email dans la base de données ou un fichier
+                    // Exemple : ajouter l'email à un fichier CSV
+                    $file = 'newsletter_subscribers.csv';
+                    $existingEmails = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+                    if (in_array($newsletterEmail, $existingEmails)) {
+                        $newsletterErrors[] = 'Cet email est déjà inscrit à la newsletter.';
+                    } else {
+                        file_put_contents($file, $newsletterEmail . PHP_EOL, FILE_APPEND | LOCK_EX);
+                        $newsletterSuccess = true;
+                    }
+                }
+            }
+            ?>
             ?>
 
             <form id="contactForm" action="contact" method="post" enctype="multipart/form-data">
@@ -119,7 +143,7 @@
                     <p class="error-message"><?= $error ?></p>
                 <?php endforeach; ?>
             <?php endif; ?>
-            
+
         </article>
 
         <article class="newsletter">
@@ -130,9 +154,23 @@
                 <?php endforeach; ?>
             </ul>
             <div class="newsletter_email">
+            <form id="newsletterForm" action="contact" method="post">
                 <label for="newsletterEmail">S'abonner à la newsletter</label>
                 <input type="email" id="newsletterEmail" name="newsletterEmail" value="<?= $page->newsletterEmail() ?>" required>
                 <button type="submit" name="subscribe">S'abonner</button>
+            </form>
+
+            <?php if ($newsletterSuccess): ?>
+                    <div class="success-message">
+                        <p>Merci, votre demande a bien été enregistrée !</p>
+                    </div>
+                <?php endif; ?>
+
+                <?php if (!empty($newsletterErrors)): ?>
+                    <?php foreach ($newsletterErrors as $error): ?>
+                        <p class="error-message"><?= $error ?></p>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </article>
     </section>

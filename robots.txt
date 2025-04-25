@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /kirby/
+Disallow: /content/
+Disallow: /site/
+
+Sitemap: https://www.pierremedurio.com/sitemap.xml

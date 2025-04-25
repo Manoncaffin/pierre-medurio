@@ -51,7 +51,7 @@
 
     .label-message {
         display: inline-block;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
 
     #contactMessage {
@@ -180,6 +180,10 @@
     .contact {
         margin: 20px 160px 105px 160px;
     }
+
+    main {
+        margin: 145px 40px 260px 40px;
+    }
 }
 
 
@@ -191,9 +195,6 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
-    main {
-        margin: 160px 40px 260px 40px;
-    }
     
     .contact {
         margin: 20px 260px 40px 260px;
