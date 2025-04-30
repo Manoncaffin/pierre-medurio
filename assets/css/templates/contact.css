@@ -5,17 +5,17 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 300px 40px 260px 40px;
-    }
-
-    h1 {
-        font-size: 2.8rem;
+        margin: 330px 40px 280px 40px;
     }
 
     .contact {
         margin: 50px 40px 30px 40px;
         display: flex;
         flex-direction: column;
+    }
+
+    .newsletter {
+        margin-top: 50px;
     }
 
     .newsletter li.contact_networks {
@@ -37,7 +37,7 @@
         border-bottom: 1px solid black;
         padding: 4px 0 4px 10px;
         font-family: inherit;
-        font-size: 1rem;
+        font-size: var(--heading-size-desktop);
     }
 
     input:focus {
@@ -59,7 +59,7 @@
         font-family: "InclusiveSans-Light", serif;
         font-weight: 100;
         font-style: normal;
-        font-size: 1rem;
+        font-size: 1.8rem;
         padding: 10px;
     }
 
@@ -79,7 +79,6 @@
         font-family: "InclusiveSans-Light", serif;
         font-weight: 100;
         font-style: normal;
-        font-size: 1.1rem;
     }
 
     .newsletter_email {
@@ -154,10 +153,6 @@
         gap: 200px;
     }
 
-    h1 {
-        font-size: 1.8rem;
-    }
-
     .form {
         width: 50%;
         min-width: 300px;
@@ -166,6 +161,11 @@
     .newsletter {
         width: 40%;
         min-width: 250px;
+    }
+
+    input,
+    #contactMessage {
+        font-size: 1.1rem;
     }
 }
 
@@ -178,11 +178,19 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     .contact {
-        margin: 20px 160px 105px 160px;
+        margin: 20px 160px 100px 160px;
+    }
+
+    .newsletter {
+        margin-top: 0;
     }
 
     main {
         margin: 145px 40px 260px 40px;
+    }
+
+    .selected-option {
+        padding: 15px 0 4px 10px;
     }
 }
 
@@ -195,7 +203,6 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
-    
     .contact {
         margin: 20px 260px 40px 260px;
     }

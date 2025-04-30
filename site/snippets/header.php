@@ -106,41 +106,6 @@ $isHomePage = $page->isHomePage();
         <style>
             /* --------------------------------------------------- */
             /* --------------------------------------------------- */
-            /* ------------- MEDIA MIN-WIDTH 350PX --------------- */
-            /* ------------------ SUP. OU ÉGALE ------------------ */
-            /* --------------------------------------------------- */
-            @media screen and (min-width: 350px) {
-                header ul li {
-                    position: relative;
-                    padding: 20px 0;
-
-                }
-
-                header ul li::before {
-                    content: '';
-                    position: absolute;
-                    top: 10%;
-                    left: 55%;
-                    transform: translate(-50%, -50%);
-                    width: 550px;
-                    height: 180px;
-                    background-image: url('<?= url('assets/images/select_medium.svg') ?>');
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    opacity: 0;
-                    transition: opacity 0.3s ease;
-                    z-index: -1;
-                }
-
-                header ul li:hover::before,
-                header ul li.active::before {
-                    opacity: 1;
-                }
-            }
-
-
-            /* --------------------------------------------------- */
-            /* --------------------------------------------------- */
             /* ------------- MEDIA MIN-WIDTH 1000PX --------------- */
             /* ------------------ SUP. OU ÉGALE ------------------ */
             /* --------------------------------------------------- */
@@ -153,12 +118,16 @@ $isHomePage = $page->isHomePage();
                     transform: translate(-50%, -50%);
                     width: 160px;
                     height: 100px;
-                    background-image: url(http://localhost:8888/pierremedurio/assets/images/select_medium.svg);
+                    background-image: url('<?= url('assets/images/select_medium.svg') ?>');
                     background-size: contain;
                     background-repeat: no-repeat;
                     opacity: 0;
                     transition: opacity 0.3s ease;
                     z-index: -1;
+                }
+
+                header ul li:hover::before {
+                    opacity: 1;
                 }
             }
         </style>

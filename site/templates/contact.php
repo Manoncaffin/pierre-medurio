@@ -77,7 +77,6 @@
                 }
             }
             ?>
-            ?>
 
             <form id="contactForm" action="contact" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="csrf_token" value="<?= csrf() ?>" />
@@ -159,18 +158,6 @@
                 <input type="email" id="newsletterEmail" name="newsletterEmail" value="<?= $page->newsletterEmail() ?>" required>
                 <button type="submit" name="subscribe">S'abonner</button>
             </form>
-
-            <?php if ($newsletterSuccess): ?>
-                    <div class="success-message">
-                        <p>Merci, votre demande a bien été enregistrée !</p>
-                    </div>
-                <?php endif; ?>
-
-                <?php if (!empty($newsletterErrors)): ?>
-                    <?php foreach ($newsletterErrors as $error): ?>
-                        <p class="error-message"><?= $error ?></p>
-                    <?php endforeach; ?>
-                <?php endif; ?>
             </div>
         </article>
     </section>

@@ -10,13 +10,13 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 300px 40px 260px 40px;
+        margin: 330px 40px 260px 40px;
     }
 
     .all_projects {
         display: flex;
         flex-direction: column;
-        margin: 50px 40px 30px 40px;
+        margin: 50px 0 30px 0;
     }
 
     .projects {
@@ -41,7 +41,7 @@ body {
     }
 
     .projects figcaption {
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: bold;
     }
 
@@ -52,7 +52,7 @@ body {
     }
 
     .custom-select-wrapper {
-        margin-bottom: 10px;
+        margin-bottom: var(--gutter-width);
     }
 
     /* Survol légende */
@@ -63,13 +63,15 @@ body {
 
     .projects li figcaption {
         position: absolute;
-        bottom: -40px;
-        left: 0;
-        width: 250px;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 350px;
         height: 150px;
+        min-height: 100px;
         font-weight: bold;
         color: black;
-        background: rgb(212, 17, 17, 0.95);
+        background: rgba(212, 17, 17, 0.95);
         padding: 0.5rem;
         opacity: 0;
         pointer-events: none;
@@ -78,12 +80,21 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        transition: opacity 0.3s;
+    }
+
+    .projects li:hover figcaption {
+        width: 350px;         
+        opacity: 1;
+        pointer-events: auto;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .title_project {
-        font-family: "InclusiveSans-LightItalic";
-        font-style: italic;
+        font-family: "InclusiveSans-Light";
         font-weight: normal;
+        font-style: normal;
         font-size: 1rem;
     }
 
@@ -93,14 +104,6 @@ body {
         font-weight: normal;
     }
 
-    .projects li:hover figcaption {
-        opacity: 1;
-        width: 250px;
-        left: 100%;
-        transform: translateX(-70%);
-        pointer-events: auto;
-    }
-
     /* Dropdown */
     .custom-select-wrapper {
         position: relative;
@@ -108,8 +111,9 @@ body {
         margin-bottom: 10px;
     }
 
-    .selected-option, .option {
-        font-size: 2rem;
+    .selected-option,
+    .option {
+        font-size: 2.5rem;
     }
 
     .selected-option {
@@ -123,8 +127,9 @@ body {
     }
 
     .filter-icon {
-        width: 15px;
+        width: 35px;
         rotate: 180deg;
+        display: inline-block;
     }
 
     .select-options {
@@ -188,7 +193,11 @@ body {
 
     .selected-option,
     .option {
-        font-size: 0.9rem;
+        font-size: var(--text-size-desktop);
+    }
+
+    .filter-icon {
+        width: 15px;
     }
 }
 
@@ -201,9 +210,9 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1200px) {
     main {
-        margin: 145px 40px 260px 40px;
+        margin: 145px 40px 100px 40px;
     }
-    
+
     .all_projects {
         margin: 20px 140px 60px 140px;
     }
@@ -221,6 +230,26 @@ body {
     .projects figure {
         margin: 0;
         position: relative;
+    }
+
+    .projects li figcaption {
+        bottom: -40px;
+        left: 0;
+        width: 200px;
+        height: 100px;
+        opacity: 0;
+        line-height: 1; 
+        font-size: 16px;
+    }
+
+    .projects li:hover figcaption {
+        width: 200px;  
+        height: 20px;       
+        opacity: 1;
+        pointer-events: auto;
+        left: 80%;
+        transform: translateX(-50%);
+        text-align: center;
     }
 }
 

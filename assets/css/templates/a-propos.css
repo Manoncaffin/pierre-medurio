@@ -5,7 +5,7 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 300px 40px 260px 40px;
+        margin: 330px 40px 260px 40px;
     }
 
     .biography {
@@ -67,11 +67,15 @@
     
     .biography {
         margin: 20px 160px 0 160px;
-        gap: 100px;
+        gap: 150px;
 
         img {
-            width: 300px;
+            width: 340px;
         }
+    }
+
+    .text_biography p {
+        margin-bottom: 15px;
     }
 }
 

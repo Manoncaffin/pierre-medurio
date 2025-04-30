@@ -2,7 +2,9 @@
 <link rel="stylesheet" href="<?= url('assets/css/templates/projets.css') ?>">
 
 <?php
+
 use Kirby\Toolkit\Str;
+
 $tags = ['reportage', 'portrait', 'atelier', 'travail personnel', 'tous les projets'];
 ?>
 
@@ -11,7 +13,7 @@ $tags = ['reportage', 'portrait', 'atelier', 'travail personnel', 'tous les proj
         <div class="custom-select-wrapper" id="dropdown">
             <input type="hidden" name="projectTags" id="projectTagsInput">
             <div class="selected-option" tabindex="0" role="button">
-                Filtres
+                <span class="selected-text">Filtres</span>
                 <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Filter Icon" class="filter-icon">
             </div>
             <div class="select-options" id="projectTagsOptions">

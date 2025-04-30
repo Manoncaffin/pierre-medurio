@@ -5,7 +5,18 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 300px 40px 260px 40px;
+        margin: 330px 40px 260px 40px;
+    }
+
+    p,
+    a,
+    .qa p,
+    .qa p.question,
+    .text_1 p,
+    .text_2 p,
+    .excerpt p,
+    .excerpt a {
+        font-size: var(--text-size-mobile);
     }
 
     .all_articles {
@@ -17,6 +28,20 @@
         ul li {
             padding: 0;
         }
+    }
+
+    .title_border {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .border_article {
+        margin-top: 15px;
+        border: 1px solid black;
+        width: 100%;
+        height: 1px;
     }
 
     .articles {
@@ -35,11 +60,10 @@
     }
 
     .articles figure {
-        margin: 0;
+        margin: 30px 0 0 0;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        margin-top: 0;
     }
 
     figcaption {
@@ -49,14 +73,13 @@
     }
 
     small {
-        font-size: 2rem;
         font-family: "InclusiveSans-Light";
         font-style: normal;
         font-weight: normal;
     }
 
     .articles figcaption {
-        font-size: 3.8rem;
+        font-size: var(--heading-size-mobile);
         line-height: 3.5rem;
         font-weight: bold;
     }
@@ -79,15 +102,30 @@
     }
 
     .excerpt a {
-        font-size: 2rem;
         font-family: "InclusiveSans-Light";
         font-style: normal;
         font-weight: normal;
+        display: inline;
+        white-space: nowrap;
     }
 
     .excerpt a:hover {
         text-decoration: underline;
     }
+
+    .article-content {
+        flex-direction: column;
+    }
+
+    .image-container {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .read-more {
+        margin-left: 4px;
+        font-style: italic;
+      }
 }
 
 
@@ -124,8 +162,19 @@
         margin: 145px 40px 260px 40px;
     }
 
+    p,
+    a,
+    .qa p,
+    .qa p.question,
+    .text_1 p,
+    .text_2 p,
+    .excerpt p,
     .excerpt a {
-        font-size: 1.5rem;
+        font-size: var(--text-size-desktop);
+    }
+
+    .articles figcaption {
+        font-size: var(--heading-size-desktop);
     }
 
     .excerpt {
@@ -141,17 +190,42 @@
         margin-top: 10px;
     }
 
-    small {
-        font-size: 1.5rem;
-    }
-
     .articles figcaption {
-        font-size: 1.8rem;
         line-height: 2.2rem;
     }
 
     .all_articles {
         margin: 20px 140px 60px 140px;
+    }
+
+    .article-item {
+        margin-bottom: 2rem;
+    }
+
+    .article-header {
+        margin-bottom: 1rem;
+    }
+
+    .article-content {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .image-container {
+        flex: 0 0 auto;
+        max-width: 40%;
+    }
+
+    .text-container {
+        flex: 1 1 auto;
+    }
+
+    .image_article img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
 

@@ -9,7 +9,7 @@
         <?php endif; ?>
 
         <div class="text_biography">
-            <p><?= $page->biography()->kirbytext() ?></p>
+            <?= $page->biography()->kirbytext() ?>
         </div>
     </section>
 

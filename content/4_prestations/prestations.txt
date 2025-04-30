@@ -126,11 +126,7 @@ Text6:
 
 ----
 
-Phototext5:
-
-- file://HoynUp4aBjeeKZE3
-- file://LQucE5GK6khmrd7N
-- file://VmqScnVNAOBuGtCr
+Phototext5: 
 
 ----
 

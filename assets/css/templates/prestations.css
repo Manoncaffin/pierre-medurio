@@ -5,13 +5,12 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 300px 40px 260px 40px;
+        margin: 330px 40px 260px 40px;
     }
 
     h1,
     h2,
     strong {
-        font-size: 3.8rem;
         font-family: "InclusiveSans-Semibold", serif;
         font-weight: bold;
     }
@@ -22,13 +21,13 @@
 
     .portrait,
     .reportage {
-        margin: 50px 40px 30px 40px;
+        margin: 50px 40px 0 40px;
         display: flex;
         flex-direction: column;
     }
 
     .atelier {
-        margin: 50px 40px 0 40px;
+        margin: 90px 40px 0 40px;
     }
 
     .image-text {
@@ -69,7 +68,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 5px;
+        gap: 15px;
         overflow: hidden;
     }
 
@@ -86,7 +85,6 @@
         display: block;
         font-family: "InclusiveSans-Semibold", serif;
         font-weight: bold;
-        font-size: 2.2rem;
         line-height: 2.6rem;
     }
 
@@ -144,7 +142,7 @@
 
     .reportage-gallery,
     .atelier-gallery {
-        margin-top: 15px;
+        margin-top: 25px;
         gap: 5px;
         display: flex;
         flex-direction: column;
@@ -200,11 +198,6 @@
     .atelier {
         margin-bottom: 350px;
     }
-
-    h1,
-    h2 {
-        font-size: 2.8rem;
-    }
 }
 
 
@@ -215,22 +208,25 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
 
+    .qa p.question,
+    .qa p.answer .qa {
+        margin-bottom: 20px;
+    }
+
+    .arrow {
+        width: 25px
+    }
+
     .portrait {
         margin: 20px 80px 0 80px;
     }
 
     .reportage {
-        margin-top: 60px;
-        margin-bottom: 0;
+        margin: 60px 80px 0 80px;
     }
 
     .atelier {
-        margin: 60px 80px 100px 80px;
-    }
-
-    h1,
-    h2 {
-        font-size: 1.8rem;
+        margin: 60px 80px 160px 80px;
     }
 
     .atelier-gallery,
@@ -269,10 +265,9 @@
         flex-direction: row;
     }
 
-    .qa p.question,
-    .qa p.answer,
-    strong {
-        font-size: 1.1rem;
+    .text_1,
+    .text_2 {
+        margin-top: 0;
     }
 }
 
@@ -293,7 +288,7 @@
     }
 
     .atelier {
-        margin: 20px 160px 200px 160px;
+        margin: 20px 160px 100px 160px;
     }
 
     .text_1,
@@ -322,5 +317,4 @@
 /* ------------- MEDIA MIN-WIDTH 1500PX -------------- */
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
-@media only screen and (min-width: 1500px) {
-}
+@media only screen and (min-width: 1500px) {}

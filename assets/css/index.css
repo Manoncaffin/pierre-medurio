@@ -25,28 +25,22 @@
     font-style: normal;
 }
 
-::selection {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
-}
-
-body {
-    font-family: "InclusiveSans-Light", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 1.1rem;
-    overflow-x: hidden;
-}
-
 :root {
     --gutter-width: 15px;
-    --text-color: #181818;
-    --text-size: 20px;
+    --text-color: #000000;
+    --text-size-desktop: 17.5px;
+    --text-size-mobile: 30px;
+    --heading-size-mobile: 3.8rem;
+    --heading-size-desktop: 1.8rem;
 }
 
 * {
     box-sizing: border-box;
+}
+
+::selection {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
 }
 
 html,
@@ -59,6 +53,14 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+
+body {
+    font-family: "InclusiveSans-Light", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    overflow-x: hidden;
 }
 
 h1,
@@ -82,7 +84,6 @@ a {
     margin: 0;
     padding: 0;
     line-height: 2rem;
-    font-size: 1.5rem;
 }
 
 ul,
@@ -108,14 +109,15 @@ button {
     padding: 6px 10px;
     display: flex;
     justify-content: center;
-    width: 100px;
-    margin-top: 10px;
+    width: 160px;
 }
 
 button:hover {
     background-color: black;
     color: white;
 }
+
+
 
 /* Start coding here */
 
@@ -125,6 +127,28 @@ button:hover {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
+    button {
+        margin-top: 15px;
+    }
+
+    /* font-size mobile */
+    body {
+        font-size: var(--text-size-mobile);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: var(--heading-size-mobile);
+    }
+
+    p,
+    a {
+        font-size: var(--text-size-mobile);
+    }
 
     /* ------- HEADER ------- */
     /* ---------------------- */
@@ -157,7 +181,6 @@ button:hover {
     }
 
     .container_header {
-        /* position: fixed; */
         top: 0;
         left: 0;
         right: 0;
@@ -202,14 +225,14 @@ button:hover {
         z-index: 10;
         padding: 6px 10px;
         flex-direction: column;
-        gap: 75px;
-    } 
+        gap: 55px;
+    }
 
     .nav_other ul.open {
         display: flex;
         height: 100vh;
         align-items: center;
-        padding-top: 250px;
+        padding-top: 230px;
         width: 100%;
     }
 
@@ -227,7 +250,7 @@ button:hover {
     .header_other.menu-open {
         border-bottom: none;
         background-color: white !important;
-        z-index: 1100; 
+        z-index: 1100;
     }
 
     .overlay {
@@ -237,12 +260,12 @@ button:hover {
         width: 100vw;
         height: 100vh;
         background-color: white;
-        z-index: 500; 
+        z-index: 500;
         display: none;
     }
 
     .burger-menu img {
-        width: 100px;
+        width: 80px;
     }
 
     nav .logo {
@@ -288,7 +311,7 @@ button:hover {
     ul li a {
         font-family: 'InclusiveSans-Semibold';
         font-weight: 600;
-        font-size: 5rem;
+        /* font-size: 70px; */
     }
 
     .separator {
@@ -386,16 +409,29 @@ button:hover {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
 
-    /* ------- HEADER ------- */
-    /* ---------------------- */
+    /* font-size deskstop */
+    body {
+        font-size: var(--text-size-desktop);
+    }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: var(--heading-size-desktop);
+    }
 
     p,
     a {
-        font-size: 1.1rem;
+        font-size: var(--text-size-desktop);
         line-height: 1.5rem;
     }
-    
+
+    /* ------- HEADER ------- */
+    /* ---------------------- */
+
     .main_home {
         padding-top: 120px;
         padding-bottom: 60px;
@@ -414,7 +450,8 @@ button:hover {
         width: 460px;
     }
 
-    .header_home, .header_other {
+    .header_home,
+    .header_other {
         height: 220px;
     }
 
@@ -452,9 +489,9 @@ button:hover {
     .networks {
         position: relative;
         display: inline-block;
-        min-width: 300px;
+        min-width: 150px;
         height: 1.2em;
-        width: 220px;
+        width: 200px;
     }
 
     .networks span {
@@ -491,13 +528,17 @@ button:hover {
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
-
+    button {
+        margin-top: 10px;
+    }
+    
     /* ------- HEADER ------- */
     /* ---------------------- */
     .container_header,
     .container_header_other {
         margin: 20px 140px 0 140px;
     }
+
     .logo_header {
         width: 180px;
     }
@@ -523,7 +564,7 @@ button:hover {
     ul li a {
         font-family: 'InclusiveSans-Semibold';
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: var(--text-size-desktop);
     }
 
     .separator {
@@ -539,7 +580,7 @@ button:hover {
     .burger-menu {
         display: none;
     }
-    
+
     header {
         border-bottom: 1px solid black;
     }
@@ -551,7 +592,8 @@ button:hover {
         align-items: center;
     }
 
-    .header_home, .header_other {
+    .header_home,
+    .header_other {
         height: 120px;
     }
 

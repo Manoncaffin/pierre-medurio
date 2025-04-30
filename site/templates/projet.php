@@ -14,7 +14,7 @@
         <ul>
           <?php foreach ($page->details()->toStructure() as $item): ?>
             <?php if ($item->client()->isNotEmpty()): ?>
-              <li><strong>Client·e :</strong> <?= $item->client() ?></li>
+              <li><strong>Commanditaire :</strong> <?= $item->client() ?></li>
             <?php endif ?>
             <?php if ($item->model()->isNotEmpty()): ?>
               <li><strong>Modèle :</strong> <?= $item->model() ?></li>
@@ -38,12 +38,12 @@
       <div class="previous">
         <a href="<?= $prevPage->url() ?>">
           <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Flèche précédente">
-          <p>page précédente</p>
+          <p>projet précédent</p>
         </a>
       </div>
       <div class="next">
         <a href="<?= $nextPage->url() ?>">
-          <p>page suivante</p>
+          <p>projet suivant</p>
           <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Flèche suivante">
         </a>
       </div>

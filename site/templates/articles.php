@@ -6,25 +6,41 @@
         <ul class="articles" <?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
             <?php foreach ($page->children()->listed() as $article): ?>
                 <li class="article-item">
-                    <a href="<?= $article->url() ?>" class="title_article">
-                        <figcaption><?= $article->title()->html() ?>
+                    <div class="article-header">
+                        <a href="<?= $article->url() ?>" class="title_article">
+                            <div class="title_border">
+                                <figcaption><?= $article->title()->html() ?></figcaption>
+                                <div class="border_article"></div>
+                            </div>
                             <small>
-                                <?php
-                                $year = $article->published('Y');
-                                echo $year->isEmpty() ? 'Date non définie' : $year;
-                                ?>
+                                <?php $year = $article->published('Y');
+                                echo $year->isEmpty() ? 'Date non définie' : 'Publié le ' . $year; ?>
                             </small>
-                        </figcaption>
-                        <figure class="image_article">
-                            <?php if ($imageArticle = $article->imageArticle()->toFile()): ?>
-                                <img src="<?= $imageArticle->url() ?>" alt="<?= $imageArticle->alt()->html() ?>">
+                        </a>
+                    </div>
+
+                    <div class="article-content">
+                        <div class="image-container">
+                            <figure class="image_article">
+                                <?php if ($imageArticle = $article->imageArticle()->toFile()): ?>
+                                    <img src="<?= $imageArticle->url() ?>" alt="<?= $imageArticle->alt()->html() ?>">
+                                <?php endif ?>
+                            </figure>
+                            <?php if ($legend = $article->legend()->isNotEmpty()): ?>
+                                <div class="legend"><?= $article->legend()->kirbytext() ?></div>
                             <?php endif ?>
-                        </figure>
-                    </a>
-                    <?php if ($legend = $article->legend()->isNotEmpty()): ?>
-                        <div class="legend"><?= $article->legend()->kirbytext() ?></div>
-                    <?php endif ?>
-                    <p class="excerpt"><?= $article->description()->excerpt(150) ?> <a href="<?= $article->url() ?>">Lire la suite...</a></p>
+                        </div>
+
+                        <div class="text-container">
+                            <p class="excerpt">
+                                <?php
+                                $excerptText = $article->description()->excerpt(147, '', '');
+                                echo $excerptText;
+                                ?>
+                                <a href="<?= $article->url() ?>" class="read-more">Lire la suite...</a>
+                            </p>
+                        </div>
+                    </div>
                 </li>
             <?php endforeach ?>
         </ul>
