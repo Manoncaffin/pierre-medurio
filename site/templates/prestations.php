@@ -3,11 +3,9 @@
 
 <main>
     <section class="portrait">
-        <div class="title_border">
-            <h1>Portrait</h1>
-            <div class="border_portrait"></div>
+        <div class="title_container">
+            <h1 class="title">Portrait</h1>
         </div>
-
         <?php foreach ($page->portrait()->toStructure() as $item): ?>
             <div class="qa">
                 <div class="question_arrow">
@@ -42,11 +40,9 @@
     </section>
 
     <section class="reportage">
-        <div class="title_border">
-            <h2>Reportage</h2>
-            <div class="border_portrait"></div>
+        <div class="title_container">
+            <h2 class="title">Reportage</h2>
         </div>
-
         <?php foreach ($page->reportage()->toStructure() as $item): ?>
             <div class="qa">
                 <div class="question_arrow">
@@ -70,11 +66,9 @@
     </section>
 
     <section class="atelier">
-        <div class="title_border">
-            <h2>Cours et ateliers de photographie</h2>
-            <div class="border_portrait"></div>
+        <div class="title_container">
+            <h2 class="title">Cours et ateliers de photographie</h2>
         </div>
-
         <?php foreach ($page->atelier()->toStructure() as $item): ?>
             <div class="qa">
                 <div class="question_arrow">

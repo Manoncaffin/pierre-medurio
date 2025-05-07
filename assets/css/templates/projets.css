@@ -16,7 +16,7 @@ body {
     .all_projects {
         display: flex;
         flex-direction: column;
-        margin: 50px 0 30px 0;
+        margin: 50px 40px 30px 40px;
     }
 
     .projects {
@@ -183,6 +183,10 @@ body {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 1000px) {
+    main {
+        margin: 230px 80px 150px 80px;
+    }
+
     .all_projects {
         margin: 20px 80px 30px 80px;
     }
@@ -222,7 +226,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Figures */
+    /* Survol */
     .projects li {
         position: relative;
     }
@@ -244,7 +248,7 @@ body {
 
     .projects li:hover figcaption {
         width: 200px;  
-        height: 20px;       
+        height: 100px;       
         opacity: 1;
         pointer-events: auto;
         left: 80%;
@@ -262,19 +266,21 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1500px) {
     .all_projects {
-        margin: 20px 140px 70px 140px;
+        margin: 20px 220px 125px 220px;
     }
-}
 
+    /* Survol */
+    .projects li figcaption {
+        bottom: -50px;
+        left: 0;
+        width: 200px;
+        height: 100px;
+    }
 
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 1600PX --------------- */
-/* ------------------ SUP. OU ÉGALE ------------------ */
-/* --------------------------------------------------- */
-@media screen and (min-width: 1600px) {
-    .all_projects {
-        margin: 20px 200px 70px 200px;
+    .projects li:hover figcaption {
+        width: 200px;  
+        height: 100px;       
+        left: 90%;
+        transform: translateX(-50%);
     }
 }

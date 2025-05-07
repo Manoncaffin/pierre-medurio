@@ -29,7 +29,7 @@
     --gutter-width: 15px;
     --text-color: #000000;
     --text-size-desktop: 17.5px;
-    --text-size-mobile: 30px;
+    --text-size-mobile: 16px;
     --heading-size-mobile: 3.8rem;
     --heading-size-desktop: 1.8rem;
 }
@@ -166,7 +166,7 @@ button:hover {
         top: 0;
         left: 0;
         right: 0;
-        z-index: 1000;
+        z-index: 2000;
         height: 300px;
     }
 
@@ -351,6 +351,15 @@ button:hover {
     footer h3 {
         font-family: "InclusiveSans-Semibold", serif;
         font-weight: bold;
+    }
+
+    footer a {
+        transition: border-bottom 0.3s ease;
+    }
+
+    footer a:hover {
+        border-bottom: 1px solid black;
+        line-height: 0;
     }
 
 

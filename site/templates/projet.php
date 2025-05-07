@@ -49,45 +49,100 @@
       </div>
     </div>
 
-    <?php if ($cover = $page->files()->template('cover')->first()): ?>
-  <div class="gallery">
-    <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->html() ?>">
-
     <?php
+    // Collection des images
+    $cover = $page->files()->template('cover')->first();
     $gallery = $page->files()->template('image');
-    if ($gallery->isNotEmpty()):
-      foreach ($gallery as $image): ?>
-        <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
-      <?php endforeach ?>
-    <?php endif ?>
-  </div>
-<?php endif ?>
+    $allImages = new Kirby\Cms\Files([$cover]);
 
-    <!-- Swiper -->
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <!-- Tu pourras ici boucler sur les images si besoin -->
+    if ($gallery->isNotEmpty()) {
+      foreach ($gallery as $image) {
+        $allImages->append($image);
+      }
+    }
+
+    $imageCount = $allImages->count();
+    ?>
+
+    <?php if ($cover): ?>
+      <!-- Galerie de miniatures - toujours visible -->
+      <div class="gallery" id="gallery-thumbnails">
+        <!-- Cover image -->
+        <div class="thumbnail-item" data-index="0">
+          <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->html() ?>">
+        </div>
+
+        <!-- Images de la galerie -->
+        <?php if ($gallery->isNotEmpty()): ?>
+          <?php $index = 1; ?>
+          <?php foreach ($gallery as $image): ?>
+            <div class="thumbnail-item" data-index="<?= $index ?>">
+              <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
+            </div>
+            <?php $index++; ?>
+          <?php endforeach ?>
+        <?php endif ?>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-scrollbar"></div>
+    <?php endif ?>
+
+    <!-- Modal Carrousel -->
+    <div id="carousel-modal" class="modal">
+      <div class="modal-close">
+        <a href="#" id="modal-close" role="button">
+          <img src="<?= url('assets/images/close.svg') ?>" alt="Fermer"></a>
+        </a>
+      </div>
+
+      <div class="modal-content">
+        <!-- Swiper -->
+        <div class="swiper carousel-swiper">
+          <div class="swiper-wrapper">
+            <?php if ($cover): ?>
+              <div class="swiper-slide">
+                <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->html() ?>">
+              </div>
+            <?php endif ?>
+
+            <?php if ($gallery->isNotEmpty()): ?>
+              <?php foreach ($gallery as $image): ?>
+                <div class="swiper-slide">
+                  <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
+                </div>
+              <?php endforeach ?>
+            <?php endif ?>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev">
+            <div class="custom-prev">
+              <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Précédent">
+            </div>
+          </div>
+          <div class="swiper-button-next custom-next">
+            <div class="custom-next">
+              <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Suivant">
+            </div>
+          </div>
+
+          <div class="hover-zone left-zone"></div>
+          <div class="hover-zone right-zone"></div>
+        </div>
+
+
+        <!-- Counter -->
+        <div class="swiper-counter">
+          <span class="current-slide">1</span>/<span class="total-slides"><?= $imageCount ?></span>
+        </div>
+      </div>
     </div>
   </section>
-
-  <?php
-  $images = $page->images()->filterBy('type', 'image');
-  $imageCount = $images->count();
-  ?>
-
-  <p><?= $imageCount ?> image<?= $imageCount > 1 ? 's' : '' ?></p>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="<?= url('assets/js/toggle.js') ?>"></script>
 <script src="<?= url('assets/js/swiper.js') ?>"></script>
-<script src="<?= url('assets/js/dropdown.js') ?>"></script>
+<script src="<?= url('assets/js/gallery.js') ?>"></script>
+<script src="<?= url('assets/js/zone.js') ?>"></script>
+<script src="<?= url('assets/js/close.js') ?>"></script>
+<script src="<?= url('assets/js/toggle.js') ?>"></script>
+
 <?php snippet('footer') ?>
