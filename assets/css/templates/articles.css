@@ -30,18 +30,11 @@
         }
     }
 
-    .title_border {
+    .title_container {
         display: flex;
-        justify-content: space-between;
-        align-items: start;
-        gap: 15px;
-    }
-
-    .border_article {
-        margin-top: 15px;
-        border: 1px solid black;
+        align-items: center;
         width: 100%;
-        height: 1px;
+        margin-right: 10px;
     }
 
     .articles {
@@ -50,7 +43,7 @@
         margin: 0;
         display: flex;
         flex-direction: column;
-        margin-bottom: 60px;
+        margin-bottom: 120px;
     }
 
     .articles li a {
@@ -60,22 +53,18 @@
     }
 
     .articles figure {
-        margin: 30px 0 0 0;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-    }
-
-    figcaption {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+        margin: 0;
     }
 
     small {
         font-family: "InclusiveSans-Light";
         font-style: normal;
         font-weight: normal;
+        font-size: var(--text-size-mobile);
+        margin: 15px 0;
     }
 
     .articles figcaption {
@@ -97,14 +86,9 @@
         display: none;
     }
 
-    .excerpt {
-        margin-top: 50px;
-    }
-
     .excerpt a {
-        font-family: "InclusiveSans-Light";
-        font-style: normal;
-        font-weight: normal;
+        font-family: "InclusiveSans-Semibold", serif;
+        font-weight: bold;
         display: inline;
         white-space: nowrap;
     }
@@ -119,12 +103,21 @@
 
     .image-container {
         max-width: 100%;
-        margin-bottom: 1rem;
+    }
+
+    .excerpt {
+        display: inline;
+        line-height: var(--line-height-mobile);
     }
 
     .read-more {
-        margin-left: 4px;
-        font-style: italic;
+        display: inline;
+        white-space: nowrap;
+        margin-top: 25px;
+    }
+
+    .text-container {
+        margin-top: 25px;
     }
 }
 
@@ -152,20 +145,6 @@
         margin: 20px 80px 30px 80px;
     }
 
-}
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 1200PX -------------- */
-/* ----------------- SUP. OU ÉGALE ------------------- */
-/* --------------------------------------------------- */
-@media only screen and (min-width: 1200px) {
-    main {
-        margin: 145px 40px 260px 40px;
-    }
-
     p,
     a,
     .qa p,
@@ -179,10 +158,36 @@
 
     .articles figcaption {
         font-size: var(--heading-size-desktop);
+        line-height: var(--line-height-desktop);
+    }
+
+    small {
+        font-size: var(--text-size-desktop);
+        list-style: var(--line-height-desktop);
+        margin: 10px 0;
     }
 
     .excerpt {
-        margin-top: 20px;
+        display: inline;
+        line-height: var(--line-height-desktop);
+    }
+
+    .text-container,
+    .read-more {
+        margin-top: 15px;
+    }
+}
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1200PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+    main {
+        margin: 145px 40px 260px 40px;
     }
 
     .image_article img {
@@ -203,7 +208,7 @@
     }
 
     .article-item {
-        margin-bottom: 2rem;
+        margin-bottom: 60px;
     }
 
     .article-header {
@@ -226,11 +231,44 @@
         flex: 1 1 auto;
     }
 
+    .text-container {
+        margin-top: 0;
+    }
+
+    .read-more {
+        margin-top: 15px;
+    }
+
+    small {
+        margin: 5px 0;
+    }
+
     .image_article img {
         width: 100%;
         height: auto;
         display: block;
     }
+
+    figcaption {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    figcaption::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+    }
+
+    figcaption {
+        white-space: nowrap;
+    }
+
 }
 
 

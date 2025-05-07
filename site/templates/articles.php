@@ -8,9 +8,8 @@
                 <li class="article-item">
                     <div class="article-header">
                         <a href="<?= $article->url() ?>" class="title_article">
-                            <div class="title_border">
+                            <div class="title_container">
                                 <figcaption><?= $article->title()->html() ?></figcaption>
-                                <div class="border_article"></div>
                             </div>
                             <small>
                                 <?php $year = $article->published('Y');
@@ -33,11 +32,12 @@
 
                         <div class="text-container">
                             <p class="excerpt">
-                                <?php
-                                $excerptText = $article->description()->excerpt(147, '', '');
-                                echo $excerptText;
-                                ?>
-                                <a href="<?= $article->url() ?>" class="read-more">Lire la suite...</a>
+                                <?php if ($article->description()->length() > 500): ?>
+                                    <?= $article->description()->excerpt(500) ?>
+                                    <a href="<?= $article->url() ?>" class="read-more">Lire la suite</a>
+                                <?php else: ?>
+                                    <?= $article->description() ?>
+                                <?php endif ?>
                             </p>
                         </div>
                     </div>

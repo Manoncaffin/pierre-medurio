@@ -25,6 +25,7 @@
         text-indent: 2em;
         margin-bottom: 10px;
         font-family: "InclusiveSans-SemiBold";
+        
     }
 }
 
@@ -50,7 +51,7 @@
     .biography {
         flex-direction: row;
         margin: 20px 80px 30px 80px;
-        gap: 100px;
+        gap: 60px;
 
         img {
             width: 270px;
@@ -72,7 +73,6 @@
     
     .biography {
         margin: 20px 160px 60px 160px;
-        gap: 150px;
 
         img {
             width: 340px;
@@ -81,6 +81,7 @@
 
     .text_biography p {
         margin-bottom: 15px;
+        font-size: 25px;
     }
 }
 
@@ -94,7 +95,7 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
     .biography {
-        margin: 20px 220px 125px 220px;
+        margin: 20px 550px 125px 220px;
 
         img {
             width: 470px;

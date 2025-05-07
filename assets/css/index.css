@@ -28,10 +28,12 @@
 :root {
     --gutter-width: 15px;
     --text-color: #000000;
-    --text-size-desktop: 17.5px;
-    --text-size-mobile: 16px;
+    --text-size-desktop: 1.1rem;
+    --text-size-mobile: 2.5rem;
     --heading-size-mobile: 3.8rem;
     --heading-size-desktop: 1.8rem;
+    --line-height-mobile: 2.5rem;
+    --line-height-desktop: 1.5rem;
 }
 
 * {
@@ -359,7 +361,7 @@ button:hover {
 
     footer a:hover {
         border-bottom: 1px solid black;
-        line-height: 0;
+        line-height: 1;
     }
 
 
