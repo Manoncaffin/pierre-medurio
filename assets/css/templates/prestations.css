@@ -253,7 +253,7 @@
     }
 
     .atelier {
-        margin: 60px auto 160px auto;
+        margin: 60px auto 150px auto;
     }
 
     .atelier-gallery,
@@ -314,22 +314,22 @@
 @media only screen and (min-width: 1200px) {
     main {
         margin: 145px auto 260px auto;
-        width: 90%;
+        width: 85%;
     }
 
     .portrait {
         margin: 20px auto 60px auto;
-        width: 90%;
+        width: 85%;
     }
 
     .reportage {
         margin: 20px auto 60px auto;
-        width: 90%;
+        width: 85%;
     }
 
     .atelier {
         margin: 0 auto 120px auto;
-        width: 90%;
+        width: 85%;
     }
 
     .text_1,
@@ -406,7 +406,7 @@
     .image-portrait,
     .reportage-gallery,
     .atelier-gallery {
-        gap: 10px;
+        gap: 5px;
     }
 
     .image-portrait img,

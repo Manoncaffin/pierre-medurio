@@ -10,13 +10,16 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 330px 40px 260px 40px;
+        margin: 330px auto 280px auto;
+        width: 90%;
+        max-width: 1400px;
     }
 
     .all_projects {
+        margin: 50px auto 250px auto;
         display: flex;
         flex-direction: column;
-        margin: 50px 40px 30px 40px;
+        max-width: 1200px; 
     }
 
     .projects {
@@ -124,10 +127,12 @@ body {
         background-color: white;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .filter-icon {
         width: 35px;
+        height: auto;
         rotate: 180deg;
         display: inline-block;
     }
@@ -146,10 +151,6 @@ body {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .select-options.open {
-        display: block;
-    }
-
     .option {
         padding: 6px 10px;
         cursor: pointer;
@@ -164,6 +165,31 @@ body {
         display: block;
     }
 
+    .dropdown-container {
+        position: relative;
+        width: 200px;
+        user-select: none;
+        margin-bottom: 20px;
+    }
+    
+    .options-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-top: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 10;
+    }
+    
+    .options-container.open {
+        max-height: 200px;
+        overflow-y: auto;
+    }
 }
 
 
@@ -173,7 +199,11 @@ body {
 /* ------------- MEDIA MIN-WIDTH 768PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    main {
+        width: 85%;
+    }
+}
 
 
 
@@ -184,11 +214,12 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1000px) {
     main {
-        margin: 230px 80px 150px 80px;
+        margin: 230px auto 150px auto;
+        width: 80%;
     }
 
     .all_projects {
-        margin: 20px 80px 30px 80px;
+        margin: 20px auto 30px auto;
     }
 
     .custom-select-wrapper {
@@ -201,7 +232,7 @@ body {
     }
 
     .filter-icon {
-        width: var(--gutter-width);
+        width: 15px;
     }
 }
 
@@ -214,11 +245,13 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1200px) {
     main {
-        margin: 145px 40px 100px 40px;
+        margin: 145px auto 100px auto;
+        width: 85%;
     }
 
     .all_projects {
-        margin: 20px 140px 60px 140px;
+        margin: 20px auto 60px auto;
+        width: 85%;
     }
 
     .projects {
@@ -266,7 +299,7 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1500px) {
     .all_projects {
-        margin: 20px 220px 125px 220px;
+        margin: 20px auto 60px auto;
     }
 
     /* Survol */

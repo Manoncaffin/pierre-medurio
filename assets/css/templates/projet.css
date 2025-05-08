@@ -10,13 +10,16 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 300px 40px 260px 40px;
+        margin: 330px auto 280px auto;
+        width: 90%;
+        max-width: 1400px;
     }
 
     .project {
-        margin: 50px 0 250px 0;
+        margin: 50px auto 250px auto;
         display: flex;
         flex-direction: column;
+        max-width: 1200px;
 
         ul li {
             padding: 0;
@@ -136,7 +139,9 @@ body {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 768px) {
-
+    main {
+        width: 85%;
+    }
 }
 
 
@@ -148,11 +153,12 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1000px) {
     main {
-        margin: 230px 80px 150px 80px;
+        margin: 230px auto 150px auto;
+        width: 80%;
     }
 
     .project {
-        margin: 20px 80px 30px 80px;
+        margin: 20px auto 30px auto;
     }
 
     .previous a,
@@ -211,6 +217,62 @@ body {
         margin: 0 100px;
     }
 
+    /* Style pour le nouveau carousel */
+    .custom-carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .custom-carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .custom-carousel-slide {
+        min-width: 100%;
+    }
+
+    .custom-carousel-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Style pour les boutons de navigation */
+    .custom-carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+        background-color: transparent;
+    }
+
+    .custom-carousel-button.custom-prev {
+        left: -140px;
+    }
+
+    .custom-carousel-button.custom-next {
+        right: -140px;
+    }
+
+    .custom-carousel-button:hover {
+        background-color: transparent !important;
+        color: inherit !important;
+    }
+
+    /* Style pour le compteur */
+    .custom-carousel-counter {
+        color: black;
+        font-size: 16px;
+        font-family: 'InclusiveSans-Light', sans-serif;
+        z-index: 10;
+        margin-top: 5px;
+    }
+
     .modal-close {
         width: 100%;
         max-width: 700px;
@@ -244,7 +306,7 @@ body {
     .swiper-slide {
         display: flex;
         justify-content: center;
-        align-items: flex-start; 
+        align-items: flex-start;
         height: auto;
     }
 
@@ -255,85 +317,27 @@ body {
         margin: auto;
     }
 
-    /* Style pour les boutons de navigation */
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: flex !important; 
-        width: 40px;
-        height: 40px;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 9999;
-    }
-
-    .swiper-button-prev {
-        left: -40px;
-    }
-
-    .swiper-button-next {
-        right: -40px;
-    }
-
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-        display: none; 
-    }
-
     .custom-prev img,
     .custom-next img {
-        width: 35px;
+        width: 20px;
         height: auto;
     }
 
     .custom-prev img {
-        transform: rotate(270deg); 
+        transform: rotate(270deg);
     }
 
     .custom-next img {
-        transform: rotate(90deg); 
-    }
-
-    .hover-zone {
-        position: absolute;
-        top: 0;
-        height: auto;
-        bottom: 0;
-        width: 50%;
-        z-index: 35;
-    }
-
-    .left-zone {
-        left: 0;
-    }
-
-    .right-zone {
-        right: 0;
-    }
-
-    /* Style pour le compteur */
-    .swiper-counter {
-        display: none;
-        position: relative;
-        bottom: auto;
-        right: 0;
-        padding-top: 5px;
-        text-align: right;
-        color: black; 
-        font-size: 16px;
-        font-family: 'InclusiveSans-Light', sans-serif;
-        z-index: 9999;
+        transform: rotate(90deg);
     }
 
     .modal.active {
         display: flex !important;
     }
-    
+
     .modal.active .swiper-counter {
         display: flex !important;
-        justify-content: flex-end; /* Aligner à droite */
+        justify-content: flex-end;
     }
 
     .project {
@@ -341,6 +345,105 @@ body {
             width: 300px;
         }
     }
+
+    /* Zoom */
+    .zoom-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        cursor: zoom-out;
+    }
+
+    .zoom-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .zoomed-image {
+        max-width: 85%;
+        max-height: 85%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        cursor: zoom-in;
+    }
+
+    .zoom-overlay.active .zoomed-image {
+        transform: scale(1);
+    }
+
+    .zoom-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    .close-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .zoom-navigation {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .zoom-prev,
+    .zoom-next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .zoom-prev:hover,
+    .zoom-next:hover,
+    .zoom-close:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: black;
+    }
+
+    .custom-carousel-slide img {
+        cursor: zoom-in;
+    }
+
+    .zoom-counter {
+        position: absolute;
+        bottom: 8px;
+        color: white;
+        font-size: 14px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+
 }
 
 
@@ -351,11 +454,13 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1200px) {
     main {
-        margin: 145px 40px 100px 40px;
+        margin: 145px auto 100px auto;
+        width: 85%;
     }
 
     .project {
-        margin: 20px 160px 60px 160px;
+        margin: 20px auto 60px auto;
+        width: 85%;
 
         ul {
             margin-top: 0;
@@ -386,7 +491,7 @@ body {
 /* --------------------------------------------------- */
 @media screen and (min-width: 1500px) {
     .project {
-        margin: 20px 220px 125px 220px;
+        margin: 20px auto 60px auto;
     }
 
     .text_projet {

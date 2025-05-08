@@ -53,23 +53,23 @@
     // Récupérer toutes les images (couverture + galerie)
     $cover = $page->files()->template('cover')->first();
     $gallery = $page->files()->template('image');
-    
+
     // Combiner les images en une collection
     $allImages = new Kirby\Cms\Files([]);
-    
+
     if ($cover) {
       $allImages->append($cover);
     }
-    
+
     if ($gallery->isNotEmpty()) {
       foreach ($gallery as $image) {
         $allImages->append($image);
       }
     }
-    
+
     // Tri par le champ "sort" si disponible
     $allImages = $allImages->sortBy('sort', 'asc');
-    
+
     $imageCount = $allImages->count();
     ?>
 
@@ -93,36 +93,40 @@
       </div>
 
       <div class="modal-content">
-        <!-- Swiper -->
-        <div class="swiper carousel-swiper">
-          <div class="swiper-wrapper">
+        <!-- Custom Carousel -->
+        <div class="custom-carousel">
+          <div class="custom-carousel-inner">
             <?php foreach ($allImages as $image): ?>
-              <div class="swiper-slide">
+              <div class="custom-carousel-slide">
                 <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
               </div>
             <?php endforeach ?>
           </div>
-
-          <!-- Navigation buttons -->
-          <div class="swiper-button-prev">
-            <div class="custom-prev">
-              <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Précédent">
-            </div>
-          </div>
-          <div class="swiper-button-next custom-next">
-            <div class="custom-next">
-              <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Suivant">
-            </div>
-          </div>
-
-          <div class="hover-zone left-zone"></div>
-          <div class="hover-zone right-zone"></div>
         </div>
 
-        <!-- Counter -->
-        <div class="swiper-counter">
-          <span class="current-slide">1</span>/<span class="total-slides"><?= $imageCount ?></span>
-        </div>
+        <!-- Navigation buttons -->
+        <button class="custom-carousel-button custom-prev">
+          <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Précédent">
+        </button>
+        <button class="custom-carousel-button custom-next">
+          <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Suivant">
+        </button>
+      </div>
+      <!-- Counter -->
+      <div class="custom-carousel-counter">
+        <span class="current-slide">1</span>/<span class="total-slides"><?= $imageCount ?></span>
+      </div>
+    </div>
+    <!-- Zoom -->
+    <div class="zoom-overlay">
+      <img src="" alt="" class="zoomed-image">
+      <div class="zoom-close">
+      <img src="<?= url('assets/images/close.svg') ?>" alt="Fermer" class="close-icon">
+      </div>
+      <div class="zoom-navigation">
+        <button class="zoom-prev">&larr; Précédente</button>
+        <span class="zoom-counter">1 / 1</span>
+        <button class="zoom-next">Suivante &rarr;</button>
       </div>
     </div>
   </section>
@@ -134,5 +138,6 @@
 <script src="<?= url('assets/js/zone.js') ?>"></script>
 <script src="<?= url('assets/js/close.js') ?>"></script>
 <script src="<?= url('assets/js/toggle.js') ?>"></script>
+<script src="<?= url('assets/js/zoom.js') ?>"></script>
 
 <?php snippet('footer') ?>
