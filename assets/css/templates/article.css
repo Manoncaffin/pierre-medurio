@@ -52,9 +52,9 @@
         font-style: normal;
     }
 
-    p > strong {
+    p>strong {
         display: inline-block;
-        margin-top: 10px; 
+        margin-top: 10px;
     }
 
     .article_image {
@@ -93,11 +93,8 @@
         margin-bottom: 20px;
     }
 
-    .article_footer {
+    .back_link {
         text-align: center;
-    }
-
-    .back-link {
         display: inline-block;
         margin-top: 20px;
         color: black;
@@ -105,10 +102,20 @@
         font-family: "InclusiveSans-SemiBold";
         font-weight: 600;
         font-style: normal;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
     }
 
-    .back-link:hover {
+    .back_link:hover {
         text-decoration: underline;
+    }
+
+    .back-arrow-icon {
+        width: 35px;
+        height: auto;
+        rotate: 270deg;
+        vertical-align: middle;
     }
 }
 
@@ -152,6 +159,9 @@
         line-height: var(--line-height-desktop);
     }
 
+    .back-arrow-icon {
+        width: 15px;
+    }
 }
 
 

@@ -14,7 +14,7 @@
         margin: 50px auto 250px auto;
         display: flex;
         flex-direction: column;
-        max-width: 1200px; 
+        max-width: 1200px;
     }
 
     .newsletter {
@@ -41,6 +41,19 @@
         padding: 4px 0 4px 10px;
         font-family: inherit;
         font-size: var(--heading-size-desktop);
+    }
+
+    input[type="checkbox"] {
+        all: revert;
+        margin-right: 5px; 
+    }
+
+    #rgpdConsent {
+        margin: 0 5 0 0;
+    }
+
+    .consent_label {
+        font-size: var(--text-size-legend-mobile);
     }
 
     input:focus {
@@ -82,6 +95,11 @@
         font-family: "InclusiveSans-Light", serif;
         font-weight: 100;
         font-style: normal;
+        transition: border-bottom 0.3s ease;
+    }
+
+    .contact_networks a:hover {
+        border-bottom: 1px solid black;
     }
 
     .newsletter_email {
@@ -133,6 +151,19 @@
         color: white;
     }
 
+
+
+    /* Newsletter */
+    .newsletter_form {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    #newsletterForm {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* --------------------------------------------------- */
@@ -180,6 +211,10 @@
     #contactMessage {
         font-size: 1.1rem;
     }
+
+    .consent_label {
+        font-size: var(--text-size-legend-desktop);
+    }
 }
 
 
@@ -188,7 +223,7 @@
 /* ------------- MEDIA MIN-WIDTH 1200PX -------------- */
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
-@media only screen and (min-width: 1200px) {    
+@media only screen and (min-width: 1200px) {
     main {
         margin: 145px auto 100px auto;
         width: 85%;
@@ -213,7 +248,7 @@
 /* ------------- MEDIA MIN-WIDTH 1500PX -------------- */
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
-@media only screen and (min-width: 1500px) {    
+@media only screen and (min-width: 1500px) {
     main {
         width: 90%;
     }

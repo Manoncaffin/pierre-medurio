@@ -153,11 +153,17 @@
                 <?php endforeach; ?>
             </ul>
             <div class="newsletter_email">
-            <form id="newsletterForm" action="contact" method="post">
-                <label for="newsletterEmail">S'abonner à la newsletter</label>
-                <input type="email" id="newsletterEmail" name="newsletterEmail" value="<?= $page->newsletterEmail() ?>" required>
-                <button type="submit" name="subscribe">S'abonner</button>
-            </form>
+                <form id="newsletterForm" action="contact" method="post">
+                    <div class="newsletter_form">
+                    <label for="newsletterEmail">S'abonner à la newsletter</label>
+                    <input type="email" id="newsletterEmail" name="newsletterEmail" value="<?= $page->newsletterEmail() ?>" required>
+                    </div>
+                    <label class="consent_label">
+                        <input type="checkbox" id="rgpdConsent" name="rgpdConsent" required>
+                        J'accepte de recevoir la newsletter. Je peux me désabonner à tout moment après m'être inscrit·e.
+                    </label>
+                    <button type="submit" name="subscribe">S'abonner</button>
+                </form>
             </div>
         </article>
     </section>

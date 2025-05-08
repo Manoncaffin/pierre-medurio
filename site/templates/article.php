@@ -42,9 +42,9 @@
             <?php endif ?>
         </div>
 
-        <div class="article_footer">
-            <a href="<?= $page->parent()->url() ?>" class="back-link">&larr; Retour aux articles</a>
-        </div>
+        <a href="<?= $page->parent()->url() ?>" class="back_link">
+            <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Retour aux articles" class="back-arrow-icon">Retour aux articles
+        </a>
     </article>
 </main>
 
