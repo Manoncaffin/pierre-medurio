@@ -6,6 +6,9 @@ status:
   listed: Publication
 
 fields:
+  intro:
+    type: textarea
+    size: medium
   description:
     type: textarea
     size: large

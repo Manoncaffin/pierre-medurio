@@ -163,6 +163,7 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 10%;
+        width: 80%;
     }
 
     .form {
@@ -189,13 +190,12 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {    
     main {
-        margin: 145px auto 260px auto;
-        width: 75%;
+        margin: 145px auto 100px auto;
+        width: 85%;
     }
 
     .contact {
-        margin: 20px auto 60px auto;
-        width: 90%;
+        margin: 20px auto 100px auto;
     }
 
     .newsletter {
@@ -215,11 +215,11 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {    
     main {
-        width: 70%;
+        width: 90%;
     }
 
     .contact {
         margin: 20px auto 125px auto;
-        width: 80%;
+        width: 90%;
     }
 }

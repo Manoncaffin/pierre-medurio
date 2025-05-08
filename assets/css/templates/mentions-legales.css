@@ -33,7 +33,7 @@
         margin: 50px auto 250px auto;
         display: flex;
         flex-direction: column;
-        max-width: 1200px; 
+        max-width: 1200px;
     }
 }
 
@@ -89,13 +89,13 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     main {
-        margin: 145px auto 260px auto;
-        width: 75%;
+        margin: 145px auto 100px auto;
+        width: 85%;
     }
     
     .legal_notice_grid {
         margin: 20px auto 60px auto;
-        width: 90%;
+        width: 85%;
     }
 }
 
@@ -107,7 +107,7 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
     main {
-        width: 70%;
+        width: 80%;
     }
 
     .legal_notice_grid {

@@ -9,7 +9,7 @@
                     <div class="article-header">
                         <a href="<?= $article->url() ?>" class="title_article">
                             <div class="title_container">
-                                <figcaption><?= $article->title()->html() ?></figcaption>
+                                <h1><?= $article->title()->html() ?></h1>
                             </div>
                             <small>
                                 <?php $year = $article->published('Y');

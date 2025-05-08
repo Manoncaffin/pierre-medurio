@@ -5,15 +5,28 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 330px 40px 260px 40px;
+        margin: 330px auto 280px auto;
+        width: 90%;
+        max-width: 1400px;
+
     }
 
     .all_article {
-        margin: 50px 0 0 0;
+        margin: 50px auto 250px auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+    }
+
+    .title_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     h1 {
-        font-family: "InclusiveSans-Semibold", serif;
+        font-size: var(--heading-size-mobile);
+        line-height: 3.5rem;
         font-weight: bold;
     }
 
@@ -22,11 +35,34 @@
         font-size: var(--text-size-mobile);
     }
 
-    .all_article {
+    .article_intro p {
+        font-family: "InclusiveSans-Semibold", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .article_description p {
+        text-indent: 2em;
+        margin-bottom: 15px;
+    }
+
+    p strong {
+        font-family: "InclusiveSans-Semibold", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    p > strong {
+        display: inline-block;
+        margin-top: 10px; 
+    }
+
+    .article_image {
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
-        margin-bottom: 250px;
+        justify-content: center;
+        align-items: end;
+        margin-top: 15px;
     }
 
     .article_image img {
@@ -37,6 +73,43 @@
         display: block;
         margin: 0 auto;
     }
+
+    .article-meta {
+        margin-bottom: 30px;
+        font-size: var(--text-size-legend-mobile);
+        color: #666;
+    }
+
+    .article_image figcaption {
+        margin-bottom: 20px;
+    }
+
+    .article_image figcaption p {
+        font-size: var(--text-size-legend-mobile);
+        font-style: italic;
+    }
+
+    .article_content {
+        margin-bottom: 20px;
+    }
+
+    .article_footer {
+        text-align: center;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: black;
+        text-decoration: none;
+        font-family: "InclusiveSans-SemiBold";
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
 }
 
 
@@ -46,7 +119,11 @@
 /* ------------- MEDIA MIN-WIDTH 768PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    main {
+        width: 85%;
+    }
+}
 
 
 /* --------------------------------------------------- */
@@ -56,12 +133,25 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     main {
-        margin: 230px 80px 150px 80px;
+        margin: 230px auto 150px auto;
+        width: 80%;
     }
 
     .all_article {
-        margin: 20px 80px 0 80px;
+        margin: 20px auto 30px auto;
+        width: 80%;
     }
+
+    .article-meta,
+    .article_image figcaption p {
+        font-size: var(--text-size-legend-desktop);
+    }
+
+    h1 {
+        font-size: var(--heading-size-desktop);
+        line-height: var(--line-height-desktop);
+    }
+
 }
 
 
@@ -72,11 +162,44 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     main {
-        margin: 145px 40px 260px 40px;
+        margin: 145px auto 100px auto;
+        width: 85%;
     }
 
     .all_article {
-        margin: 20px 160px 60px 160px;
+        margin: 20px auto 125px auto;
+    }
+
+    .article_intro,
+    .article_description {
+        margin: 0 150px;
+    }
+
+    .article_image {
+        margin: 15px 150px;
+    }
+
+    h1 {
+        line-height: 2.2rem;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: var(--gutter-width);
+    }
+
+    h1::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+    }
+
+    h1 {
+        white-space: nowrap;
     }
 }
 
@@ -88,7 +211,12 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
+    main {
+        width: 90%;
+    }
+
     .all_article {
-        margin: 60px 220px 125px 220px;
+        margin: 20px auto 125px auto;
+        width: 90%;
     }
 }

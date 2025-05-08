@@ -5,17 +5,17 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 330px auto 260px auto;
+        margin: 330px auto 280px auto;
         width: 90%;
-        max-width: 1400px; 
+        max-width: 1400px;
     }
 
     .biography {
         margin: 50px auto 250px auto;
         display: flex;
         flex-direction: column;
+        max-width: 1200px;
         gap: 60px;
-        max-width: 1200px; 
 
         img {
             width: 100%;
@@ -40,10 +40,6 @@
     main {
         width: 85%;
     }
-    
-    .biography {
-        width: 90%;
-    }
 }
 
 
@@ -61,9 +57,9 @@
     .biography {
         flex-direction: row;
         margin: 20px auto 30px auto;
-        width: 85%;
         gap: 60px;
         align-items: flex-start; 
+        width: 80%;
 
         img {
             width: 270px;
@@ -86,13 +82,12 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     main {
-        margin: 145px auto 260px auto;
-        width: 75%;
+        margin: 145px auto 100px auto;
+        width: 85%;
     }
     
     .biography {
         margin: 20px auto 60px auto;
-        width: 80%;
 
         img {
             width: 340px;
@@ -110,13 +105,13 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
     main {
-        width: 70%;
+        width: 90%;
     }
     
     .biography {
-        margin: 20px auto 125px auto;
-        width: 75%;
+        margin: 20px auto 60px auto;
         gap: 80px;
+        width: 90%;
 
         img {
             width: 470px;

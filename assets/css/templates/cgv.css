@@ -63,6 +63,7 @@
         margin: 20px auto 30px auto;
         flex-direction: row;
         justify-content: space-between;
+        width: 80%;
     }
 
     .col {
@@ -78,13 +79,13 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     main {
-        margin: 145px auto 260px auto;
-        width: 90%;
+        margin: 145px auto 100px auto;
+        width: 85%;
     }
     
     .cgv_grid {
-        margin: 20px auto 120px auto;
-        width: 90%;
+        margin: 20px auto 60px auto;
+        width: 85%;
     }
 }
 
@@ -95,7 +96,12 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
+    main {
+        width: 80%;
+    }
+
     .cgv_grid {
         margin: 20px auto 125px auto;
+        width: 80%;
     }
 }

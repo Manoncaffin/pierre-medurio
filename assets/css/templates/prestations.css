@@ -131,11 +131,9 @@
         display: flex;
         align-items: center;
         width: 100%;
-        margin-right: 10px;
     }
 
     .title {
-        margin-right: 10px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -235,6 +233,21 @@
         width: 80%;
     }
 
+    .portrait {
+        margin: 20px auto 40px auto;
+        width: 80%;
+    }
+
+    .reportage {
+        margin: 20px auto 40px auto;
+        width: 80%;
+    }
+
+    .atelier {
+        margin: 20px auto 60px auto;
+        width: 80%;
+    }
+
     .qa p.question,
     .qa p.answer .qa {
         margin-bottom: 20px;
@@ -242,18 +255,6 @@
 
     .arrow {
         width: 25px
-    }
-
-    .portrait {
-        margin: 20px auto auto auto;
-    }
-
-    .reportage {
-        margin: 60px auto auto auto;
-    }
-
-    .atelier {
-        margin: 60px auto 150px auto;
     }
 
     .atelier-gallery,
@@ -318,18 +319,15 @@
     }
 
     .portrait {
-        margin: 20px auto 60px auto;
-        width: 85%;
+        margin: 20px auto 40px auto;
     }
 
     .reportage {
-        margin: 20px auto 60px auto;
-        width: 85%;
+        margin: 20px auto 40px auto;
     }
 
     .atelier {
-        margin: 0 auto 120px auto;
-        width: 85%;
+        margin: 20px auto 100px auto;
     }
 
     .text_1,
@@ -359,28 +357,23 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
+    main {
+        width: 90%;
+    }
+    
     .portrait {
-        margin: 20px auto 0 auto;
+        margin: 20px auto 40px auto;
+        width: 90%;
     }
 
     .reportage {
-        margin: 60px auto 0 auto;
+        margin: 20px auto 40px auto;
+        width: 90%;
     }
 
     .atelier {
-        margin: 60px auto 125px auto;
-    }
-
-    /* Amélioration pour les grands écrans */
-    main {
+        margin: 20px auto 125px auto;
         width: 85%;
-        max-width: 1800px;
-    }
-
-    .image-portrait img,
-    .reportage-gallery img,
-    .image-text_atelier img {
-        max-width: 1100px;
     }
 }
 
@@ -390,34 +383,6 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1800px) {
-    main {
-        width: 80%;
-        max-width: 2000px;
-        margin: 160px auto 280px auto;
-    }
-
-    .portrait,
-    .reportage,
-    .atelier {
-        width: 85%;
-        max-width: 1800px;
-    }
-
-    .image-portrait,
-    .reportage-gallery,
-    .atelier-gallery {
-        gap: 5px;
-    }
-
-    .image-portrait img,
-    .reportage-gallery img,
-    .image-text_atelier img {
-        max-width: 1300px;
-    }
-
-    .image-portrait {
-        justify-content: space-between;
-    }
 
     .text_1,
     .text_2 {
@@ -438,29 +403,6 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 2200px) {
-    main {
-        width: 75%;
-        max-width: 2400px;
-    }
-
-    .portrait,
-    .reportage,
-    .atelier {
-        width: 80%;
-        max-width: 2200px;
-    }
-
-    .image-portrait img,
-    .reportage-gallery img,
-    .image-text_atelier img {
-        max-width: 1600px;
-    }
-
-    .atelier-gallery img,
-    .reportage-gallery img {
-        width: calc((100% - 20px) / 3);
-        max-width: 700px;
-    }
 
     h1 {
         font-size: 2.5rem;
@@ -488,29 +430,6 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 2800px) {
-    main {
-        width: 70%;
-        max-width: 3000px;
-    }
-
-    .portrait,
-    .reportage,
-    .atelier {
-        width: 75%;
-        max-width: 2800px;
-    }
-
-    .image-portrait img,
-    .reportage-gallery img,
-    .image-text_atelier img {
-        max-width: 1800px;
-    }
-
-    .atelier-gallery img,
-    .reportage-gallery img {
-        width: calc((100% - 30px) / 3);
-        max-width: 900px;
-    }
 
     .text_1,
     .text_2 {
