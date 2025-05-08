@@ -5,13 +5,16 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 330px 40px 280px 40px;
+        margin: 330px auto 280px auto;
+        width: 90%;
+        max-width: 1400px;
     }
 
     .contact {
-        margin: 50px 0 250px 0;
+        margin: 50px auto 250px auto;
         display: flex;
         flex-direction: column;
+        max-width: 1200px; 
     }
 
     .newsletter {
@@ -137,7 +140,11 @@
 /* ------------- MEDIA MIN-WIDTH 768PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    main {
+        width: 85%;
+    }
+}
 
 
 /* --------------------------------------------------- */
@@ -147,14 +154,15 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     main {
-        margin: 230px 80px 150px 80px;
+        margin: 230px auto 150px auto;
+        width: 80%;
     }
 
     .contact {
-        margin: 20px 80px 30px 80px;
+        margin: 20px auto 30px auto;
         flex-direction: row;
         justify-content: space-between;
-        gap: 200px;
+        gap: 10%;
     }
 
     .form {
@@ -174,7 +182,6 @@
 }
 
 
-
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* ------------- MEDIA MIN-WIDTH 1200PX -------------- */
@@ -182,7 +189,8 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     .contact {
-        margin: 20px 160px 60px 160px;
+        margin: 20px auto 60px auto;
+        width: 90%;
     }
 
     .newsletter {
@@ -190,15 +198,14 @@
     }
 
     main {
-        margin: 145px 40px 260px 40px;
+        margin: 145px auto 260px auto;
+        width: 75%;
     }
 
     .selected-option {
         padding: 15px 0 4px 10px;
     }
 }
-
-
 
 
 /* --------------------------------------------------- */
@@ -208,8 +215,11 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
     .contact {
-        margin: 20px 220px 125px 220px;
+        margin: 20px auto 125px auto;
+        width: 80%;
+    }
+    
+    main {
+        width: 70%;
     }
 }
-
-

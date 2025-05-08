@@ -50,40 +50,39 @@
     </div>
 
     <?php
-    // Collection des images
+    // Récupérer toutes les images (couverture + galerie)
     $cover = $page->files()->template('cover')->first();
     $gallery = $page->files()->template('image');
-    $allImages = new Kirby\Cms\Files([$cover]);
-
+    
+    // Combiner les images en une collection
+    $allImages = new Kirby\Cms\Files([]);
+    
+    if ($cover) {
+      $allImages->append($cover);
+    }
+    
     if ($gallery->isNotEmpty()) {
       foreach ($gallery as $image) {
         $allImages->append($image);
       }
     }
-
+    
+    // Tri par le champ "sort" si disponible
+    $allImages = $allImages->sortBy('sort', 'asc');
+    
     $imageCount = $allImages->count();
     ?>
 
-    <?php if ($cover): ?>
-      <!-- Galerie de miniatures - toujours visible -->
-      <div class="gallery" id="gallery-thumbnails">
-        <!-- Cover image -->
-        <div class="thumbnail-item" data-index="0">
-          <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->html() ?>">
+    <!-- Galerie de miniatures - toujours visible -->
+    <div class="gallery" id="gallery-thumbnails">
+      <?php $index = 0; ?>
+      <?php foreach ($allImages as $image): ?>
+        <div class="thumbnail-item" data-index="<?= $index ?>">
+          <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
         </div>
-
-        <!-- Images de la galerie -->
-        <?php if ($gallery->isNotEmpty()): ?>
-          <?php $index = 1; ?>
-          <?php foreach ($gallery as $image): ?>
-            <div class="thumbnail-item" data-index="<?= $index ?>">
-              <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
-            </div>
-            <?php $index++; ?>
-          <?php endforeach ?>
-        <?php endif ?>
-      </div>
-    <?php endif ?>
+        <?php $index++; ?>
+      <?php endforeach ?>
+    </div>
 
     <!-- Modal Carrousel -->
     <div id="carousel-modal" class="modal">
@@ -97,19 +96,11 @@
         <!-- Swiper -->
         <div class="swiper carousel-swiper">
           <div class="swiper-wrapper">
-            <?php if ($cover): ?>
+            <?php foreach ($allImages as $image): ?>
               <div class="swiper-slide">
-                <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->html() ?>">
+                <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
               </div>
-            <?php endif ?>
-
-            <?php if ($gallery->isNotEmpty()): ?>
-              <?php foreach ($gallery as $image): ?>
-                <div class="swiper-slide">
-                  <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
-                </div>
-              <?php endforeach ?>
-            <?php endif ?>
+            <?php endforeach ?>
           </div>
 
           <!-- Navigation buttons -->
@@ -127,7 +118,6 @@
           <div class="hover-zone left-zone"></div>
           <div class="hover-zone right-zone"></div>
         </div>
-
 
         <!-- Counter -->
         <div class="swiper-counter">

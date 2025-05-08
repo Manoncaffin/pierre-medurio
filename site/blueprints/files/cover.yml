@@ -5,3 +5,9 @@ fields:
   alt:
     label: Texte alternatif
     type: text
+  sort:
+    label: Ordre d'affichage
+    type: number
+    min: 1
+    default: 1
+    help: Définit l'ordre d'apparition de la couverture dans la galerie (1 = première position)

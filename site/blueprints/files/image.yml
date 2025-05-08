@@ -4,3 +4,9 @@ fields:
   alt:
     label: Texte alternatif
     type: text
+  sort:
+    label: Ordre d'affichage
+    type: number
+    min: 1
+    default: 999
+    help: Définit l'ordre d'apparition de l'image dans la galerie (les plus petits nombres apparaissent en premier)
