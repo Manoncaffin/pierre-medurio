@@ -85,7 +85,7 @@ a {
     font-weight: normal;
     margin: 0;
     padding: 0;
-    line-height: 2rem;
+    /* line-height: 2rem; */
 }
 
 ul,
@@ -130,7 +130,7 @@ button:hover {
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     button {
-        margin-top: 15px;
+        margin-top: var(--gutter-width);
     }
 
     /* font-size mobile */
@@ -201,7 +201,7 @@ button:hover {
     nav {
         display: flex;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: var(--gutter-width);
     }
 
     .nav_first {

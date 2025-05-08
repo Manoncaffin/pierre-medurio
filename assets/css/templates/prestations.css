@@ -5,7 +5,9 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     main {
-        margin: 330px 40px 260px 40px;
+        margin: 330px auto 280px auto;
+        width: 90%;
+        max-width: 1400px;
     }
 
     h1,
@@ -21,13 +23,14 @@
 
     .portrait,
     .reportage {
-        margin: 50px 0 0 0;
+        margin: 50px auto auto auto;
         display: flex;
         flex-direction: column;
+        max-width: 1200px; 
     }
 
     .atelier {
-        margin: 85px 0 250px 0;
+        margin: 85px auto 250px auto;
     }
 
     .image-text {
@@ -39,7 +42,7 @@
     .text_2 {
         display: flex;
         flex-direction: column;
-        margin-bottom: 15px;
+        margin-bottom: var(--gutter-width);
         margin-top: 20px;
 
         p {
@@ -68,13 +71,13 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 15px;
+        gap: var(--gutter-width);
         overflow: hidden;
     }
 
     .qa p.question,
     .qa p.answer {
-        margin-bottom: 15px;
+        margin-bottom: var(--gutter-width);
         display: block;
         font-family: "InclusiveSans-Semibold", serif;
         font-weight: bold;
@@ -90,7 +93,7 @@
     }
 
     .qa {
-        margin-top: 15px;
+        margin-top: var(--gutter-width);
         cursor: pointer;
     }
 
@@ -136,7 +139,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        gap: 15px;
+        gap: var(--gutter-width);
     }
 
     .title::after {
@@ -214,7 +217,11 @@
 /* ------------- MEDIA MIN-WIDTH 768PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    main {
+        width: 85%;
+    }
+}
 
 
 /* --------------------------------------------------- */
@@ -224,7 +231,8 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     main {
-        margin: 230px 80px 150px 80px;
+        margin: 230px auto 150px auto;
+        width: 80%;
     }
 
     .qa p.question,
@@ -237,15 +245,15 @@
     }
 
     .portrait {
-        margin: 20px 80px 0 80px;
+        margin: 20px auto auto auto;
     }
 
     .reportage {
-        margin: 60px 80px 0 80px;
+        margin: 60px auto auto auto;
     }
 
     .atelier {
-        margin: 60px 80px 160px 80px;
+        margin: 60px auto 160px auto;
     }
 
     .atelier-gallery,
@@ -279,7 +287,7 @@
     }
 
     .image-text_atelier p {
-        margin-bottom: 15px;
+        margin-bottom: var(--gutter-width);
     }
 
     .image-portrait {
@@ -305,19 +313,23 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     main {
-        margin: 145px 40px 260px 40px;
+        margin: 145px auto 260px auto;
+        width: 90%;
     }
 
     .portrait {
-        margin: 20px 160px 60px 160px;
+        margin: 20px auto 60px auto;
+        width: 90%;
     }
 
     .reportage {
-        margin: 60px 160px 60px 160px;
+        margin: 20px auto 60px auto;
+        width: 90%;
     }
 
     .atelier {
-        margin: 0 160px 120px 160px;
+        margin: 0 auto 120px auto;
+        width: 90%;
     }
 
     .text_1,
@@ -347,16 +359,176 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
-
     .portrait {
-        margin: 20px 220px 0 220px;
+        margin: 20px auto 0 auto;
     }
 
     .reportage {
-        margin: 60px 220px 0 220px;
+        margin: 60px auto 0 auto;
     }
 
     .atelier {
-        margin: 60px 220px 125px 220px;
+        margin: 60px auto 125px auto;
+    }
+
+    /* Amélioration pour les grands écrans */
+    main {
+        width: 85%;
+        max-width: 1800px;
+    }
+
+    .image-portrait img,
+    .reportage-gallery img,
+    .image-text_atelier img {
+        max-width: 1100px;
+    }
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1800PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1800px) {
+    main {
+        width: 80%;
+        max-width: 2000px;
+        margin: 160px auto 280px auto;
+    }
+
+    .portrait,
+    .reportage,
+    .atelier {
+        width: 85%;
+        max-width: 1800px;
+    }
+
+    .image-portrait,
+    .reportage-gallery,
+    .atelier-gallery {
+        gap: 10px;
+    }
+
+    .image-portrait img,
+    .reportage-gallery img,
+    .image-text_atelier img {
+        max-width: 1300px;
+    }
+
+    .image-portrait {
+        justify-content: space-between;
+    }
+
+    .text_1,
+    .text_2 {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .qa p.question,
+    .qa p.answer {
+        font-size: 1.2rem;
+        line-height: 2.8rem;
+    }
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 2200PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 2200px) {
+    main {
+        width: 75%;
+        max-width: 2400px;
+    }
+
+    .portrait,
+    .reportage,
+    .atelier {
+        width: 80%;
+        max-width: 2200px;
+    }
+
+    .image-portrait img,
+    .reportage-gallery img,
+    .image-text_atelier img {
+        max-width: 1600px;
+    }
+
+    .atelier-gallery img,
+    .reportage-gallery img {
+        width: calc((100% - 20px) / 3);
+        max-width: 700px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .text_1,
+    .text_2 {
+        font-size: 1.2rem;
+        line-height: 1.7;
+    }
+
+    .qa p.question,
+    .qa p.answer {
+        font-size: 1.3rem;
+    }
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 2800PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 2800px) {
+    main {
+        width: 70%;
+        max-width: 3000px;
+    }
+
+    .portrait,
+    .reportage,
+    .atelier {
+        width: 75%;
+        max-width: 2800px;
+    }
+
+    .image-portrait img,
+    .reportage-gallery img,
+    .image-text_atelier img {
+        max-width: 1800px;
+    }
+
+    .atelier-gallery img,
+    .reportage-gallery img {
+        width: calc((100% - 30px) / 3);
+        max-width: 900px;
+    }
+
+    .text_1,
+    .text_2 {
+        font-size: 1.3rem;
+        line-height: 1.8;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .qa p.question,
+    .qa p.answer {
+        font-size: 1.4rem;
+        line-height: 3rem;
     }
 }

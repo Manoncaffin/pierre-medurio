@@ -92,7 +92,7 @@ body {
     .next {
         a {
             display: flex;
-            gap: 15px;
+            gap: var(--gutter-width);
             font-size: var(--text-size-mobile);
         }
     }
@@ -101,7 +101,7 @@ body {
     .next {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: var(--gutter-width);
         margin-top: 30px;
         margin-bottom: 10px;
     }

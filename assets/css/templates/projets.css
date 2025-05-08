@@ -201,7 +201,7 @@ body {
     }
 
     .filter-icon {
-        width: 15px;
+        width: var(--gutter-width);
     }
 }
 

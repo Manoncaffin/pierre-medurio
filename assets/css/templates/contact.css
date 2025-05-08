@@ -187,7 +187,12 @@
 /* ------------- MEDIA MIN-WIDTH 1200PX -------------- */
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {    
+    main {
+        margin: 145px auto 260px auto;
+        width: 75%;
+    }
+
     .contact {
         margin: 20px auto 60px auto;
         width: 90%;
@@ -195,11 +200,6 @@
 
     .newsletter {
         margin-top: 0;
-    }
-
-    main {
-        margin: 145px auto 260px auto;
-        width: 75%;
     }
 
     .selected-option {
@@ -213,13 +213,13 @@
 /* ------------- MEDIA MIN-WIDTH 1500PX -------------- */
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1500px) {    
+    main {
+        width: 70%;
+    }
+
     .contact {
         margin: 20px auto 125px auto;
         width: 80%;
-    }
-    
-    main {
-        width: 70%;
     }
 }
