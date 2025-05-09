@@ -34,8 +34,10 @@
     --text-size-legend-mobile: 1.5rem;
     --heading-size-mobile: 3.8rem;
     --heading-size-desktop: 1.8rem;
-    --line-height-mobile: 2.5rem;
-    --line-height-desktop: 1.5rem;
+    --line-height-text-mobile: 3.5rem;
+    --line-height-text-desktop: 1.5rem;
+    --line-height-heading-mobile: 4rem;
+    --line-height-heading-desktop: 2.1rem;
 }
 
 * {
@@ -87,7 +89,6 @@ a {
     font-weight: normal;
     margin: 0;
     padding: 0;
-    /* line-height: 2rem; */
 }
 
 ul,
@@ -113,7 +114,7 @@ button {
     padding: 6px 10px;
     display: flex;
     justify-content: center;
-    width: 160px;
+    width: 200px;
 }
 
 button:hover {
@@ -147,11 +148,13 @@ button:hover {
     h5,
     h6 {
         font-size: var(--heading-size-mobile);
+        line-height: var(--line-height-heading-mobile);
     }
 
     p,
     a {
         font-size: var(--text-size-mobile);
+        line-height: var(--line-height-text-mobile);
     }
 
     /* ------- HEADER ------- */
@@ -171,7 +174,7 @@ button:hover {
         left: 0;
         right: 0;
         z-index: 2000;
-        height: 300px;
+        height: 280px;
     }
 
     .header_other {
@@ -236,8 +239,15 @@ button:hover {
         display: flex;
         height: 100vh;
         align-items: center;
-        padding-top: 230px;
+        padding-top: 100px;
         width: 100%;
+    }
+
+    .header_open,
+    .li_burger {
+        font-family: 'InclusiveSans-Semibold';
+        font-weight: 600;
+        font-size: var(--heading-size-mobile);
     }
 
     .logo_other {
@@ -292,12 +302,12 @@ button:hover {
     }
 
     .logo img {
-        margin-bottom: 750px;
+        margin-bottom: 705px;
     }
 
     nav ul {
         display: flex;
-        gap: 40px;
+        gap: 30px;
         list-style: none;
         padding: 0;
         padding-top: 700px;
@@ -310,12 +320,6 @@ button:hover {
     ul li {
         position: relative;
         padding: 10px 20px;
-    }
-
-    ul li a {
-        font-family: 'InclusiveSans-Semibold';
-        font-weight: 600;
-        /* font-size: 70px; */
     }
 
     .separator {
@@ -402,7 +406,13 @@ button:hover {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
+    .logo_header {
+        width: 450px;
+    }
 
+    .logo img {
+        margin-bottom: 750px;
+    }
     /* ------- HEADER ------- */
     /* ---------------------- */
 
@@ -439,14 +449,19 @@ button:hover {
     p,
     a {
         font-size: var(--text-size-desktop);
-        line-height: 1.5rem;
+        line-height: var(--line-height-text-desktop)
+    }
+
+    .header_open,
+    .li_burger {
+        font-size: var(--text-size-mobile);
     }
 
     /* ------- HEADER ------- */
     /* ---------------------- */
 
     .main_home {
-        padding-top: 120px;
+        padding-top: 150px;
         padding-bottom: 60px;
     }
 
@@ -556,6 +571,11 @@ button:hover {
         width: 180px;
     }
 
+    .header_open,
+    .li_burger {
+        font-size: var(--text-size-desktop);
+    }
+
     .nav_first ul,
     .nav_other ul {
         display: flex;
@@ -572,12 +592,6 @@ button:hover {
     ul li {
         position: relative;
         padding: 10px 10px;
-    }
-
-    ul li a {
-        font-family: 'InclusiveSans-Semibold';
-        font-weight: 600;
-        font-size: var(--text-size-desktop);
     }
 
     .separator {

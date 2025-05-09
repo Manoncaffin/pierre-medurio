@@ -167,7 +167,7 @@ body {
 
     .dropdown-container {
         position: relative;
-        width: 200px;
+        width: 100%;
         user-select: none;
         margin-bottom: 20px;
     }
@@ -187,7 +187,7 @@ body {
     }
     
     .options-container.open {
-        max-height: 200px;
+        max-height: 400px;
         overflow-y: auto;
     }
 }
@@ -234,6 +234,16 @@ body {
 
     .filter-icon {
         width: 15px;
+    }
+
+    .dropdown-container {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .options-container.open {
+        max-height: 200px;
+        overflow-y: auto;
     }
 }
 

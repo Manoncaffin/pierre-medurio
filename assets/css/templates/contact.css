@@ -11,7 +11,7 @@
     }
 
     .contact {
-        margin: 50px auto 250px auto;
+        margin: 50px auto 350px auto;
         display: flex;
         flex-direction: column;
         max-width: 1200px;
@@ -40,12 +40,21 @@
         border-bottom: 1px solid black;
         padding: 4px 0 4px 10px;
         font-family: inherit;
-        font-size: var(--heading-size-desktop);
+        font-size: var(--text-size-mobile);
+    }
+
+    #contactMessage {
+        font-size: var(--text-size-mobile);
+        height: 400px;
+        font-family: "InclusiveSans-Light", serif;
+        font-weight: 100;
+        font-style: normal;
+        padding: 10px;
     }
 
     input[type="checkbox"] {
         all: revert;
-        margin-right: 5px; 
+        margin-right: 5px;
     }
 
     #rgpdConsent {
@@ -62,21 +71,12 @@
     }
 
     label {
-        margin-top: 15px;
+        margin-top: 30px;
     }
 
     .label-message {
         display: inline-block;
         margin-bottom: 5px;
-    }
-
-    #contactMessage {
-        height: 100px;
-        font-family: "InclusiveSans-Light", serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 1.8rem;
-        padding: 10px;
     }
 
     .message-textarea {
@@ -113,13 +113,13 @@
         position: relative;
         width: 100%;
         cursor: pointer;
+        padding-top: 15px;
     }
 
     .selected-option {
         border-bottom: 1px solid #000;
         background-color: white;
         padding: 4px 0 4px 10px;
-        font-size: 1rem;
         color: #6a6a6a;
     }
 
@@ -135,7 +135,6 @@
         right: 0;
         background: white;
         z-index: 10;
-        font-size: 1rem;
     }
 
     .select-options.open {
@@ -151,12 +150,10 @@
         color: white;
     }
 
-
-
     /* Newsletter */
     .newsletter_form {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 5px;
     }
 
@@ -203,17 +200,35 @@
     }
 
     .newsletter {
-        width: 40%;
-        min-width: 250px;
+        width: 50%;
+        min-width: 300px;
+        margin-top: 0;
+    }
+
+    .newsletter_email input[type="email"] {
+        /* width: 55%;  */
+        box-sizing: border-box;
     }
 
     input,
     #contactMessage {
-        font-size: 1.1rem;
+        font-size: var(--text-size-desktop);
+    }
+
+    #contactMessage {
+        height: 100px;
     }
 
     .consent_label {
         font-size: var(--text-size-legend-desktop);
+    }
+
+    .custom-select {
+        padding-top: 0;
+    }
+
+    label {
+        margin-top: 15px;
     }
 }
 
@@ -233,12 +248,15 @@
         margin: 20px auto 100px auto;
     }
 
-    .newsletter {
-        margin-top: 0;
-    }
-
     .selected-option {
         padding: 15px 0 4px 10px;
+    }
+
+    .newsletter_form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
     }
 }
 

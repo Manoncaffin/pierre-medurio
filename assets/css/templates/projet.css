@@ -105,7 +105,7 @@ body {
         display: flex;
         align-items: center;
         gap: var(--gutter-width);
-        margin-top: 30px;
+        margin-top: 60px;
         margin-bottom: 10px;
     }
 
@@ -128,6 +128,10 @@ body {
 
     .swiper-button-next,
     .swiper-button-prev {
+        display: none;
+    }
+
+    .zoom-overlay {
         display: none;
     }
 }
@@ -171,6 +175,11 @@ body {
 
     .project h1 {
         font-size: var(--heading-size-desktop);
+    }
+
+    .previous,
+    .next {
+        margin-top: 30px;
     }
 
     /* swiper */
@@ -349,6 +358,7 @@ body {
 
     /* Zoom */
     .zoom-overlay {
+        display: block;
         position: fixed;
         top: 0;
         left: 0;

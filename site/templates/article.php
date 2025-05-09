@@ -5,7 +5,7 @@
     <article class="all_article">
         <div class="title_container">
             <h1><?= $page->title()->html() ?></h1>
-            <div class="article-meta">
+            <div class="article_meta">
                 <?php if ($page->published()->isNotEmpty()): ?>
                     <time datetime="<?= $page->published()->toDate('c') ?>">
                         Publié le <?= $page->published()->toDate('d/m/Y') ?>
