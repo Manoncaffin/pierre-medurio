@@ -3,10 +3,10 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: hidden; /* Bloquer le défilement vertical aussi */
-    height: 100%; /* Important pour le comportement d'overflow */
+    overflow-y: hidden;
+    height: 100%; 
     width: 100%;
-    position: fixed; /* En dernier recours pour les mobiles */
+    position: fixed;
 }
 
 /* --------------------------------------------------- */
@@ -122,9 +122,27 @@ body {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     .main_home {
-        padding-top: 150px;
-        height: calc(100vh - 150px);
+        padding-top: 170px;
+        height: calc(100vh - 170px);
         overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 20px;
+    }
+
+    .image_home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .image_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .logo img {
@@ -132,7 +150,10 @@ body {
     }
 
     .image_home img {
-        width: 820px;
+        width: auto;
+        max-width: 820px;
+        max-height: calc(100vh - 220px);
+        object-fit: contain;
     }
 }
 
@@ -144,12 +165,16 @@ body {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
     .main_home {
-        padding-top: 165px;
-        height: calc(100vh - 165px);
+        padding-top: 185px;
+        height: calc(100vh - 185px);
+    }
+
+    .image_home {
+        margin-top: 30px;
     }
 
     .image_home img {
-        width: 1050px;
-        max-height: calc(100vh - 205px);
-    }
+        max-width: 1050px;
+        max-height: calc(100vh - 245px);
+}
 }
