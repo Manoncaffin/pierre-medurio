@@ -1,5 +1,4 @@
 <?php if ($page->template() != 'intro'): ?>
-    <?php snippet('head') ?>
     <?php snippet('header') ?>
 <?php endif; ?>
 
