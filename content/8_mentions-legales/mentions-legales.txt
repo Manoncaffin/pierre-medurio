@@ -28,6 +28,14 @@ Column2:
 
 ----
 
+Metatitle: Mentions légales | Pierre Medurio
+
+----
+
+Metadescription: Découvrez les mentions légales du site.
+
+----
+
 Template: mentions-legales
 
 ----

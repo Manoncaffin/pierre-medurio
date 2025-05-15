@@ -18,6 +18,10 @@ class ComposerStaticInit42c24665b7d1bdc28de7f80a37688bc4
     );
 
     public static $prefixLengthsPsr4 = array (
+        'o' => 
+        array (
+            'omz13\\' => 6,
+        ),
         'W' => 
         array (
             'Whoops\\' => 7,
@@ -65,6 +69,10 @@ class ComposerStaticInit42c24665b7d1bdc28de7f80a37688bc4
     );
 
     public static $prefixDirsPsr4 = array (
+        'omz13\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/site/plugins/kirby3-xmlsitemap/src',
+        ),
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',

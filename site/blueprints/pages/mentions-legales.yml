@@ -47,3 +47,21 @@ columns:
               - ul
               - ol
             format: markdown
+
+  # Ajout des champs metaTitle et metaDescription
+  - width: 1/2
+    sections:
+      pageSettings:
+        type: fields
+        fields:
+          metaTitle:
+            label: Titre SEO
+            type: text
+            width: 1/2
+            help: "Titre affiché dans les résultats des moteurs de recherche. 50-60 caractères recommandés."
+
+          metaDescription:
+            label: Description SEO
+            type: textarea
+            width: 1/2
+            help: "Description affichée dans les résultats Google. 140-160 caractères recommandés."

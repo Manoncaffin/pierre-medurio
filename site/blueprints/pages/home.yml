@@ -1,4 +1,5 @@
 title: Home
+icon: 🏠
 
 sections:
   images:
@@ -8,3 +9,18 @@ sections:
     multiple: true
     max: 15
     template: imagehome
+
+  seo:
+    type: fields
+    fields:
+      metaTitle:
+        label: Titre SEO
+        type: text
+        width: 1/2
+        help: "Titre affiché dans les résultats des moteurs de recherche. 50-60 caractères recommandés."
+
+      metaDescription:
+        label: Description SEO
+        type: textarea
+        width: 1/2
+        help: "Description affichée dans les résultats Google. 140-160 caractères recommandés."

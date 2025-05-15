@@ -131,7 +131,8 @@ body {
         display: none;
     }
 
-    .zoom-overlay {
+    .zoom-overlay,
+    .modal-close {
         display: none;
     }
 }

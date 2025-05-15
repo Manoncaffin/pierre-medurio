@@ -19,4 +19,12 @@ Details:
 
 ----
 
+Metatitle: Portrait | Pierre Medurio
+
+----
+
+Metadescription: Série de portraits réalisés en lumière naturelle.
+
+----
+
 Uuid: 26y91SErAFhBUA9V

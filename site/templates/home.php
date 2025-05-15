@@ -32,3 +32,4 @@
         <p>Aucune image n'est disponible pour la page d'accueil.</p>
     <?php endif; ?>
 </main>
+

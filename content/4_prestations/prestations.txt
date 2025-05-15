@@ -34,7 +34,7 @@ Des photos de vous qui vous ressemblent et vous plaisent. En ville, chez vous, Ã
 
 ----
 
-Phototext2-image: - file://PonVYe9ooAf3qwmm
+Phototext2-image: - file://HoynUp4aBjeeKZE3
 
 ----
 
@@ -127,6 +127,14 @@ Text6:
 ----
 
 Phototext5: 
+
+----
+
+Metatitle: Prestations |Â Pierre Medurio
+
+----
+
+Metadescription: Je vous propose des prestations pour du portrait, du reportage et des ateliers.
 
 ----
 

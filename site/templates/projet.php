@@ -140,4 +140,5 @@
 <script src="<?= url('assets/js/toggle.js') ?>"></script>
 <script src="<?= url('assets/js/zoom.js') ?>"></script>
 
+
 <?php snippet('footer') ?>

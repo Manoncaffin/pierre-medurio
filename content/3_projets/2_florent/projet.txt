@@ -21,17 +21,23 @@ Details:
 
 ----
 
+Metatitle: Portrait | Pierre Medurio
+
+----
+
+Metadescription: Série de portrait.
+
+----
+
 Tags: Portrait
 
 ----
 
-Cover: 
-  - flo-1-web-couv.webp
+Cover: - flo-1-web-couv.webp
 
 ----
 
-Gallery:
-  - flo-2-web.webp
+Gallery: - flo-2-web.webp
 
 ----
 

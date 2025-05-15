@@ -16,7 +16,7 @@
         <loc>https://www.pierremedurio.com/projets</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://www.pierremedurio.com/articles</loc>
@@ -28,12 +28,24 @@
         <loc>https://www.pierremedurio.com/a-propos</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.4</priority>
     </url>
     <url>
         <loc>https://www.pierremedurio.com/contact</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.pierremedurio.com/mentions-legales</loc>
+        <lastmod>2025-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+        <url>
+        <loc>https://www.pierremedurio.com/cgv</loc>
+        <lastmod>2025-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
     </url>
 </urlset>

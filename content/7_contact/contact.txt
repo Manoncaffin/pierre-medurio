@@ -39,6 +39,18 @@ Networks:
 
 ----
 
+Newsletteremail: 
+
+----
+
+Metatitle: Contact | Pierre Medurio
+
+----
+
+Metadescription: Contactez-moi pour toute question ou demande. Vous pouvez également vous inscrire à ma newsletter.
+
+----
+
 Email: 
 
 ----

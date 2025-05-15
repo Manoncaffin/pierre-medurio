@@ -1,11 +1,35 @@
 title: Articles
-preset: pages
+icon: 📚
 
-drafts:
-  extends: sections/articles
-  label: Articles brouillons
+tabs:
+  contenu:
+    label: Articles
+    sections:
+      drafts:
+        type: pages
+        headline: Articles brouillons
+        status: draft
+        extends: sections/articles
 
-listed:
-  extends: sections/articles
-  label: Articles publiés
-  layout: cards
+      listed:
+        type: pages
+        headline: Articles publiés
+        status: listed
+        layout: cards
+        extends: sections/articles
+
+  seo:
+    label: SEO
+    icon: search
+    fields:
+      metaTitle:
+        label: Titre SEO
+        type: text
+        width: 1/2
+        help: "Titre affiché dans les résultats des moteurs de recherche. 50-60 caractères recommandés."
+
+      metaDescription:
+        label: Description SEO
+        type: textarea
+        width: 1/2
+        help: "Description affichée dans les résultats Google. 140-160 caractères recommandés."

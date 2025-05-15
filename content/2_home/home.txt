@@ -2,4 +2,12 @@ Title: home
 
 ----
 
+Metatitle: Page d'accueil | Pierre Medurio
+
+----
+
+Metadescription: Découvrez quelques-unes de mes photographies.
+
+----
+
 Uuid: sCSQUEBohQccK2U6

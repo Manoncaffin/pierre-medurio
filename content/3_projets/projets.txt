@@ -1,8 +1,21 @@
 Title: projets
+
 ----
+
+Metatitle: Projets | Pierre Medurio
+
+----
+
+Metadescription: Découvrez tous mes projets.
+
+----
+
 Template: projets
+
 ----
-Text:
-Ceci est la page des projets.
+
+Text: Ceci est la page des projets.
+
 ----
+
 Uuid: PQrVjerkrNaXT1pN

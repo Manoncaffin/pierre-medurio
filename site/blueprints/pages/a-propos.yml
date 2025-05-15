@@ -8,9 +8,9 @@ columns:
         type: fields
         fields:
           pagePartners:
-              label: Biographie
-              type: headline
-              required: true
+            label: Biographie
+            type: headline
+            required: true
           portrait:
             label: Portrait
             type: files
@@ -21,5 +21,17 @@ columns:
             label: Biographie
             type: textarea
 
-
-
+  - width: 1/2
+    sections:
+      seo:
+        type: fields
+        fields:
+          metaTitle:
+            label: Titre SEO
+            type: text
+          metaDescription:
+            label: Description SEO
+            type: textarea
+            buttons: false
+            maxlength: 160
+            help: "Texte affiché dans les résultats Google. 160 caractères max conseillés."
