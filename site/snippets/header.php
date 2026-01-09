@@ -1,7 +1,7 @@
 <?php
-$logo = $site->files()->first('pierre_medurio_logotype_noir.svg');
+$logo = $site->files()->first();
 $navPages = $site->children()->listed()->filter(function ($page) {
-    return in_array($page->slug(), ['projets', 'prestations', 'articles', 'a-propos', 'contact']);
+    return in_array($page->slug(), ['photographies', 'prestations', 'articles', 'a-propos', 'contact']);
 });
 $isHomePage = $page->isHomePage();
 ?>
@@ -16,7 +16,7 @@ $isHomePage = $page->isHomePage();
                     <?php if ($logo): ?>
                         <div class="logo">
                             <a href="<?= url('home') ?>">
-                                <img src="<?= $logo->url() ?>" alt="Logo" class="logo_header">
+                                <img src="<?= $logo->url() ?>" alt="Telma Medurio | Photographe" class="logo_header">
                             </a>
                         </div>
                     <?php else: ?>
@@ -54,7 +54,7 @@ $isHomePage = $page->isHomePage();
                     <?php if ($logo): ?>
                         <div class="logo_other" id="mobile_logo">
                             <a href="<?= url('home') ?>">
-                                <img src="<?= $logo->url() ?>" alt="Logo" class="logo_other_page">
+                                <img src="<?= $logo->url() ?>" alt="Telma Medurio | Photographe" class="logo_other_page">
                             </a>
                         </div>
                     <?php else: ?>

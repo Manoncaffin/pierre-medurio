@@ -56,7 +56,7 @@
         <?php endforeach ?>
 
         <div class="image-text_reportage">
-            <?= $page->text3()->kt() ?>
+            <?= $page->photoText3_text()->kt() ?>
             <div class="gallery reportage-gallery">
                 <?php foreach ($page->photoText3()->toFiles() as $image): ?>
                     <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">

@@ -1,0 +1,21 @@
+Title: photographies
+
+----
+
+Metatitle: Photographies | Pierre Medurio
+
+----
+
+Metadescription: Découvrez toutes mes photographies.
+
+----
+
+Template: photographies
+
+----
+
+Text: Ceci est la page des photographies.
+
+----
+
+Uuid: PQrVjerkrNaXT1pN

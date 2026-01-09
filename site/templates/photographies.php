@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<link rel="stylesheet" href="<?= url('assets/css/templates/projets.css') ?>">
+<link rel="stylesheet" href="<?= url('assets/css/templates/photographies.css') ?>">
 
 <?php
 
@@ -10,6 +10,7 @@ $tags = ['reportage', 'portrait', 'atelier', 'travail personnel', 'tous les proj
 
 <main>
     <section class="all_projects">
+    <h1 class="sr-only">Photographies de Telma Medurio - Photographe [reportage/portrait/atelier]</h1>
     <div id="dropdown" class="dropdown-container">
     <div class="selected-option">
         <span class="selected-text">Filtres</span>

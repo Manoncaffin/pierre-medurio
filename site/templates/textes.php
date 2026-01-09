@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<link rel="stylesheet" href="<?= url('assets/css/templates/articles.css') ?>">
+<link rel="stylesheet" href="<?= url('assets/css/templates/textes.css') ?>">
 
 <main>
     <section class="all_articles">

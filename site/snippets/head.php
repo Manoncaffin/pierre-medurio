@@ -12,25 +12,22 @@ $description = $page->metaDescription()->isNotEmpty() ? $page->metaDescription()
 <title><?= $title ?></title>
 <meta name="description" content="<?= $description->esc() ?>">
 
-    <meta property="og:description" content="<?= $description ?>" />
-    <meta property="twitter:description" content="<?= $description ?>" />
-    <meta property="og:title" content="<?= $title ?>" />
-    <meta property="twitter:title" content="<?= $title ?>" />
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="<?= $site->url() ?>" />
-    <meta property="og:title" content="<?= $site->title() ?>" />
-    <meta property="og:description" content="" />
+    <meta property="og:url" content="<?= $page->url() ?>" />
+    <meta property="og:title" content="<?= $title ?>" />
+    <meta property="og:description" content="<?= $description->esc() ?>" />
     <meta property="og:image" content="<?= $site->url() ?>/assets/imgs/meta-tags.png" />
+    
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="<?= $site->url() ?>" />
-    <meta property="twitter:description" content="" />
+    <meta property="twitter:url" content="<?= $page->url() ?>" />
+    <meta property="twitter:title" content="<?= $title ?>" />
+    <meta property="twitter:description" content="<?= $description->esc() ?>" />
     <meta property="twitter:image" content="<?= $site->url() ?>/assets/imgs/meta-tags.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Pierre Medurio" />
+    <meta name="Author" content="Telma Medurio" />
     <meta name="Revisit-After" content="15 days" />
     <?= css(['assets/css/index.css', '@auto']) ?>
 

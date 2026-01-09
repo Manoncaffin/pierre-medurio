@@ -1,6 +1,6 @@
 type: pages
-headline: Projets
-parent: kirby.page("projets")
+headline: Photographies
+parent: site
 layout: cards
 size: medium
 template: projet

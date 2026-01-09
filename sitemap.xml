@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.pierremedurio.com/</loc>
+        <loc>https://www.telmamedurio.com/</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.pierremedurio.com/prestations</loc>
+        <loc>https://www.telmamedurio.com/photographies</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.pierremedurio.com/projets</loc>
+        <loc>https://www.telmamedurio.com/prestations</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.pierremedurio.com/articles</loc>
+        <loc>https://www.telmamedurio.com/textes</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pierremedurio.com/a-propos</loc>
+        <loc>https://www.telmamedurio.com/a-propos</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://www.pierremedurio.com/contact</loc>
+        <loc>https://www.telmamedurio.com/contact</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://www.pierremedurio.com/mentions-legales</loc>
+        <loc>https://www.telmamedurio.com/mentions-legales</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.4</priority>
+        <priority>0.2</priority>
     </url>
         <url>
-        <loc>https://www.pierremedurio.com/cgv</loc>
+        <loc>https://www.telmamedurio.com/cgv</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.4</priority>
+        <priority>0.2</priority>
     </url>
 </urlset>

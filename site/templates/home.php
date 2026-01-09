@@ -18,6 +18,8 @@
                     ?>
 
                     <div class="legend">
+                        <h1 style="position: absolute; left: -9999px;">Telma Medurio - Photographe</h1>
+                        <p style="position: absolute; left: -9999px;">Photographe professionnelle spécialisée en reportage et portrait</p>
                         <span class="project-name"><em><?= $alt ?></em></span>
                         <?php if ($year): ?>
                             <span class="project-year"><?= $year ?></span> 

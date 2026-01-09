@@ -13,12 +13,12 @@ return [
     
      'omz13.xmlsitemap' => [
         'disable' => false,
-        'include' => ['projets', 'articles'], // Pages à inclure spécifiquement
+        'include' => ['photographies', 'textes'], // Pages à inclure spécifiquement
         'exclude' => ['error'], // Pages à exclure
         'priorityByDepth' => [ // Priorité selon la profondeur
             0 => 1.0, // Page d'accueil
             1 => 0.8, // Pages principales
-            2 => 0.6, // Projets et articles
+            2 => 0.6, // Photographies et textes
             3 => 0.4, // Sous-pages plus profondes
         ],
     ],

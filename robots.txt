@@ -3,4 +3,4 @@ Disallow: /kirby/
 Disallow: /content/
 Disallow: /site/
 
-Sitemap: https://www.pierremedurio.com/sitemap.xml
+Sitemap: https://www.telmamedurio.com/sitemap.xml

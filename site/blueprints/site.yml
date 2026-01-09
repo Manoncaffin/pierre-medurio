@@ -17,9 +17,9 @@ tabs:
             type: pages
             template: 
               - home
-              - projets
+              - photographies
               - prestations
-              - articles
+              - textes
               - a-propos
               - contact
               - mentions-legales
@@ -43,5 +43,21 @@ tabs:
             accept: 
               - image/svg+xml
               - image/png
+              - image/x-png
               - image/jpeg
+              - image/jpg
               - image/webp
+
+  footer:
+    label: Footer
+    columns:
+      main:
+        width: 1/2
+        sections:
+          footercontent:
+            type: fields
+            fields:
+              footer_credit:
+                label: Crédit du site
+                type: text
+                placeholder: "Nom du site © année"

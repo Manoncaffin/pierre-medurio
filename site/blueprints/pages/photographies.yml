@@ -1,22 +1,20 @@
-title: Articles
-icon: 📚
+title: Photographies
+icon: 🖼
 
 tabs:
-  contenu:
-    label: Articles
+  photographies:
+    label: Photographies
     sections:
       drafts:
-        type: pages
-        headline: Articles brouillons
-        status: draft
-        extends: sections/articles
-
+        extends: sections/photographies
+        label: Brouillons
+        status: draft 
+        
       listed:
-        type: pages
-        headline: Articles publiés
-        status: listed
+        extends: sections/photographies
+        label: Publiés
+        status: listed 
         layout: cards
-        extends: sections/articles
 
   seo:
     label: SEO

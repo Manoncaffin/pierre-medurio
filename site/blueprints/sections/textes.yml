@@ -1,6 +1,6 @@
 type: pages
-headline: Articles
-parent: kirby.page("articles")
+headline: Textes
+parent: kirby.page("textes")
 layout: cards
 size: medium
 template: article

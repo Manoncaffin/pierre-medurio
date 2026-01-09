@@ -23,6 +23,14 @@ body {
         height: calc(100vh - 360px); 
     }
 
+    .sr-only {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
     .container_page {
         border-top: 1px solid black;
     }

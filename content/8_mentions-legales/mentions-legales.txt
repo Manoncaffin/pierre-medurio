@@ -4,31 +4,31 @@ Title: mentions légales
 
 Column1:
 
-**Éditeur du site :** Pierre Medurio
+**Éditrice du site :** Telma Medurio
 **Siège social :** Saint-Étienne, 42000
 **Numéro SIRET :** 82255862300028
 **Numéro RCS :** Saint-Étienne A 822558623
 **N° de TVA intracommunautaire :** FR52822558623
 **Email :** contact@pierremedurio.com
-**Responsable de la publication :** Pierre Medurio
+**Responsable de la publication :** Telma Medurio
 **Hébergeur :** EX2
 **Siège social :** 34 Avenue des Champs-Élysées, 75008 Paris
 
 ----
 
-Column1-row2: Toutes les photographies, textes, et plus généralement, le contenu du site Pierre Medurio sont protégés par le droit d’auteur et les lois relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Pierre Medurio.
+Column1-row2: Toutes les photographies, textes, et plus généralement, le contenu du site Telma Medurio sont protégés par le droit d’auteure et les lois relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Telma Medurio.
 
 ----
 
 Column2:
 
-**Photographies :** Pierre Medurio
+**Photographies :** Telma Medurio
 **Identité visuelle, webdesign et code :** Manon Caffin
 **Typographies :** Inclusive par Olivia King
 
 ----
 
-Metatitle: Mentions légales | Pierre Medurio
+Metatitle: Mentions légales | Telma Medurio
 
 ----
 
