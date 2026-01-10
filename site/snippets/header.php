@@ -1,7 +1,7 @@
 <?php
 $logo = $site->files()->first();
 $navPages = $site->children()->listed()->filter(function ($page) {
-    return in_array($page->slug(), ['photographies', 'prestations', 'articles', 'a-propos', 'contact']);
+    return in_array($page->slug(), ['photographies', 'prestations', 'textes', 'a-propos', 'contact']);
 });
 $isHomePage = $page->isHomePage();
 ?>
