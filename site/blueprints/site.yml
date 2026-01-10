@@ -17,6 +17,7 @@ tabs:
             type: pages
             template: 
               - home
+              - projets
               - photographies
               - prestations
               - textes

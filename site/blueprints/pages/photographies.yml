@@ -6,15 +6,28 @@ tabs:
     label: Photographies
     sections:
       drafts:
-        extends: sections/photographies
-        label: Brouillons
-        status: draft 
+        type: pages
+        headline: Brouillons
+        status: draft
+        layout: cards
+        template: projet
+        image:
+          query: page.images.template("cover").first
+          ratio: 3/2
+          cover: true
+        info: "{{ page.details.toStructure().first().year }}"
         
       listed:
-        extends: sections/photographies
-        label: Publiés
-        status: listed 
+        type: pages
+        headline: Publiés
+        status: listed
         layout: cards
+        template: projet
+        image:
+          query: page.images.template("cover").first
+          ratio: 3/2
+          cover: true
+        info: "{{ page.details.toStructure().first().year }}"
 
   seo:
     label: SEO

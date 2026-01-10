@@ -16,13 +16,15 @@ Details:
   client: Atelier Horizon
   model: Amina Bouajila
   year: 2020
-  categorie: portrait
-  network: Atelier Horizon
 
 ----
 
-Tags: Portrait
+Metatitle: Reportage photo Atelier Horizon
 
 ----
 
-Uuid: NOVv5vrBlG7LrvAC
+Metadescription: Roxane Boisserie développe depuis 2017 avec sa marque Atelier Horizon des bijoux entièrement artisanaux, réalisés dans son atelier à Marseille. Elle s'inspire notamment de la Méditerranée et de ses récits antiques. Roxane souhaitait que je réalise des photographies de ses bijoux portés, afin de compléter les images détaillées de ces bijoux qu'elle avait déjà. C'est donc bien sûr au bord de la mer que nous sommes allé·es, avec son horizon dont on ne se lasse jamais.
+
+----
+
+Uuid: TNjPWhdLUKQkKSXi
