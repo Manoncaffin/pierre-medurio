@@ -1,8 +1,12 @@
-Title: textes
+Title: Textes
 
 ----
 
 Metatitle: Textes | Telma Medurio
+
+----
+
+Template: textes
 
 ----
 

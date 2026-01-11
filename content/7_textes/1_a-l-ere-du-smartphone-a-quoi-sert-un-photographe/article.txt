@@ -2,6 +2,10 @@ Title: Pourquoi faire appel à un·e photographe professionnel·le ?
 
 ----
 
+Template: article
+
+----
+
 Intro: **Tout le monde prend des photos. La qualité d'image des smartphones est devenue excellente (pour leur format), tout comme celle des appareils photos entrée de gamme. De nombreux·ses amateur·es produisent des images de grande qualité. À ce stade, quelle est la place d'un·e photographe professionnel·le ?**
 
 ----
@@ -44,7 +48,7 @@ Pour conclure, on peut se réjouir de voir que la photographie soit devenue une 
 
 ----
 
-Imagearticle: - file://rZfsKlcj3mBKBBSg
+ImageArticle: - file://rZfsKlcj3mBKBBSg
 
 ----
 
