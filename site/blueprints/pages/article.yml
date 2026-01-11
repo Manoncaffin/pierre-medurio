@@ -31,15 +31,27 @@ fields:
     width: 1/2
     help: "Titre affiché dans les résultats des moteurs de recherche. 50-60 caractères recommandés."
 
+  footnotes:
+    label: Notes de bas de page
+    type: structure
+    fields:
+      number:
+        label: Numéro
+        type: number
+        width: 1/4
+      content:
+        label: Contenu de la note
+        type: textarea
+        width: 3/4
+
   metaDescription:
     label: Description SEO
     type: textarea
     width: 1/2
     help: "Description affichée dans les résultats Google. 140-160 caractères recommandés."
+
 sidebar:
   galleryArticle:
     type: files
     label: Galerie
     template: image
-
-    

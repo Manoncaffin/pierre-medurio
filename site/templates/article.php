@@ -42,6 +42,20 @@
             <?php endif ?>
         </div>
 
+<?php if ($page->footnotes()->isNotEmpty()): ?>
+    <div class="footnotes">
+        <?php foreach ($page->footnotes()->toStructure() as $note): ?>
+            <?php 
+                $data = $note->toArray();
+            ?>
+            <p class="footnote-item" id="fn<?= $data['number'] ?>">
+                <sup><?= $data['number'] ?></sup> 
+                <?= $data['content'] ?>
+            </p>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>
+
         <a href="<?= $page->parent()->url() ?>" class="back_link">
             <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Retour aux articles" class="back-arrow-icon">Retour aux articles
         </a>
