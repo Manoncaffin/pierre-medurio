@@ -5,102 +5,41 @@ tabs:
     label: Contenu
     fields:
 
-      # ——— PORTRAIT ———
-      portrait_title:
-        label: 📸 Portrait
+      # ——— PRESTATIONS ———
+      prestations_title:
+        label: 📸 Prestations
         type: headline
 
-      portrait:
-        label: Questions portrait
-        type: structure
-        fields:
-          question:
-            label: Question
-            type: text
-          answer:
-            label: Réponse
-            type: textarea
-            buttons: false
-
-      photoText1_image:
+      # Images
+      image1:
         label: Image 1
         type: files
         template: image
         max: 1
-      photoText1_text:
-        label: Texte associé
-        type: textarea
-
-      photoText2_image:
-        label: Image + texte 2
+      
+      image2:
+        label: Image 2
         type: files
         template: image
         max: 1
-      photoText2_text:
-        label: Texte associé
-        type: textarea
-
-      # ——— REPORTAGE ———
-      reportage_title:
-        label: 🎞️ Reportage
-        type: headline
-
-      reportage:
-        label: Questions reportage
-        type: structure
-        fields:
-          question:
-            label: Question
-            type: text
-          answer:
-            label: Réponse
-            type: textarea
-            buttons: false
-
-      photoText3_text:
-        label: Texte associé
-        type: textarea
-
-      photoText3:
-        label: Galerie reportage
+      
+      image3:
+        label: Image 3
         type: files
         template: image
-        multiple: true
-        max: 3
+        max: 1
 
-      # ——— ATELIER ———
-      atelier_title:
-        label: 🛠️ Atelier
-        type: headline
-
-      atelier:
-        label: Questions atelier
-        type: structure
-        fields:
-          question:
-            label: Question
-            type: text
-          answer:
-            label: Réponse
-            type: textarea
-            buttons: false
-
-      text5:
-        label: Texte associé 5
+      # Texte
+      prestations_text:
+        label: Texte des prestations
         type: textarea
-
-      text6:
-        label: Texte associé 6
-        type: textarea
-
-      photoText5:
-        label: Galerie atelier
-        type: files
-        multiple: true
-        max: 3
-        template: image
+        buttons: true
 
       # ——— SEO ———
+      seo_title:
+        label: SEO
+        type: headline
+
       metaTitle:
         label: Titre SEO
         type: text

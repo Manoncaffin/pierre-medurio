@@ -67,6 +67,10 @@
         }
     }
 
+    .text_biography {
+        margin-bottom: 60px;
+    }
+
     .text_biography p {
         margin-bottom: var(--gutter-width);
         font-size: 18px;

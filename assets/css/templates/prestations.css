@@ -21,6 +21,7 @@
         margin-bottom: 35px;
     }
 
+    .prestations,
     .portrait,
     .reportage {
         margin: 50px auto auto auto;
@@ -31,6 +32,34 @@
 
     .atelier {
         margin: 85px auto 350px auto;
+    }
+
+    .images-column {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .image-prestations {
+        width: 100%;
+    }
+
+    .image-prestations img {
+        width: 100%;
+        height: auto;
+        max-width: 900px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .text-prestations {
+        margin-top: var(--gutter-width);
+        margin-bottom: 250px;
+    }
+
+    .text-prestations p {
+        margin-bottom: 20px;
     }
 
     .image-text {
@@ -246,43 +275,22 @@
         width: 80%;
     }
 
-    .portrait {
+    .prestations {
         margin: 20px auto 40px auto;
         width: 80%;
-    }
-
-    .reportage {
-        margin: 20px auto 40px auto;
-        width: 80%;
-    }
-
-    .atelier {
-        margin: 20px auto 100px auto;
-        width: 80%;
-    }
-
-    .qa p.question,
-    .qa p.answer .qa {
-        margin-bottom: 20px;
-    }
-
-    .arrow {
-        width: 25px
-    }
-
-    .atelier-gallery,
-    .reportage-gallery {
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: var(--gutter-width);
     }
 
-    .reportage-gallery img,
-    .atelier-gallery img {
-        width: calc((100% - 10px) / 3);
-        max-width: 500px;
-        height: auto;
-        object-fit: cover;
+    .images-column {
+        width: 55%;
+        flex-shrink: 0;
+        margin-bottom: 90px;
+    }
+
+    .text-prestations {
+        width: 45%;
+        margin-top: 0;
     }
 
     .text_1 p,
@@ -298,32 +306,12 @@
         margin-top: 20px;
     }
 
-    .reportage-gallery,
-    .atelier-gallery {
-        margin-top: 30px;
-    }
-
     .image-text_atelier p {
         margin-bottom: var(--gutter-width);
     }
 
     .title {
         white-space: nowrap;
-    }
-
-        .image-portrait {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: var(--gutter-width);
-    }
-    
-    .image-portrait img {
-        width: 45%;
-        height: auto;
-        object-fit: contain;
-        margin: 0;
-        flex-shrink: 0;
     }
     
     .text_1, .text_2 {
@@ -344,16 +332,16 @@
         width: 85%;
     }
 
-    .portrait {
+    .prestations {
         margin: 20px auto 40px auto;
     }
 
-    .reportage {
-        margin: 20px auto 40px auto;
+    .images-column {
+        width: 45%;
     }
 
-    .atelier {
-        margin: 20px auto 100px auto;
+    .text-prestations {
+        width: 55%;
     }
 
     .text_1,
@@ -361,36 +349,9 @@
         margin: 0;
     }
 
-    .image-portrait img {
-        width: 30%;
-    }
-
-    .image-portrait {
-        flex-direction: row;
-    }
-
     .qa {
         margin-top: 0;
     }
-
-    .qa p.question,
-    .qa p.answer {
-        margin-bottom: 10px;
-    }
-
-    .arrow {
-        width: 20px;
-    }
-
-    @-moz-document url-prefix() {
-    .image-portrait {
-        width: 100%;
-    }
-    
-    .image-portrait img {
-        flex-basis: auto;
-    }
-}
 }
 
 
@@ -405,19 +366,9 @@
         width: 90%;
     }
 
-    .portrait {
+    .prestations {
         margin: 20px auto 40px auto;
         width: 90%;
-    }
-
-    .reportage {
-        margin: 20px auto 40px auto;
-        width: 90%;
-    }
-
-    .atelier {
-        margin: 20px auto 125px auto;
-        width: 85%;
     }
 }
 
@@ -429,15 +380,10 @@
 @media only screen and (min-width: 1800px) {
 
     .text_1,
-    .text_2 {
+    .text_2,
+    .text-prestations {
         font-size: 1.1rem;
         line-height: 1.6;
-    }
-
-    .qa p.question,
-    .qa p.answer {
-        font-size: 1.2rem;
-        line-height: 2.8rem;
     }
 }
 
@@ -457,14 +403,10 @@
     }
 
     .text_1,
-    .text_2 {
+    .text_2,
+    .text-prestations {
         font-size: 1.2rem;
         line-height: 1.7;
-    }
-
-    .qa p.question,
-    .qa p.answer {
-        font-size: 1.3rem;
     }
 }
 
@@ -476,7 +418,8 @@
 @media only screen and (min-width: 2800px) {
 
     .text_1,
-    .text_2 {
+    .text_2,
+    .text-prestations {
         font-size: 1.3rem;
         line-height: 1.8;
     }
@@ -487,11 +430,5 @@
 
     h2 {
         font-size: 2.5rem;
-    }
-
-    .qa p.question,
-    .qa p.answer {
-        font-size: 1.4rem;
-        line-height: 3rem;
     }
 }
