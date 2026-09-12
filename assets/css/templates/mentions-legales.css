@@ -35,6 +35,10 @@
         flex-direction: column;
         max-width: 1200px;
     }
+
+    .col p {
+  margin-bottom: 70px;
+}
 }
 
 
