@@ -123,8 +123,8 @@ class ComposerStaticInit42c24665b7d1bdc28de7f80a37688bc4
         ),
         'Kirby\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/kirby/src',
-            1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            0 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            1 => __DIR__ . '/../..' . '/kirby/src',
         ),
         'GrahamCampbell\\ResultType\\' => 
         array (

@@ -5,7 +5,7 @@
         <p class="networks">
         <span class="default-text">Me suivre</span>
         <span class="social-links">
-            <a href="https://www.instagram.com/pierre.medurio/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/telma.medurio/" target="_blank">Instagram</a>
         </span>
         </p>
         <a href="<?= url('cgv') ?>">CGV</a>

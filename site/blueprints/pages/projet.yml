@@ -14,11 +14,13 @@ fields:
       portrait: Portrait
       atelier: Atelier
       travail-personnel: Travail personnel
+    required: false
 
   description:
     label: Description
     type: textarea
     size: large
+    required: false
 
   details:
     label: Détails
@@ -27,15 +29,17 @@ fields:
       client:
         label: Commanditaire
         type: text
+        required: false
       model:
         label: Modèle
         type: text
+        required: false
       year:
         label: Date
         type: number
         min: 2000
         default: 2020
-        required: true
+        required: false
 
   # Champs SEO
   metaTitle:
@@ -43,12 +47,14 @@ fields:
     type: text
     width: 1/2
     help: "Titre affiché dans les résultats des moteurs de recherche. 50-60 caractères recommandés."
+    required: false
 
   metaDescription:
     label: Description SEO
     type: textarea
     width: 1/2
     help: "Description affichée dans les résultats Google. 140-160 caractères recommandés."
+    required: false
 
 sidebar:
   cover:
@@ -57,8 +63,9 @@ sidebar:
     layout: cards
     info: "{{ file.alt.or(file.filename) }}"
     template: cover
-    min: 1
+    min: 0
     max: 1
+    required: false
 
   gallery:
     label: Galerie de photos
@@ -68,3 +75,4 @@ sidebar:
     multiple: true
     max: 20
     info: "{{ file.alt.or(file.filename) }}"
+    required: false

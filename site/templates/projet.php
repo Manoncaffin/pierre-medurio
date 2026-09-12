@@ -10,20 +10,25 @@
       </div>
 
       <div class="text_projet">
-        <?= $page->description()->kt() ?>
-        <ul>
-          <?php foreach ($page->details()->toStructure() as $item): ?>
-            <?php if ($item->client()->isNotEmpty()): ?>
-              <li><strong>Commanditaire :</strong> <?= $item->client() ?></li>
-            <?php endif ?>
-            <?php if ($item->model()->isNotEmpty()): ?>
-              <li><strong>Modèle :</strong> <?= $item->model() ?></li>
-            <?php endif ?>
-            <?php if ($item->year()->isNotEmpty()): ?>
-              <li><strong>Année :</strong> <?= $item->year() ?></li>
-            <?php endif ?>
-          <?php endforeach ?>
-        </ul>
+        <?php if ($page->description()->isNotEmpty()): ?>
+          <?= $page->description()->kt() ?>
+        <?php endif ?>
+        
+        <?php if ($page->details()->isNotEmpty()): ?>
+          <ul>
+            <?php foreach ($page->details()->toStructure() as $item): ?>
+              <?php if ($item->client()->isNotEmpty()): ?>
+                <li><strong>Commanditaire :</strong> <?= $item->client() ?></li>
+              <?php endif ?>
+              <?php if ($item->model()->isNotEmpty()): ?>
+                <li><strong>Modèle :</strong> <?= $item->model() ?></li>
+              <?php endif ?>
+              <?php if ($item->year()->isNotEmpty()): ?>
+                <li><strong>Année :</strong> <?= $item->year() ?></li>
+              <?php endif ?>
+            <?php endforeach ?>
+          </ul>
+        <?php endif ?>
       </div>
     </div>
 
@@ -73,62 +78,64 @@
     $imageCount = $allImages->count();
     ?>
 
-    <!-- Galerie de miniatures - toujours visible -->
-    <div class="gallery" id="gallery-thumbnails">
-      <?php $index = 0; ?>
-      <?php foreach ($allImages as $image): ?>
-        <div class="thumbnail-item" data-index="<?= $index ?>">
-          <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
-        </div>
-        <?php $index++; ?>
-      <?php endforeach ?>
-    </div>
-
-    <!-- Modal Carrousel -->
-    <div id="carousel-modal" class="modal">
-      <div class="modal-close">
-        <a href="#" id="modal-close" role="button">
-          <img src="<?= url('assets/images/close.svg') ?>" alt="Fermer"></a>
-        </a>
-      </div>
-
-      <div class="modal-content">
-        <!-- Custom Carousel -->
-        <div class="custom-carousel">
-          <div class="custom-carousel-inner">
-            <?php foreach ($allImages as $image): ?>
-              <div class="custom-carousel-slide">
-                <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
-              </div>
-            <?php endforeach ?>
+    <?php if ($imageCount > 0): ?>
+      <!-- Galerie de miniatures - toujours visible -->
+      <div class="gallery" id="gallery-thumbnails">
+        <?php $index = 0; ?>
+        <?php foreach ($allImages as $image): ?>
+          <div class="thumbnail-item" data-index="<?= $index ?>">
+            <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
           </div>
+          <?php $index++; ?>
+        <?php endforeach ?>
+      </div>
+
+      <!-- Modal Carrousel -->
+      <div id="carousel-modal" class="modal">
+        <div class="modal-close">
+          <a href="#" id="modal-close" role="button">
+            <img src="<?= url('assets/images/close.svg') ?>" alt="Fermer"></a>
+          </a>
         </div>
 
-        <!-- Navigation buttons -->
-        <button class="custom-carousel-button custom-prev">
-          <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Précédent">
-        </button>
-        <button class="custom-carousel-button custom-next">
-          <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Suivant">
-        </button>
+        <div class="modal-content">
+          <!-- Custom Carousel -->
+          <div class="custom-carousel">
+            <div class="custom-carousel-inner">
+              <?php foreach ($allImages as $image): ?>
+                <div class="custom-carousel-slide">
+                  <img src="<?= $image->url() ?>" alt="<?= $image->alt()->html() ?>">
+                </div>
+              <?php endforeach ?>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <button class="custom-carousel-button custom-prev">
+            <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Précédent">
+          </button>
+          <button class="custom-carousel-button custom-next">
+            <img src="<?= url('assets/images/fleche_droite.svg') ?>" alt="Suivant">
+          </button>
+        </div>
+        <!-- Counter -->
+        <div class="custom-carousel-counter">
+          <span class="current-slide">1</span>/<span class="total-slides"><?= $imageCount ?></span>
+        </div>
       </div>
-      <!-- Counter -->
-      <div class="custom-carousel-counter">
-        <span class="current-slide">1</span>/<span class="total-slides"><?= $imageCount ?></span>
+      <!-- Zoom -->
+      <div class="zoom-overlay">
+        <img src="" alt="" class="zoomed-image">
+        <div class="zoom-close">
+        <img src="<?= url('assets/images/close.svg') ?>" alt="Fermer" class="close-icon">
+        </div>
+        <div class="zoom-navigation">
+          <button class="zoom-prev">&larr; Précédente</button>
+          <span class="zoom-counter">1 / 1</span>
+          <button class="zoom-next">Suivante &rarr;</button>
+        </div>
       </div>
-    </div>
-    <!-- Zoom -->
-    <div class="zoom-overlay">
-      <img src="" alt="" class="zoomed-image">
-      <div class="zoom-close">
-      <img src="<?= url('assets/images/close.svg') ?>" alt="Fermer" class="close-icon">
-      </div>
-      <div class="zoom-navigation">
-        <button class="zoom-prev">&larr; Précédente</button>
-        <span class="zoom-counter">1 / 1</span>
-        <button class="zoom-next">Suivante &rarr;</button>
-      </div>
-    </div>
+    <?php endif ?>
   </section>
 </main>
 
